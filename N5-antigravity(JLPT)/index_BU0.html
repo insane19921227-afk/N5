@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時光照相館 N5 委託系統 V17.1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <style>
+        :root {
+            --cheng-blue: #2d8cf0;
+            --lu-white: #f8fafc;
+            --dark-bg: #0f172a;
+            --glass: rgba(15, 23, 42, 0.9);
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --success: #10b981;
+        }
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh;
+            background-image: url('link-click.png'); 
+            background-size: cover; background-position: center; background-attachment: fixed;
+            user-select: none; color: white;
+        }
+        body::before { content: ""; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.7); z-index: -1; }
+        
+        .app-container { width: 95%; max-width: 500px; min-height: 680px; position: relative; padding-bottom: 50px; }
+        .hidden { display: none !important; }
+
+        /* 卡片樣式 */
+        .glass-card {
+            background: var(--glass); backdrop-filter: blur(15px); border-radius: 20px; 
+            border: 1px solid rgba(255,255,255,0.1); padding: 30px; text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: fadeIn 0.5s;
+            position: relative; overflow: hidden;
+        }
+        
+        .film-strip-top, .film-strip-bottom {
+            position: absolute; left: 0; width: 100%; height: 15px;
+            background-image: linear-gradient(to right, transparent 50%, rgba(255,255,255,0.3) 50%);
+            background-size: 20px 100%; opacity: 0.5;
+        }
+        .film-strip-top { top: 0; } .film-strip-bottom { bottom: 0; }
+
+        .big-btn {
+            background: var(--cheng-blue); color: white; width: 100%; padding: 16px; 
+            border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; 
+            cursor: pointer; transition: 0.2s; position: relative; overflow: hidden;
+            box-shadow: 0 0 15px rgba(45, 140, 240, 0.4); text-transform: uppercase; letter-spacing: 2px;
+        }
+        .big-btn:hover { background: #1a73e8; transform: scale(1.02); }
+
+        /* 儀表板 */
+        h1 { margin: 0; font-size: 1.8rem; text-shadow: 0 0 10px var(--cheng-blue); }
+        .subtitle { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 20px; }
+        .stat-box { 
+            background: rgba(255,255,255,0.05); padding: 10px 5px; border-radius: 10px; 
+            border: 1px solid rgba(255,255,255,0.1); transition: 0.2s;
+        }
+        .stat-val { font-size: 1.2rem; font-weight: 900; color: var(--cheng-blue); }
+        .stat-label { font-size: 0.7rem; color: #cbd5e1; margin-top: 5px; }
+        
+        .stat-box.darkroom-stat { border-color: rgba(239, 68, 68, 0.5); cursor: pointer; }
+        .stat-box.darkroom-stat:hover { background: rgba(239, 68, 68, 0.1); transform: translateY(-2px); }
+        .stat-box.darkroom-stat .stat-val { color: var(--danger); }
+
+        .dashboard-btns { display: flex; flex-direction: column; gap: 10px; }
+        .darkroom-btn { background: #333; border: 1px solid #555; color: #aaa; }
+        .darkroom-btn:hover { background: #444; color: white; border-color: white; }
+        .report-center-btn { background: #b45309; color: white; border: 1px solid #d97706; }
+        .report-center-btn:hover { background: #d97706; }
+
+        /* 測驗介面 */
+        .quiz-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .hearts-container { color: var(--danger); font-size: 1.2rem; text-shadow: 0 0 10px var(--danger); }
+        
+        .timer-display {
+            font-family: 'Courier New', monospace; font-size: 1.1rem; font-weight: bold;
+            color: var(--warning); border: 1px solid var(--warning);
+            padding: 2px 8px; border-radius: 4px; display: none;
+        }
+        .timer-display.urgent { color: var(--danger); border-color: var(--danger); animation: shake 0.5s infinite; }
+
+        .meta-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .q-tag { background: rgba(45, 140, 240, 0.2); color: var(--cheng-blue); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; border: 1px solid var(--cheng-blue); }
+        
+        .meta-right { display: flex; gap: 10px; align-items: center; }
+        .id-badge { font-family: 'Courier New', monospace; font-size: 0.8rem; color: #64748b; border: 1px solid #334155; padding: 2px 8px; border-radius: 4px; cursor: pointer; transition: 0.2s; }
+        .id-badge:hover { color: white; border-color: var(--cheng-blue); background: rgba(45,140,240,0.1); }
+
+        .exit-btn {
+            background: rgba(239, 68, 68, 0.1); border: 1px solid #ef4444; color: #ef4444;
+            padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; transition: 0.2s;
+            display: flex; align-items: center; gap: 3px;
+        }
+        .exit-btn:hover { background: #ef4444; color: white; }
+
+        .question-text { font-size: 1.4rem; font-weight: bold; margin: 10px 0 20px; line-height: 1.6; text-shadow: 1px 1px 2px black; user-select: text !important; cursor: text; }
+
+        .option-btn {
+            width: 100%; background: rgba(255,255,255,0.9); color: #0f172a;
+            border: none; padding: 15px; border-radius: 8px; margin-bottom: 10px; text-align: left;
+            font-size: 1rem; font-weight: bold; transition: 0.2s; position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);
+        }
+        .option-btn:hover { background: white; transform: translateX(5px); box-shadow: -5px 0 0 var(--cheng-blue); }
+        .option-btn.correct { background: #dcfce7; color: #166534; box-shadow: -5px 0 0 #22c55e; }
+        .option-btn.wrong { background: #fee2e2; color: #991b1b; box-shadow: -5px 0 0 #ef4444; }
+
+        .tools-area { display: flex; gap: 8px; margin-top: 15px; justify-content: center; }
+        .tool-btn { padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; border: none; color: white; display: flex; align-items: center; gap: 5px; }
+        .btn-copy { background: #475569; }
+        .btn-bug { background: #f59e0b; color: #fff; }
+        .btn-bug:hover { background: #d97706; }
+        .btn-bug.disabled { opacity: 0.5; cursor: not-allowed; filter: grayscale(1); }
+
+        .character-dialog {
+            background: rgba(0,0,0,0.6); border-left: 4px solid var(--cheng-blue);
+            padding: 10px 15px; margin-top: 20px; text-align: left; border-radius: 0 10px 10px 0;
+            display: none; animation: slideIn 0.3s;
+        }
+        .char-name { font-weight: bold; font-size: 0.9rem; margin-bottom: 3px; }
+        .char-text { font-size: 0.95rem; line-height: 1.5; }
+        .cheng { border-color: var(--cheng-blue); color: #bfdbfe; }
+        .lu { border-color: #94a3b8; color: #e2e8f0; }
+
+        .cat-card { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; cursor: pointer; text-align: left; border: 1px solid rgba(255,255,255,0.1); transition: 0.2s; }
+        .cat-card:hover { background: rgba(255,255,255,0.2); border-color: var(--cheng-blue); }
+        .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 15px; }
+        
+        .result-view { display: none; text-align: center; }
+        .score-circle { width: 120px; height: 120px; border-radius: 50%; border: 5px solid var(--cheng-blue); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; margin: 0 auto 20px; box-shadow: 0 0 20px var(--cheng-blue); background: rgba(0,0,0,0.5); }
+
+        .setup-modal { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(15,23,42,0.98); z-index:10; display:none; flex-direction:column; justify-content:center; padding:30px; }
+        
+        .list-container {
+            max-height: 350px; overflow-y: auto; background: rgba(0,0,0,0.3); 
+            border: 1px solid #334155; border-radius: 8px; padding: 10px; margin-bottom: 15px; text-align: left;
+        }
+        .list-item {
+            display: flex; align-items: flex-start; gap: 10px; border-bottom: 1px solid #334155; padding: 10px 5px; cursor: pointer; transition: 0.2s;
+        }
+        .list-item:hover { background: rgba(255,255,255,0.05); }
+        .darkroom-item { justify-content: space-between; align-items: center; }
+        .darkroom-item .q-info { flex-grow: 1; }
+        .darkroom-item .go-btn { background: var(--cheng-blue); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; border: none; cursor: pointer; }
+        
+        .report-item input { margin-top: 5px; transform: scale(1.2); }
+        .info-text { font-size: 0.85rem; color: #cbd5e1; }
+        .id-tag { color: var(--warning); font-weight: bold; font-family: monospace; margin-right: 5px; }
+
+        .switch { position: relative; display: inline-block; width: 50px; height: 26px; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #555; transition: .4s; border-radius: 34px; }
+        .slider:before { position: absolute; content: ""; height: 20px; width: 20px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+        input:checked + .slider { background-color: var(--danger); }
+        input:checked + .slider:before { transform: translateX(24px); }
+        .count-btn { background: transparent; border: 1px solid #555; color: #aaa; padding: 10px; border-radius: 5px; cursor: pointer; }
+        .count-btn.active { border-color: var(--cheng-blue); color: var(--cheng-blue); background: rgba(45,140,240,0.1); }
+        
+        .setting-sub-box { background:#0f172a; padding:8px; border-radius:8px; margin-top:5px; border:1px solid #334155; }
+        select { width:100%; padding:5px; border-radius:5px; background:#1e293b; color:white; border:1px solid #475569; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideIn { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes shake { 0% { transform: translateX(0); } 25% { transform: translateX(-5px); } 50% { transform: translateX(5px); } 75% { transform: translateX(-5px); } 100% { transform: translateX(0); } }
+        @keyframes heal { 0% { transform: scale(1); } 50% { transform: scale(1.3); color: var(--success); } 100% { transform: scale(1); } }
+        .heal-anim { animation: heal 0.5s ease-in-out; }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- 主儀表板 -->
+        <div id="dashboard" class="glass-card">
+            <div class="film-strip-top"></div>
+            <h1>TIME PHOTO STUDIO</h1>
+            <p class="subtitle">時光照相館 N5 委託中心</p>
+            
+            <div class="stats-grid">
+                <div class="stat-box"><div class="stat-val" id="stat-total">0</div><div class="stat-label">完成委託</div></div>
+                <div class="stat-box"><div class="stat-val" id="stat-accuracy">0%</div><div class="stat-label">同步率</div></div>
+                <div class="stat-box darkroom-stat" onclick="openDarkroomList()">
+                    <div class="stat-val" id="stat-wrong">0</div>
+                    <div class="stat-label">暗房異常</div>
+                </div>
+            </div>
+
+            <div style="text-align:left; margin-bottom:10px; font-weight:bold; color:#cbd5e1;">📂 選擇委託類別：</div>
+            <div id="category-container" class="category-grid"></div>
+
+            <div class="dashboard-btns">
+                <button class="big-btn" onclick="openSetup('ALL')">⚡ 綜合潛入 (隨機)</button>
+                <button class="big-btn darkroom-btn" onclick="openDarkroomRandom()">📷 暗房隨機重修</button>
+                <button class="big-btn report-center-btn" onclick="openReportCenter()">⚠ 問題回報中心</button>
+            </div>
+
+            <div style="margin-top:20px; font-size:0.8rem; color:#64748b; cursor:pointer;" onclick="resetStats()">[ 重置所有記錄 ]</div>
+            <div class="film-strip-bottom"></div>
+        </div>
+
+        <!-- 任務設定彈窗 -->
+        <div id="setup-modal" class="setup-modal">
+            <h2 style="color:white; margin-bottom:5px;">任務參數設定</h2>
+            <div style="margin-bottom:10px; color:#cbd5e1;">照片數量：</div>
+            <div style="display:flex; gap:10px; margin-bottom:20px;">
+                <button class="count-btn active" onclick="selectCount(5, this)">5</button>
+                <button class="count-btn" onclick="selectCount(10, this)">10</button>
+                <button class="count-btn" onclick="selectCount(20, this)">20</button>
+            </div>
+            <div style="background:#1e293b; padding:15px; border-radius:10px; margin-bottom:15px; border:1px solid #334155;">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span style="font-weight:bold; color:#ef4444;">🔥 挑戰模式 (HP)</span>
+                    <label class="switch"><input type="checkbox" id="challenge-toggle" onchange="toggleChallengeMode()"><span class="slider"></span></label>
+                </div>
+                <div id="heart-setting" class="setting-sub-box" style="display:none;">
+                    <label style="font-size:0.8rem; color:#94a3b8;">初始血量：</label>
+                    <select id="heart-count">
+                        <option value="1">1 ❤ (一擊必殺)</option>
+                        <option value="2">2 ❤ (困難)</option>
+                        <option value="3" selected>3 ❤ (標準)</option>
+                        <option value="4">4 ❤ (簡單)</option>
+                        <option value="5">5 ❤ (非常簡單)</option>
+                    </select>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; border-top:1px dashed #334155; padding-top:10px;">
+                        <span style="font-weight:bold; color:#f59e0b;">⏳ 限時答題</span>
+                        <label class="switch" style="width:40px; height:20px;">
+                            <input type="checkbox" id="timer-toggle" onchange="toggleTimerMode()">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div id="timer-setting" style="display:none; margin-top:5px;">
+                        <select id="time-limit">
+                            <option value="5">5 秒 (極限)</option>
+                            <option value="12" selected>12 秒 (動畫標準)</option>
+                            <option value="20">20 秒 (寬裕)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="big-btn" onclick="confirmStart()">🚀 DIVES</button>
+            <div style="margin-top:20px; color:#64748b; cursor:pointer; text-align:center;" onclick="closeSetup()">取消</div>
+        </div>
+
+        <!-- 問題回報中心彈窗 -->
+        <div id="report-modal" class="setup-modal">
+            <h2 style="color:var(--warning); margin-bottom:5px;">問題回報中心</h2>
+            <div style="display:flex; gap:10px; margin-bottom:10px;">
+                <button style="background:#334155; color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;" onclick="toggleSelectAllReports()">全選/取消</button>
+            </div>
+            <div id="report-list-container" class="list-container"></div>
+            <button class="big-btn" style="background:var(--success);" onclick="resolveReports()">✅ 標記為已處理</button>
+            <div style="margin-top:20px; color:#64748b; cursor:pointer; text-align:center;" onclick="closeReportCenter()">關閉</div>
+        </div>
+
+        <!-- 暗房異常清單彈窗 -->
+        <div id="darkroom-list-modal" class="setup-modal">
+            <h2 style="color:var(--danger); margin-bottom:5px;">暗房異常檔案</h2>
+            <p style="color:#94a3b8; margin-bottom:20px; font-size:0.9rem;">點擊題目進行單獨修復。</p>
+            <div id="darkroom-list-container" class="list-container"></div>
+            <div style="margin-top:20px; color:#64748b; cursor:pointer; text-align:center;" onclick="closeDarkroomList()">返回總部</div>
+        </div>
+
+        <!-- 測驗介面 -->
+        <div id="quiz-screen" class="glass-card hidden">
+            <div class="film-strip-top"></div>
+            <div class="quiz-header">
+                <div style="display:flex; align-items:center;">
+                    <span id="q-progress">Q. 1</span>
+                    <span id="score-display" style="margin-left:10px; font-size:0.9rem; color:#94a3b8;">SCORE: <span id="current-score">0</span></span>
+                </div>
+                
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <div id="timer-display" class="timer-display">12s</div>
+                    <div id="hearts-container" class="hearts-container" style="display:none;">❤❤❤</div>
+                </div>
+            </div>
+
+            <div class="meta-row">
+                <span class="q-tag" id="q-category-tag">文法</span>
+                <div class="meta-right">
+                    <span class="id-badge" onclick="copyId()" title="點擊複製 ID">ID: <span id="q-db-id">--</span></span>
+                    <button class="exit-btn" onclick="forceExit()">⛔ 退出照片</button>
+                </div>
+            </div>
+
+            <div class="question-text" id="q-text">Loading...</div>
+            <div id="options-container"></div>
+
+            <div id="char-dialog" class="character-dialog">
+                <div class="char-name" id="char-name">程小時</div>
+                <div class="char-text" id="char-msg">...</div>
+                <div style="margin-top:10px; font-size:0.9rem; color:#cbd5e1; border-top:1px solid rgba(255,255,255,0.1); padding-top:10px;" id="static-exp-text"></div>
+                <div class="tools-area">
+                    <button class="tool-btn btn-copy" onclick="copyToClipboard()">📋 問AI</button>
+                    <button id="btn-report-bug" class="tool-btn btn-bug" onclick="reportCurrentQuestion()">⚠ 題目異常</button>
+                </div>
+            </div>
+
+            <button class="big-btn" id="next-btn" style="margin-top:20px; display:none;" onclick="nextQuestion()">下一張 ❯</button>
+            <div class="film-strip-bottom"></div>
+        </div>
+
+        <!-- 結果畫面 -->
+        <div class="glass-card hidden" id="result-view">
+            <div class="film-strip-top"></div>
+            <h2 id="result-title">任務報告</h2>
+            <div class="score-circle" id="final-score">100</div>
+            <div id="fail-img-wrapper" style="display:none; margin-bottom:20px;">
+                <img src="Fail_images.png" style="max-width:100%; border-radius:10px; border:2px solid #ef4444;" alt="Failed">
+            </div>
+            <p id="feedback-text" style="color:#cbd5e1; margin-bottom:30px;">結算中...</p>
+            <button class="big-btn" onclick="location.reload()">返回總部</button>
+            <div class="film-strip-bottom"></div>
+        </div>
+    </div>
+
+    <script>
+        let allQuestions = [], quizList = [], currentIdx = 0, score = 0;
+        let tempSelectedCategory = 'ALL', tempSelectedCount = 5;
+        let isChallengeMode = false, isTimerMode = false, timeLimit = 12, timerInterval = null, timeLeft = 0;
+        let maxHearts = 3, currentHearts = 3, isGameOver = false;
+        
+        let userStats = JSON.parse(localStorage.getItem('jlpt_n5_stats_v17')) || { total: 0, correct: 0 };
+        let fixList = JSON.parse(localStorage.getItem('jlpt_n5_fixes')) || {};
+        let wrongQuestions = JSON.parse(localStorage.getItem('jlpt_n5_wrong_list')) || [];
+        let reportList = JSON.parse(localStorage.getItem('jlpt_n5_reports')) || [];
+        let pendingHeal = false;
+
+        const chengQuotes = ["這張照片沒問題！", "配合完美！", "Nice shot!", "時光節點確認。"];
+        const luQuotes = ["你越界了。", "仔細看清楚。", "請勿干涉過去...但這題錯了。", "同步率下降。"];
+
+        window.onload = async () => {
+            await loadData();
+            updateDashboard();
+            renderCategories();
+        };
+
+        async function loadData() {
+            try {
+                const res = await fetch('n5_questions.json');
+                if (!res.ok) throw new Error("File not found");
+                allQuestions = await res.json();
+                allQuestions.forEach(q => { if (fixList[q.id] !== undefined) q.answer = fixList[q.id]; });
+            } catch (e) { allQuestions = []; }
+        }
+
+        function updateDashboard() {
+            const { total, correct } = userStats;
+            const accuracy = total === 0 ? 0 : Math.round((correct / total) * 100);
+            document.getElementById('stat-total').innerText = total;
+            document.getElementById('stat-accuracy').innerText = accuracy + "%";
+            document.getElementById('stat-wrong').innerText = wrongQuestions.length;
+        }
+
+        function renderCategories() {
+            const container = document.getElementById('category-container');
+            container.innerHTML = '';
+            if (allQuestions.length === 0) { container.innerHTML = '<div>題庫未載入</div>'; return; }
+            const catCounts = {};
+            allQuestions.forEach(q => { const sec = q.section || "其他"; catCounts[sec] = (catCounts[sec] || 0) + 1; });
+            for (const [section, count] of Object.entries(catCounts)) {
+                const card = document.createElement('div');
+                card.className = 'cat-card';
+                card.onclick = () => openSetup(section);
+                card.innerHTML = `<div class="cat-title">${section}</div><div class="cat-badge">${count} 題</div>`;
+                container.appendChild(card);
+            }
+        }
+
+        // --- 暗房功能 ---
+        function openDarkroomList() {
+            const listContainer = document.getElementById('darkroom-list-container');
+            listContainer.innerHTML = '';
+            if (wrongQuestions.length === 0) {
+                listContainer.innerHTML = '<div style="color:#aaa; text-align:center; padding:20px;">暗房很乾淨，沒有異常。</div>';
+            } else {
+                wrongQuestions.forEach(id => {
+                    const q = allQuestions.find(item => item.id == id);
+                    if (q) {
+                        const cleanQ = q.question.replace(/<[^>]+>/g, '').substring(0, 30) + "...";
+                        const row = document.createElement('div');
+                        row.className = 'list-item darkroom-item';
+                        row.innerHTML = `<div class="q-info"><span class="id-tag">#${q.id}</span><span class="info-text">${cleanQ}</span></div><button class="go-btn" onclick="startSingleQuestion(${q.id})">修復</button>`;
+                        row.onclick = (e) => { if(e.target.tagName !== 'BUTTON') startSingleQuestion(q.id); };
+                        listContainer.appendChild(row);
+                    }
+                });
+            }
+            document.getElementById('darkroom-list-modal').style.display = 'flex';
+        }
+        function closeDarkroomList() { document.getElementById('darkroom-list-modal').style.display = 'none'; }
+        function startSingleQuestion(id) {
+            const q = allQuestions.find(item => item.id == id);
+            if (!q) return alert("題目資料遺失");
+            closeDarkroomList();
+            quizList = [q];
+            document.getElementById('dashboard').classList.add('hidden');
+            document.getElementById('quiz-screen').classList.remove('hidden');
+            currentIdx = 0; score = 0; isChallengeMode = false; isTimerMode = false; isGameOver = false;
+            document.getElementById('hearts-container').style.display = 'none';
+            document.getElementById('timer-display').style.display = 'none';
+            document.getElementById('score-display').style.display = 'inline';
+            showQuestion();
+        }
+        function openDarkroomRandom() {
+            if (wrongQuestions.length === 0) { alert("暗房是空的。"); return; }
+            const darkroomList = allQuestions.filter(q => wrongQuestions.includes(q.id));
+            quizList = darkroomList.sort(() => Math.random() - 0.5);
+            document.getElementById('dashboard').classList.add('hidden');
+            document.getElementById('quiz-screen').classList.remove('hidden');
+            currentIdx = 0; score = 0; isChallengeMode = false; isTimerMode = false; isGameOver = false;
+            document.getElementById('hearts-container').style.display = 'none';
+            document.getElementById('timer-display').style.display = 'none';
+            document.getElementById('score-display').style.display = 'inline';
+            showQuestion();
+        }
+
+        // --- 回報中心 ---
+        function openReportCenter() {
+            const listContainer = document.getElementById('report-list-container');
+            listContainer.innerHTML = '';
+            if(reportList.length === 0) {
+                listContainer.innerHTML = '<div style="color:#aaa; text-align:center; padding:20px;">無待處理回報。</div>';
+            } else {
+                reportList.forEach(item => {
+                    const fullQ = allQuestions.find(q => q.id == item.id) || { question: "題目已刪除" };
+                    const cleanQ = fullQ.question.replace(/<[^>]+>/g, '').substring(0, 30) + "...";
+                    const row = document.createElement('div');
+                    row.className = 'list-item report-item';
+                    row.innerHTML = `<input type="checkbox" class="report-check" value="${item.id}"><div><div class="id-tag">ID: ${item.id}</div><div class="info-text">${cleanQ}</div></div>`;
+                    listContainer.appendChild(row);
+                });
+            }
+            document.getElementById('report-modal').style.display = 'flex';
+        }
+        function closeReportCenter() { document.getElementById('report-modal').style.display = 'none'; }
+        function toggleSelectAllReports() {
+            const checks = document.querySelectorAll('.report-check');
+            const allChecked = Array.from(checks).every(c => c.checked);
+            checks.forEach(c => c.checked = !allChecked);
+        }
+        function resolveReports() {
+            const checks = document.querySelectorAll('.report-check:checked');
+            if(checks.length === 0) return alert("請勾選項目。");
+            const idsToRemove = Array.from(checks).map(c => parseInt(c.value));
+            reportList = reportList.filter(item => !idsToRemove.includes(item.id));
+            localStorage.setItem('jlpt_n5_reports', JSON.stringify(reportList));
+            alert(`已清除 ${idsToRemove.length} 筆。`);
+            openReportCenter();
+        }
+
+        // --- 設定與開始 ---
+        function openSetup(category) {
+            tempSelectedCategory = category;
+            document.getElementById('setup-modal').style.display = 'flex';
+            document.getElementById('challenge-toggle').checked = false;
+            document.getElementById('timer-toggle').checked = false;
+            toggleChallengeMode();
+        }
+        function closeSetup() { document.getElementById('setup-modal').style.display = 'none'; }
+        function selectCount(num, btn) {
+            tempSelectedCount = num;
+            document.querySelectorAll('.count-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+        function toggleChallengeMode() {
+            const checked = document.getElementById('challenge-toggle').checked;
+            document.getElementById('heart-setting').style.display = checked ? 'block' : 'none';
+            if(!checked) { document.getElementById('timer-toggle').checked = false; toggleTimerMode(); }
+        }
+        function toggleTimerMode() {
+            const checked = document.getElementById('timer-toggle').checked;
+            document.getElementById('timer-setting').style.display = checked ? 'block' : 'none';
+        }
+        function confirmStart() {
+            isChallengeMode = document.getElementById('challenge-toggle').checked;
+            isTimerMode = false;
+            if (isChallengeMode) {
+                maxHearts = parseInt(document.getElementById('heart-count').value);
+                currentHearts = maxHearts;
+                if(document.getElementById('timer-toggle').checked) {
+                    isTimerMode = true;
+                    timeLimit = parseInt(document.getElementById('time-limit').value);
+                }
+            }
+            closeSetup();
+            startQuiz();
+        }
+
+        function startQuiz() {
+            document.getElementById('dashboard').classList.add('hidden');
+            document.getElementById('quiz-screen').classList.remove('hidden');
+            
+            const heartDiv = document.getElementById('hearts-container');
+            const timerDiv = document.getElementById('timer-display');
+            const scoreDiv = document.getElementById('score-display');
+            
+            if (isChallengeMode) {
+                heartDiv.style.display = 'block';
+                heartDiv.innerText = "❤".repeat(currentHearts);
+                scoreDiv.style.display = 'none';
+                if(isTimerMode) {
+                    timerDiv.style.display = 'block';
+                    timerDiv.innerText = `⏳ ${timeLimit}s`;
+                } else { timerDiv.style.display = 'none'; }
+            } else {
+                heartDiv.style.display = 'none';
+                timerDiv.style.display = 'none';
+                scoreDiv.style.display = 'inline';
+            }
+
+            let filtered = tempSelectedCategory === 'ALL' ? allQuestions : allQuestions.filter(q => q.section === tempSelectedCategory);
+            let shuffled = filtered.sort(() => Math.random() - 0.5);
+            quizList = shuffled.slice(0, Math.min(tempSelectedCount, shuffled.length));
+            currentIdx = 0; score = 0; isGameOver = false; pendingHeal = false;
+            showQuestion();
+        }
+
+        // 🔥 強制退出功能
+        function forceExit() {
+            if(confirm("確定要中斷連結，強制退出照片嗎？\n(目前的進度將列入結算)")) {
+                stopTimer();
+                isGameOver = true;
+                // 強制結束，傳入 true 代表是手動退出
+                showResult(true); 
+            }
+        }
+
+        function reportCurrentQuestion() {
+            const q = quizList[currentIdx];
+            if(!reportList.some(item => item.id === q.id)) {
+                reportList.push({ id: q.id, timestamp: Date.now() });
+                localStorage.setItem('jlpt_n5_reports', JSON.stringify(reportList));
+                const btn = document.getElementById('btn-report-bug');
+                btn.innerHTML = "✅ 已回報";
+                btn.classList.add('disabled');
+                if(isChallengeMode) { pendingHeal = true; alert("收到回報！\n【救援啟動】下題答對回復 1 ❤"); }
+                else { alert("ID 已記錄至回報中心。"); }
+            }
+        }
+
+        function startTimer() {
+            if (!isTimerMode) return;
+            timeLeft = timeLimit;
+            updateTimerDisplay();
+            if(timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                if (timeLeft <= 0) { clearInterval(timerInterval); handleTimeout(); }
+            }, 1000);
+        }
+        function stopTimer() { if(timerInterval) clearInterval(timerInterval); }
+        function updateTimerDisplay() {
+            const timerDiv = document.getElementById('timer-display');
+            timerDiv.innerText = `⏳ ${timeLeft}s`;
+            if(timeLeft <= 3) timerDiv.classList.add('urgent');
+            else timerDiv.classList.remove('urgent');
+        }
+        function handleTimeout() {
+            document.querySelectorAll('.option-btn').forEach(btn => btn.style.pointerEvents = 'none');
+            checkAnswer(null, true);
+        }
+
+        function showQuestion() {
+            stopTimer();
+            const q = quizList[currentIdx];
+            document.getElementById('q-progress').innerText = `Q. ${currentIdx + 1}/${quizList.length}`;
+            document.getElementById('current-score').innerText = score;
+            document.getElementById('q-category-tag').innerText = q.section;
+            document.getElementById('q-db-id').innerText = q.id;
+            document.getElementById('q-text').innerHTML = q.question;
+            document.getElementById('next-btn').style.display = 'none';
+            document.getElementById('char-dialog').style.display = 'none';
+            document.getElementById('hearts-container').classList.remove('shake-anim', 'heal-anim');
+            
+            const reportBtn = document.getElementById('btn-report-bug');
+            reportBtn.innerHTML = "⚠ 題目異常";
+            reportBtn.classList.remove('disabled');
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            let optionObjs = q.options.map((text, idx) => ({ text: text, isCorrect: (idx === q.answer) }));
+            optionObjs.sort(() => Math.random() - 0.5);
+
+            optionObjs.forEach((obj) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerText = obj.text;
+                if (obj.isCorrect) btn.dataset.correct = "true";
+                btn.onclick = function() { checkAnswer(this, false); };
+                container.appendChild(btn);
+            });
+
+            if(isTimerMode) startTimer();
+        }
+
+        function checkAnswer(btn, isTimeout) {
+            stopTimer();
+            document.querySelectorAll('.option-btn').forEach(b => b.style.pointerEvents = 'none');
+            const q = quizList[currentIdx];
+            const charDialog = document.getElementById('char-dialog');
+            charDialog.style.display = 'block';
+
+            let isRight = false;
+            if(!isTimeout && btn) isRight = (btn.dataset.correct === "true");
+
+            if (isRight) {
+                btn.classList.add('correct');
+                score++;
+                if(!isChallengeMode) confetti({ particleCount: 30, spread: 50, origin: { y: 0.7 } });
+                charDialog.className = "character-dialog cheng";
+                document.getElementById('char-name').innerText = "程小時";
+                let msg = chengQuotes[Math.floor(Math.random() * chengQuotes.length)];
+                if (isChallengeMode && pendingHeal) {
+                    if (currentHearts < maxHearts) {
+                        currentHearts++;
+                        msg = "異常排除！生命回復。 (+1 ❤)";
+                        document.getElementById('hearts-container').innerText = "❤".repeat(currentHearts);
+                        document.getElementById('hearts-container').classList.add('heal-anim');
+                    } else { msg = "異常排除！(生命已滿)"; }
+                    pendingHeal = false;
+                } else { pendingHeal = false; }
+                if (wrongQuestions.includes(q.id)) {
+                    wrongQuestions = wrongQuestions.filter(id => id !== q.id);
+                    localStorage.setItem('jlpt_n5_wrong_list', JSON.stringify(wrongQuestions));
+                    msg += " (暗房移除)";
+                }
+                document.getElementById('char-msg').innerText = msg;
+            } else {
+                if(btn) btn.classList.add('wrong');
+                document.querySelectorAll('.option-btn').forEach(b => { if (b.dataset.correct === "true") b.classList.add('correct'); });
+                charDialog.className = "character-dialog lu";
+                document.getElementById('char-name').innerText = "陸光";
+                if(isTimeout) { document.getElementById('char-msg').innerText = "動作太慢了。"; }
+                else { document.getElementById('char-msg').innerText = luQuotes[Math.floor(Math.random() * luQuotes.length)]; }
+                if (!wrongQuestions.includes(q.id)) {
+                    wrongQuestions.push(q.id);
+                    localStorage.setItem('jlpt_n5_wrong_list', JSON.stringify(wrongQuestions));
+                }
+                if (isChallengeMode) {
+                    currentHearts--;
+                    document.getElementById('hearts-container').innerText = "❤".repeat(currentHearts);
+                    document.getElementById('hearts-container').classList.add('shake-anim');
+                    if (currentHearts <= 0) isGameOver = true;
+                }
+                pendingHeal = false;
+            }
+
+            userStats.total++;
+            if(isRight) userStats.correct++;
+            localStorage.setItem('jlpt_n5_stats_v17', JSON.stringify(userStats));
+            updateDashboard();
+            
+            document.getElementById('static-exp-text').innerHTML = q.explanation || "暫無解析";
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.style.display = 'block';
+            if (isGameOver || currentIdx === quizList.length - 1) { nextBtn.innerText = "查看報告"; }
+            else { nextBtn.innerText = "下一張 ❯"; }
+        }
+
+        function nextQuestion() {
+            if (isGameOver) { showResult(); return; }
+            currentIdx++;
+            if (currentIdx < quizList.length) showQuestion(); else showResult();
+        }
+
+        function showResult(isManualExit = false) {
+            document.getElementById('quiz-screen').classList.add('hidden');
+            document.getElementById('result-view').classList.remove('hidden');
+            
+            // 計算分數 (強制退出時，分母為目前已做的題數)
+            let displayTotal = quizList.length;
+            if(isManualExit) {
+                displayTotal = isAnswered ? currentIdx + 1 : currentIdx;
+                if(displayTotal === 0) displayTotal = 1;
+            }
+
+            const finalScore = Math.round((score / displayTotal) * 100);
+            document.getElementById('final-score').innerText = finalScore;
+            
+            if (isChallengeMode && isGameOver && !isManualExit) {
+                document.getElementById('fail-img-wrapper').style.display = 'block';
+                document.getElementById('result-title').innerText = "MISSION FAILED";
+                document.getElementById('result-title').style.color = "#ef4444";
+                document.getElementById('final-score').style.borderColor = "#ef4444";
+                document.getElementById('feedback-text').innerText = "同步率歸零。";
+            } else {
+                document.getElementById('fail-img-wrapper').style.display = 'none';
+                document.getElementById('result-title').innerText = isManualExit ? "MISSION ABORTED" : "MISSION COMPLETE";
+                document.getElementById('result-title').style.color = "white";
+                document.getElementById('final-score').style.borderColor = "#2d8cf0";
+                
+                let text = isManualExit ? "連結已強制中斷。" : "委託完成。";
+                if (finalScore >= 90) text = "委託完成。"; // 90-99%
+                if (finalScore === 100) text = "完美同步！S級特務達成！"; // 100%
+                
+                document.getElementById('feedback-text').innerText = text;
+                
+                if(finalScore >= 80) confetti({ particleCount: 150, spread: 100 });
+            }
+        }
+
+        function resetStats() {
+            if(confirm("重置所有數據？")) {
+                userStats = { total: 0, correct: 0 };
+                wrongQuestions = [];
+                reportList = [];
+                localStorage.setItem('jlpt_n5_stats_v17', JSON.stringify(userStats));
+                localStorage.setItem('jlpt_n5_wrong_list', JSON.stringify(wrongQuestions));
+                localStorage.setItem('jlpt_n5_reports', JSON.stringify(reportList));
+                updateDashboard();
+            }
+        }
+        function copyToClipboard() {
+            const q = quizList[currentIdx];
+            const textToCopy = `解析日文N5 (ID:${q.id})：\n題目：${q.question.replace(/<[^>]*>/g, '')}\n選項：${q.options.join('/')}`;
+            navigator.clipboard.writeText(textToCopy);
+            alert("已複製！");
+        }
+        function copyId() {
+            const id = document.getElementById('q-db-id').innerText;
+            navigator.clipboard.writeText(id);
+            alert(`ID ${id} 已複製。`);
+        }
+    </script>
+</body>
+</html>
