@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時光照相館 N5 委託系統 V18.1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <style>
+        :root {
+            --cheng-blue: #2d8cf0; --lu-white: #f8fafc; --dark-bg: #0f172a; --glass: rgba(15, 23, 42, 0.95);
+            --danger: #ef4444; --warning: #f59e0b; --success: #10b981;
+            --border-n: #9ca3af; --border-r: #3b82f6; --border-sr: #eab308; --border-sqr: #000;
+        }
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh;
+            background-image: url('link-click.png'); background-size: cover; background-position: center; background-attachment: fixed;
+            user-select: none; color: white;
+        }
+        body::before { content: ""; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.7); z-index: -1; }
+        
+        .app-container { width: 95%; max-width: 500px; min-height: 700px; position: relative; padding-bottom: 50px; }
+        .hidden { display: none !important; }
+
+        /* 卡片與按鈕 */
+        .glass-card {
+            background: var(--glass); backdrop-filter: blur(15px); border-radius: 20px; 
+            border: 1px solid rgba(255,255,255,0.1); padding: 30px; text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: fadeIn 0.5s; position: relative; overflow: hidden;
+        }
+        .film-strip-top, .film-strip-bottom {
+            position: absolute; left: 0; width: 100%; height: 15px; opacity: 0.5;
+            background-image: linear-gradient(to right, transparent 50%, rgba(255,255,255,0.3) 50%); background-size: 20px 100%;
+        }
+        .film-strip-top { top: 0; } .film-strip-bottom { bottom: 0; }
+
+        .big-btn {
+            background: var(--cheng-blue); color: white; width: 100%; padding: 15px; border: none; border-radius: 8px;
+            font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: 0.2s; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .big-btn:hover { transform: translateY(-3px); background: #1a73e8; }
+        .darkroom-btn { background: #333; border: 1px solid #555; color: #aaa; }
+        .report-center-btn { background: #b45309; }
+        .gallery-btn { background: linear-gradient(45deg, #7c3aed, #db2777); border: 1px solid #e879f9; }
+
+        /* 儀表板 */
+        h1 { margin: 0; font-size: 1.8rem; text-shadow: 0 0 10px var(--cheng-blue); }
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+        .stat-box { background: rgba(255,255,255,0.05); padding: 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); }
+        .stat-val { font-size: 1.3rem; font-weight: 900; color: var(--cheng-blue); }
+        .stat-label { font-size: 0.7rem; color: #cbd5e1; }
+
+        .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 15px; text-align: left; }
+        .cat-card { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; cursor: pointer; border: 1px solid rgba(255,255,255,0.1); transition: 0.2s; display: flex; flex-direction: column; justify-content: center; min-height: 80px; }
+        .cat-card:hover { background: rgba(255,255,255,0.2); border-color: var(--cheng-blue); transform: translateY(-2px); }
+
+        /* 設定彈窗 */
+        .setup-modal { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(15,23,42,0.98); z-index:10; display:none; flex-direction:column; justify-content:center; padding:30px; }
+        .count-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+        .count-btn { padding: 12px; border: 2px solid #334155; background: transparent; border-radius: 8px; cursor: pointer; font-weight: bold; color: #94a3b8; }
+        .count-btn.active { border-color: var(--cheng-blue); color: var(--cheng-blue); background: rgba(45,140,240,0.1); }
+        .challenge-section { background: #1e293b; padding: 15px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #334155; }
+        .switch-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+        .switch { position: relative; display: inline-block; width: 50px; height: 26px; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #555; transition: .4s; border-radius: 34px; }
+        .slider:before { position: absolute; content: ""; height: 20px; width: 20px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+        input:checked + .slider { background-color: var(--danger); }
+        input:checked + .slider:before { transform: translateX(24px); }
+        .setting-sub-box { margin-top: 10px; border-top: 1px dashed #475569; padding-top: 10px; display: none; }
+        select { width: 100%; padding: 8px; background: #0f172a; color: white; border: 1px solid #475569; border-radius: 5px; }
+
+        /* 畫廊 */
+        .gallery-header { margin-bottom: 15px; }
+        .filter-section { background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; margin-bottom: 15px; text-align: left; }
+        .filter-label { font-size: 0.8rem; color: #94a3b8; margin-bottom: 5px; display: block; }
+        .checkbox-group { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+        .filter-chk { display: flex; align-items: center; gap: 5px; font-size: 0.85rem; cursor: pointer; }
+        .gallery-content { max-height: 450px; overflow-y: auto; padding-right: 5px; text-align: left; }
+        .group-title { color: var(--cheng-blue); font-size: 1.1rem; font-weight: bold; margin: 20px 0 10px 0; border-bottom: 1px solid rgba(45,140,240,0.3); padding-bottom: 5px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 10px; }
+        .photo-card { background: #0f172a; border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.2s; position: relative; aspect-ratio: 3/4; }
+        .photo-card:hover { transform: scale(1.05); z-index: 2; }
+        .photo-img { width: 100%; height: 100%; object-fit: cover; }
+        .photo-overlay { position: absolute; bottom: 0; left: 0; width: 100%; padding: 3px; background: rgba(0,0,0,0.7); font-size: 0.6rem; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .border-N { border: 2px solid var(--border-n); } .border-R { border: 2px solid var(--border-r); box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+        .border-SR { border: 2px solid var(--border-sr); box-shadow: 0 0 10px rgba(234, 179, 8, 0.6); } .border-SQR { border: 2px solid #ffd700; box-shadow: 0 0 15px gold; }
+
+        /* 回報 */
+        .report-list { max-height: 300px; overflow-y: auto; background: rgba(0,0,0,0.3); border: 1px solid #334155; border-radius: 8px; padding: 10px; margin-bottom: 15px; text-align: left; }
+        .report-item { display: flex; align-items: flex-start; gap: 10px; border-bottom: 1px solid #334155; padding: 8px 0; }
+        .report-id { color: var(--warning); font-weight: bold; font-family: monospace; }
+
+        /* 測驗介面 */
+        .quiz-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .hearts-container { color: var(--danger); font-size: 1.2rem; text-shadow: 0 0 10px var(--danger); }
+        .timer-display { font-family: monospace; font-size: 1.1rem; color: var(--warning); border: 1px solid var(--warning); padding: 2px 8px; border-radius: 4px; display: none; }
+        .timer-display.urgent { color: var(--danger); border-color: var(--danger); animation: shake 0.5s infinite; }
+        .meta-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .q-tag { background: rgba(45, 140, 240, 0.2); color: var(--cheng-blue); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; border: 1px solid var(--cheng-blue); }
+        .id-badge { font-family: 'Courier New', monospace; font-size: 0.8rem; color: #64748b; border: 1px solid #334155; padding: 2px 8px; border-radius: 4px; cursor: pointer; transition: 0.2s; }
+        .id-badge:hover { color: white; border-color: var(--cheng-blue); background: rgba(45,140,240,0.1); }
+        .question-text { font-size: 1.4rem; font-weight: bold; margin: 10px 0 20px; line-height: 1.6; text-shadow: 1px 1px 2px black; user-select: text !important; cursor: text; }
+        .option-btn { width: 100%; background: rgba(255,255,255,0.9); color: #0f172a; border: none; padding: 15px; border-radius: 8px; margin-bottom: 10px; text-align: left; font-size: 1rem; font-weight: bold; cursor: pointer; }
+        .option-btn.correct { background: #dcfce7; color: #166534; } .option-btn.wrong { background: #fee2e2; color: #991b1b; }
+
+        .explanation-box { background: #f8fafc; border-left: 4px solid var(--cheng-blue); padding: 20px; margin-top: 25px; border-radius: 0 12px 12px 0; display: none; color:#333; text-align:left; animation: fadeIn 0.5s; }
+        .tools-area { display: flex; gap: 10px; margin-top: 15px; }
+        .tool-btn { border: none; padding: 10px 15px; border-radius: 8px; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 6px; font-weight: bold; transition: 0.2s; color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .tool-btn:active { transform: scale(0.95); }
+        .btn-copy { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+        .btn-copy:hover { background: linear-gradient(135deg, #60a5fa, #3b82f6); box-shadow: 0 0 10px rgba(59, 130, 246, 0.5); }
+        .btn-bug { background: linear-gradient(135deg, #f59e0b, #d97706); }
+        .btn-bug:hover { background: linear-gradient(135deg, #fbbf24, #f59e0b); box-shadow: 0 0 10px rgba(245, 158, 11, 0.5); }
+        .btn-bug.disabled { background: #9ca3af; cursor: not-allowed; opacity: 0.7; box-shadow: none; }
+
+        /* 燈箱與抽卡 */
+        .lightbox-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 100; display: none; justify-content: center; align-items: center; flex-direction: column; }
+        .lightbox-img { max-width: 90%; max-height: 80vh; object-fit: contain; border: 2px solid white; box-shadow: 0 0 30px rgba(255,255,255,0.2); }
+        .gacha-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 50; display: none; justify-content: center; align-items: center; flex-direction: column; }
+        .gacha-card-reveal { width: 250px; height: 350px; background: #333; border-radius: 15px; display: flex; justify-content: center; align-items: center; opacity: 0; transform: scale(0.5); transition: all 0.5s; }
+        .gacha-card-reveal.show { opacity: 1; transform: scale(1); }
+
+        .result-view { display: none; text-align: center; }
+        .score-circle { width: 120px; height: 120px; border-radius: 50%; border: 5px solid var(--cheng-blue); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; margin: 0 auto 20px; box-shadow: 0 0 20px var(--cheng-blue); background: rgba(0,0,0,0.5); }
+        .heal-anim { animation: heal 0.5s ease-in-out; }
+        @keyframes heal { 0% { transform: scale(1); } 50% { transform: scale(1.3); color: var(--success); } 100% { transform: scale(1); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes zoomIn { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        @keyframes shake { 0% { transform: translateX(0); } 25% { transform: translateX(-5px); } 50% { transform: translateX(5px); } 75% { transform: translateX(-5px); } 100% { transform: translateX(0); } }
+        /* --- 新增樣式 V18.2 --- */
+/* 左上角碎片顯示 */
+.shard-badge {
+    position: absolute; top: 15px; left: 15px;
+    background: rgba(0,0,0,0.6); border: 1px solid var(--border-sr);
+    color: #ffd700; padding: 5px 12px; border-radius: 20px;
+    font-weight: bold; font-family: monospace; font-size: 1.1rem;
+    display: flex; align-items: center; gap: 8px; z-index: 5;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* 抽卡中心介面 */
+.gacha-pool-container { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 20px; }
+.pool-card {
+    min-width: 120px; flex: 1; background: linear-gradient(180deg, #1e293b, #0f172a);
+    border: 2px solid #334155; border-radius: 12px; padding: 15px 5px;
+    cursor: pointer; position: relative; transition: 0.2s;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.pool-card.active { border-color: var(--cheng-blue); background: rgba(45,140,240,0.1); box-shadow: 0 0 15px rgba(45,140,240,0.3); }
+.pool-title { font-weight: bold; font-size: 0.9rem; margin-bottom: 5px; color: white; }
+.pool-icon { font-size: 2rem; margin-bottom: 5px; }
+
+.gacha-actions { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; text-align: center; }
+.cost-display { color: #ffd700; margin-bottom: 15px; font-weight: bold; }
+.btn-pull { 
+    background: linear-gradient(45deg, #2563eb, #1d4ed8); border: none; padding: 10px 20px; 
+    border-radius: 8px; color: white; font-weight: bold; cursor: pointer; width: 48%;
+    display: inline-flex; flex-direction: column; align-items: center; gap: 2px;
+}
+.btn-pull:disabled { opacity: 0.5; filter: grayscale(1); cursor: not-allowed; }
+.btn-pull span { font-size: 0.8rem; opacity: 0.9; }
+
+/* 抽卡結果展示 */
+.pull-result-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 15px; }
+.mini-card { 
+    aspect-ratio: 3/4; background: #333; border-radius: 4px; overflow: hidden; position: relative; 
+    border: 2px solid #555; animation: zoomIn 0.3s backwards;
+}
+.mini-new-badge { position: absolute; top: 0; right: 0; background: var(--danger); color: white; font-size: 0.5rem; padding: 1px 3px; }
+
+/* 相簿數量標記 */
+.qty-badge {
+    position: absolute; bottom: 2px; right: 2px;
+    background: rgba(0,0,0,0.8); color: white;
+    font-size: 0.7rem; padding: 1px 6px; border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.3); font-family: monospace;
+}
+/* --- Beta 按鈕與保底顯示 --- */
+.beta-btn {
+    position: absolute; top: 15px; right: 15px;
+    background: rgba(255, 255, 255, 0.1); color: #64748b;
+    border: 1px solid #334155; padding: 5px 10px;
+    border-radius: 8px; font-size: 0.8rem; cursor: pointer;
+    font-family: monospace; transition: 0.2s;
+}
+.beta-btn:hover { background: rgba(255, 255, 255, 0.2); color: white; }
+
+.pity-counter-display {
+    background: rgba(0, 0, 0, 0.4); border-radius: 4px;
+    padding: 2px 8px; font-size: 0.75rem; color: #f59e0b;
+    display: inline-block; margin-top: 5px; border: 1px dashed #f59e0b;
+}
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+<!-- 主儀表板 -->
+        <div id="dashboard" class="glass-card">
+            <!-- 左上角：時光碎片 -->
+            <div class="shard-badge">
+                <span>💠</span> <span id="shard-count">0</span>
+            </div>
+            
+            <!-- 右上角：Beta 開發者按鈕 -->
+            <button class="beta-btn" onclick="activateBeta()">BETA</button>
+
+            <div class="film-strip-top"></div>
+            <h1>TIME PHOTO STUDIO</h1>
+            
+            <div class="stats-grid">
+                <!-- 原本的統計數據保持不變 -->
+                <div class="stat-box"><div class="stat-val" id="stat-total">0</div><div class="stat-label">完成委託</div></div>
+                <div class="stat-box"><div class="stat-val" id="stat-accuracy">0%</div><div class="stat-label">同步率</div></div>
+                <div class="stat-box"><div class="stat-val" id="stat-photo-count">0</div><div class="stat-label">相片收集</div></div>
+                <div class="stat-box"><div class="stat-val" id="stat-streak" style="color:#f59e0b">0</div><div class="stat-label">連勝</div></div>
+            </div>
+
+            <div style="text-align:left; margin-bottom:10px; font-weight:bold; color:#cbd5e1;">📂 選擇委託類別：</div>
+            <div id="category-container" class="category-grid"></div>
+
+            <button class="big-btn" onclick="openSetup('ALL')">⚡ 綜合潛入 (隨機)</button>
+            <button class="big-btn darkroom-btn" onclick="openDarkroom()">📷 進入暗房 (錯題重修)</button>
+            
+            <!-- 新增：抽卡按鈕 -->
+            <button class="big-btn" style="background: linear-gradient(45deg, #0ea5e9, #6366f1);" onclick="openGachaCenter()">🔮 時光抽卡中心</button>
+            
+            <button class="big-btn report-center-btn" onclick="openReportCenter()">⚠ 問題回報中心</button>
+            <button class="big-btn gallery-btn" onclick="openGallery()">🖼️ 委託成就庫</button>
+
+            <div style="margin-top:20px; font-size:0.8rem; color:#64748b; cursor:pointer;" onclick="resetStats()">[ 重置所有記錄 ]</div>
+            <div class="film-strip-bottom"></div>
+        </div>
+
+        <!-- 畫廊 -->
+        <div id="gallery-screen" class="glass-card hidden">
+            <div class="film-strip-top"></div>
+            <div class="gallery-header"><h2>委託成就</h2></div>
+            <div class="filter-section">
+                <div class="filter-label">排序方式：</div>
+                <select id="gallery-sort" style="margin-bottom:10px; width:100%; padding:5px; background:#0f172a; color:white;" onchange="renderGallery()">
+                    <option value="char">按人物分組</option>
+                    <option value="rarity">按稀有度分組</option>
+                </select>
+                <div class="filter-label">人物篩選：</div>
+                <div class="checkbox-group" id="filter-chars">
+                    <label class="filter-chk"><input type="checkbox" value="程小時&陸光" checked onchange="renderGallery()"> 雙人</label>
+                    <label class="filter-chk"><input type="checkbox" value="程小時" checked onchange="renderGallery()"> 程小時</label>
+                    <label class="filter-chk"><input type="checkbox" value="陸光" checked onchange="renderGallery()"> 陸光</label>
+                </div>
+                <div class="filter-label" style="margin-top:5px;">等級篩選：</div>
+                <div class="checkbox-group" id="filter-ranks">
+                    <label class="filter-chk"><input type="checkbox" value="N" checked onchange="renderGallery()"> N</label>
+                    <label class="filter-chk"><input type="checkbox" value="R" checked onchange="renderGallery()"> R</label>
+                    <label class="filter-chk"><input type="checkbox" value="SR" checked onchange="renderGallery()"> SR</label>
+                    <label class="filter-chk"><input type="checkbox" value="SQR" checked onchange="renderGallery()"> SQR</label>
+                </div>
+            </div>
+            <div id="gallery-content" class="gallery-content"></div>
+            <button class="big-btn" style="margin-top:20px;" onclick="closeGallery()">返回總部</button>
+            <div class="film-strip-bottom"></div>
+        </div>
+        <!-- 抽卡中心介面 (V18.3 更新) -->
+        <div id="gacha-screen" class="glass-card hidden">
+            <!-- 設定：Y=必不重複, N=可重複 -->
+            <div id="gacha-config" data-no-duplicate="Y" style="display:none;"></div>
+
+            <div class="film-strip-top"></div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                <h2 style="margin:0;">時光節點</h2>
+                <div style="background:rgba(0,0,0,0.5); padding:5px 10px; border-radius:15px; color:#ffd700; font-weight:bold;">
+                    💠 <span id="gacha-shard-display">0</span>
+                </div>
+            </div>
+
+            <div class="gacha-pool-container">
+                <div class="pool-card active" onclick="selectPool('duo', this)">
+                    <div class="pool-icon">👥</div>
+                    <div class="pool-title">雙人搭檔</div>
+                    <div style="font-size:0.6rem; color:#aaa;">程小時 & 陸光</div>
+                </div>
+                <div class="pool-card" onclick="selectPool('cheng', this)">
+                    <div class="pool-icon">📷</div> <!-- Emoji 改為相機 -->
+                    <div class="pool-title">程小時</div>
+                    <div style="font-size:0.6rem; color:#aaa;">熱血系</div>
+                </div>
+                <div class="pool-card" onclick="selectPool('lu', this)">
+                    <div class="pool-icon">⌚</div> <!-- Emoji 改為懷錶 -->
+                    <div class="pool-title">陸光</div>
+                    <div style="font-size:0.6rem; color:#aaa;">冷靜系</div>
+                </div>
+            </div>
+
+            <div class="gacha-actions">
+                <div id="pool-desc" style="margin-bottom:5px; color:#94a3b8; font-size:0.9rem;">
+                    N:60% | R:30% | SR:7.5% | SQR:2.5%
+                </div>
+                <!-- 新增：累積抽數顯示 -->
+                <div id="pity-display" class="pity-counter-display">
+                    累積抽數: 0 (保底 SR: 80 / SQR: 160)
+                </div>
+                
+                <div style="display:flex; justify-content:space-between; margin-top:15px;">
+                    <button class="btn-pull" onclick="executePull(1)">
+                        抽取 1 次
+                        <span>💠 100</span>
+                    </button>
+                    <button class="btn-pull" onclick="executePull(10)">
+                        抽取 10 次
+                        <span>💠 1000 (保底R)</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 抽卡結果顯示區 -->
+            <div id="pull-results" class="pull-result-grid"></div>
+
+            <button class="big-btn" style="margin-top:20px; background:#475569;" onclick="closeGachaCenter()">返回總部</button>
+            <div class="film-strip-bottom"></div>
+        </div>
+
+            
+
+        <!-- 設定彈窗 -->
+        <div id="setup-modal" class="setup-modal">
+            <h2 style="color:white; margin-bottom:5px;">任務參數</h2>
+            <div style="margin-bottom:10px; color:#cbd5e1;">題數：</div>
+            <div class="count-grid">
+                <button class="count-btn active" onclick="selectCount(5, this)">5</button>
+                <button class="count-btn" onclick="selectCount(10, this)">10</button>
+                <button class="count-btn" onclick="selectCount(20, this)">20</button>
+            </div>
+            <div class="challenge-section">
+                <div class="switch-row">
+                    <span style="font-weight:bold; color:#ef4444;">🔥 挑戰模式</span>
+                    <label class="switch"><input type="checkbox" id="challenge-toggle" onchange="toggleChallengeMode()"><span class="slider"></span></label>
+                </div>
+                <div id="heart-setting" class="setting-sub-box">
+                    <label style="font-size:0.8rem; color:#94a3b8;">初始血量：</label>
+                    <select id="heart-count">
+                        <option value="1">1 ❤</option><option value="2">2 ❤</option><option value="3" selected>3 ❤</option><option value="4">4 ❤</option><option value="5">5 ❤</option>
+                    </select>
+                    <div class="switch-row" style="margin-top:10px; border-top:1px dashed #334155; padding-top:10px;">
+                        <span style="font-weight:bold; color:#f59e0b;">⏳ 限時答題</span>
+                        <label class="switch" style="width:40px; height:20px;"><input type="checkbox" id="timer-toggle" onchange="toggleTimerMode()"><span class="slider"></span></label>
+                    </div>
+                    <div id="timer-setting" style="display:none; margin-top:5px;">
+                        <select id="time-limit"><option value="5">5s</option><option value="12" selected>12s</option><option value="20">20s</option></select>
+                    </div>
+                </div>
+            </div>
+            <button class="big-btn" onclick="confirmStart()">🚀 DIVES</button>
+            <div style="margin-top:20px; color:#64748b; cursor:pointer; text-align:center;" onclick="closeSetup()">取消</div>
+        </div>
+
+        <!-- 回報中心 -->
+        <div id="report-modal" class="setup-modal">
+            <h2 style="color:var(--warning); margin-bottom:5px;">問題回報中心</h2>
+            <div style="display:flex; gap:10px; margin-bottom:10px;">
+                <button style="background:#334155; color:white; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;" onclick="toggleSelectAllReports()">全選/取消</button>
+            </div>
+            <div id="report-list-container" class="report-list"></div>
+            <button class="big-btn" style="background:var(--success);" onclick="resolveReports()">✅ 標記為已處理</button>
+            <div style="margin-top:20px; color:#64748b; cursor:pointer; text-align:center;" onclick="closeReportCenter()">關閉</div>
+        </div>
+
+        <!-- 測驗介面 -->
+        <div id="quiz-screen" class="glass-card hidden">
+            <div class="film-strip-top"></div>
+            <div class="quiz-header">
+                <div><span id="q-progress">Q.1</span> <span id="score-display" style="margin-left:10px;">SCORE:0</span></div>
+                <div style="display:flex; gap:10px;">
+                    <div id="timer-display" class="timer-display">12s</div>
+                    <div id="hearts-container" class="hearts-container" style="display:none;">❤❤❤</div>
+                </div>
+            </div>
+            <div class="meta-row">
+                <span class="q-tag" id="q-category-tag">文法</span>
+                <span class="id-badge" onclick="copyId()">ID: <span id="q-db-id">--</span></span>
+            </div>
+            <div class="question-text" id="q-text">Loading...</div>
+            <div id="options-container"></div>
+            
+            <div class="explanation-box" id="exp-box">
+                <div style="font-weight:bold; margin-bottom:10px;">📝 解析</div>
+                <div id="static-exp-text"></div>
+                <div class="tools-area">
+                    <button class="tool-btn btn-copy" onclick="copyToClipboard()">
+                        <span>📋</span> 問AI
+                    </button>
+                    <button id="btn-report-bug" class="tool-btn btn-bug" onclick="reportCurrentQuestion()">
+                        <span>⚠</span> 回報
+                    </button>
+                </div>
+                <span id="copy-msg" style="font-size:0.8rem; color:#22c55e; display:none; margin-left:10px;">已複製！</span>
+            </div>
+            <button class="big-btn" id="next-btn" style="margin-top:20px; display:none;" onclick="nextQuestion()">下一張 ❯</button>
+            <div class="film-strip-bottom"></div>
+        </div>
+
+<!-- 結果畫面 (這裡有新增獎勵顯示區塊) -->
+        <div class="glass-card hidden" id="result-view">
+            <div class="film-strip-top"></div>
+            <h2 id="result-title">任務報告</h2>
+            <div class="score-circle" id="final-score">100</div>
+            
+            <div id="fail-img-wrapper" style="display:none; margin-bottom:20px;">
+                <img src="Fail_images.png" style="max-width:100%; border-radius:10px; border:2px solid #ef4444;">
+            </div>
+
+            <!-- 🔥 新增的部分開始：用來顯示抽到的卡片 -->
+            <div id="reward-container" style="display:none; margin-bottom:20px; animation: zoomIn 0.5s;">
+                <div style="color:#fbbf24; font-weight:bold; margin-bottom:5px;">✨ 本次委託獎勵</div>
+                <div id="reward-card-mini" style="width:120px; height:160px; margin:0 auto; background:#333; border-radius:8px; overflow:hidden; border:2px solid white;">
+                    <!-- JS 會在這裡插入圖片 -->
+                </div>
+                <div id="reward-name" style="font-size:0.9rem; margin-top:5px; color:#cbd5e1;"></div>
+            </div>
+            <!-- 🔥 新增的部分結束 -->
+
+            <p id="feedback-text" style="color:#cbd5e1; margin-bottom:30px;">結算中...</p>
+            <button class="big-btn" onclick="location.reload()">返回總部</button>
+            <div class="film-strip-bottom"></div>
+        </div>
+
+        <!-- 抽卡與燈箱 (這部分保持不變) -->
+        <div id="gacha-overlay" class="gacha-overlay">
+            <div class="gacha-flash"></div>
+            <div style="color:white; font-size:1.5rem; margin-bottom:20px; z-index:2;">✨ 獲得新委託照片！</div>
+            <div id="gacha-card-reveal" class="gacha-card-reveal"></div>
+            <div id="gacha-info" style="color:white; margin-top:20px; font-size:1.2rem; font-weight:bold; z-index:2;"></div>
+            <button class="big-btn" style="margin-top:30px; z-index:2; width:200px;" onclick="closeGacha()">收下</button>
+        </div>
+        <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+            <div class="lightbox-img-container" onclick="event.stopPropagation()">
+                <img id="lightbox-img" class="lightbox-img" src="">
+            </div>
+            <div class="lightbox-info">
+                <div id="lightbox-title" class="lightbox-title"></div>
+                <div id="lightbox-rarity" class="lightbox-meta"></div>
+            </div>
+        </div>
+
+<script>
+        // --- 核心資料與變數 V18.3 ---
+        let allQuestions = [], quizList = [], currentIdx = 0, score = 0;
+        let tempSelectedCategory = 'ALL', tempSelectedCount = 5;
+        let isChallengeMode = false, isTimerMode = false, timeLimit = 12, timerInterval = null, timeLeft = 0;
+        let maxHearts = 3, currentHearts = 3, isGameOver = false, pendingHeal = false;
+
+        // 保底題庫
+        const FALLBACK_QUESTIONS = [
+            {id:101, section:"文法", type:"助詞", question:"わたしは　明日　友達＿＿＿会います。", options:["に", "を", "で", "へ"], answer:0, explanation:"【正解：に】動詞「会います」的對象用「に」。"},
+            {id:102, section:"文法", type:"動詞", question:"本を　＿＿＿ください。", options:["読む", "読んで", "読みて", "読んて"], answer:1, explanation:"【正解：読んで】請做某事用「て形」。"},
+            {id:103, section:"語彙", type:"名詞", question:"机の上に　<span style='text-decoration:underline'>鉛筆</span>　があります。", options:["えんびつ", "えんぴつ", "はな", "かばん"], answer:1, explanation:"【正解：えんぴつ】鉛筆 = enpitsu"},
+            {id:104, section:"文法", type:"疑問詞", question:"誕生日は　＿＿＿ですか。", options:["いつ", "どれ", "だれ", "どう"], answer:0, explanation:"【正解：いつ】問時間用「いつ」。"},
+            {id:105, section:"讀解", type:"短文", question:"「日曜日は図書館に行きません。」<br>質問：日曜日はどこに行きますか。", options:["図書館", "学校", "わかりません", "会社"], answer:2, explanation:"【正解：わかりません】文中未提及要去哪。"}
+        ];
+
+        // 保底相片
+        const FALLBACK_PHOTOS = [
+            {id: "p001", title: "初始的委託", character: "程小時&陸光", rarity: "N", path: "https://via.placeholder.com/300x400/2d8cf0/ffffff?text=LINK+CLICK+N"},
+            {id: "p002", title: "校園角落", character: "陸光", rarity: "R", path: "https://via.placeholder.com/300x400/3b82f6/ffffff?text=LU+GUANG+R"},
+            {id: "p003", title: "籃球場", character: "程小時", rarity: "SR", path: "https://via.placeholder.com/300x400/eab308/ffffff?text=CHENG+SR"}
+        ];
+
+        // 數據讀取
+        let userStats = JSON.parse(localStorage.getItem('jlpt_n5_stats_v18')) || { total: 0, correct: 0, streak: 0 };
+        let wrongQuestions = JSON.parse(localStorage.getItem('jlpt_n5_wrong_list')) || [];
+        let reportList = JSON.parse(localStorage.getItem('jlpt_n5_reports')) || [];
+        
+        // 收集冊與碎片
+        let collectedPhotos = {}; 
+        let rawCollection = JSON.parse(localStorage.getItem('jlpt_n5_collection'));
+        let userShards = parseInt(localStorage.getItem('jlpt_n5_shards')) || 0;
+        
+        // 🔥 V18.3 更新：全域共用保底計數 (不再區分卡池)
+        let globalPity = JSON.parse(localStorage.getItem('jlpt_n5_global_pity')) || { sr: 0, sqr: 0 };
+
+        // 資料遷移 (Array -> Object)
+        if (Array.isArray(rawCollection)) {
+            rawCollection.forEach(id => { collectedPhotos[id] = 1; });
+            localStorage.setItem('jlpt_n5_collection', JSON.stringify(collectedPhotos));
+        } else if (rawCollection) {
+            collectedPhotos = rawCollection;
+        }
+
+        let photoDB = [];
+        let currentPool = 'duo'; 
+
+        // 初始化
+        window.onload = async () => {
+            await loadData();
+            await loadPhotoDB();
+            updateDashboard();
+            renderCategories();
+        };
+
+        async function loadData() {
+            try {
+                const res = await fetch('n5_questions.json');
+                if(!res.ok) throw new Error();
+                allQuestions = await res.json();
+            } catch (e) { allQuestions = FALLBACK_QUESTIONS; }
+        }
+
+        async function loadPhotoDB() {
+            try {
+                const res = await fetch('photos.json');
+                if(!res.ok) throw new Error();
+                photoDB = await res.json();
+            } catch (e) { photoDB = FALLBACK_PHOTOS; }
+            updateDashboard();
+        }
+
+        // --- Beta 開發者功能 (V18.3) ---
+        function activateBeta() {
+            const code = prompt("【Beta 開發者模式】\n請輸入暗號：");
+            if (code === "SC&LG") {
+                // 1. 補充碎片
+                userShards = 9999;
+                localStorage.setItem('jlpt_n5_shards', userShards);
+                
+                // 2. 解鎖所有相片
+                if(photoDB.length === 0) photoDB = FALLBACK_PHOTOS;
+                photoDB.forEach(p => {
+                    // 如果沒擁有，設為1；已擁有則不變
+                    if (!collectedPhotos[p.id]) collectedPhotos[p.id] = 1;
+                });
+                localStorage.setItem('jlpt_n5_collection', JSON.stringify(collectedPhotos));
+                
+                alert("✨ 暗號正確！\n- 時光碎片已設為 9999\n- 委託成就庫已全數解鎖");
+                location.reload(); // 重新整理以更新所有介面
+            } else {
+                alert("⛔ 暗號錯誤");
+            }
+        }
+
+        // --- 儀表板更新 ---
+        function updateDashboard() {
+            document.getElementById('stat-total').innerText = userStats.total;
+            const acc = userStats.total === 0 ? 0 : Math.round((userStats.correct / userStats.total) * 100);
+            document.getElementById('stat-accuracy').innerText = acc + "%";
+            
+            const uniqueCount = Object.keys(collectedPhotos).length;
+            document.getElementById('stat-photo-count').innerText = `${uniqueCount}/${photoDB.length}`;
+            document.getElementById('stat-streak').innerText = userStats.streak || 0;
+
+            document.getElementById('shard-count').innerText = userShards;
+            document.getElementById('gacha-shard-display').innerText = userShards;
+        }
+
+        // --- 抽卡中心邏輯 (V18.3) ---
+        function openGachaCenter() {
+            document.getElementById('dashboard').classList.add('hidden');
+            document.getElementById('gacha-screen').classList.remove('hidden');
+            document.getElementById('pull-results').innerHTML = ''; 
+            updatePityDisplay();
+            updateDashboard();
+        }
+        
+        function closeGachaCenter() {
+            document.getElementById('dashboard').classList.remove('hidden');
+            document.getElementById('gacha-screen').classList.add('hidden');
+        }
+
+        function updatePityDisplay() {
+            document.getElementById('pity-display').innerText = 
+                `累積抽數: ${globalPity.sqr} (保底 SR: ${80 - (globalPity.sr % 80)} / SQR: ${160 - (globalPity.sqr % 160)})`;
+        }
+
+        function selectPool(pool, el) {
+            currentPool = pool;
+            document.querySelectorAll('.pool-card').forEach(c => c.classList.remove('active'));
+            el.classList.add('active');
+        }
+
+        function executePull(amount) {
+            if (photoDB.length === 0) return alert("相片資料庫未載入，無法抽卡");
+            const cost = amount * 100;
+            if (userShards < cost) return alert(`時光碎片不足！需要 ${cost} 碎片`);
+            
+            userShards -= cost;
+            localStorage.setItem('jlpt_n5_shards', userShards);
+            document.getElementById('gacha-shard-display').innerText = userShards;
+            document.getElementById('shard-count').innerText = userShards;
+
+            const resultsContainer = document.getElementById('pull-results');
+            resultsContainer.innerHTML = ''; 
+            
+            for (let i = 0; i < amount; i++) {
+                // 10抽保底(R) - 簡單判定：第10張必R以上
+                let minRarity = (amount === 10 && i === 9) ? 'R' : 'N';
+                
+                setTimeout(() => {
+                    const result = rollOne(currentPool, minRarity);
+                    displayPullResult(result, resultsContainer);
+                    updatePityDisplay(); // 更新介面上的保底數
+                }, i * 150);
+            }
+        }
+
+        function rollOne(poolType, minRarity) {
+            // 1. 全域保底計數增加
+            globalPity.sr++;
+            globalPity.sqr++;
+
+            // 2. 決定稀有度
+            let rarity = 'N';
+            const rand = Math.random();
+
+            if (globalPity.sqr >= 160) {
+                rarity = 'SQR';
+            } else if (globalPity.sr >= 80) {
+                rarity = 'SR';
+            } else {
+                if (rand < 0.025) rarity = 'SQR';
+                else if (rand < 0.10) rarity = 'SR';
+                else if (rand < 0.40) rarity = 'R';
+            }
+
+            if (minRarity === 'R' && rarity === 'N') rarity = 'R';
+
+            // 3. 重置保底 (觸發保底或運氣好抽到時重置)
+            if (rarity === 'SQR') globalPity.sqr = 0;
+            if (rarity === 'SR') globalPity.sr = 0; 
+            if (rarity === 'SQR') globalPity.sr = 0; // 抽到 SQR 通常也會重置 SR 計數
+            
+            localStorage.setItem('jlpt_n5_global_pity', JSON.stringify(globalPity));
+
+            // 4. 篩選卡池
+            let poolList = photoDB.filter(p => {
+                if (p.rarity !== rarity) return false;
+                if (poolType === 'duo') return p.character.includes('&');
+                if (poolType === 'cheng') return p.character.includes('程') && !p.character.includes('&');
+                if (poolType === 'lu') return p.character.includes('陸') && !p.character.includes('&');
+                return false;
+            });
+            // 該池該稀有度沒卡，回退到全池
+            if (poolList.length === 0) poolList = photoDB.filter(p => p.rarity === rarity);
+
+            // 5. 抽取與防重覆
+            const noDupe = document.getElementById('gacha-config').dataset.noDuplicate === 'Y';
+            let winCard = null;
+
+            if (noDupe) {
+                const unowned = poolList.filter(p => !collectedPhotos[p.id]);
+                if (unowned.length > 0) winCard = unowned[Math.floor(Math.random() * unowned.length)];
+            }
+            if (!winCard) winCard = poolList[Math.floor(Math.random() * poolList.length)];
+
+            // 6. 寫入資料庫 (重要修復)
+            if (!collectedPhotos[winCard.id]) collectedPhotos[winCard.id] = 0;
+            collectedPhotos[winCard.id]++;
+            localStorage.setItem('jlpt_n5_collection', JSON.stringify(collectedPhotos));
+
+            winCard.isNew = (collectedPhotos[winCard.id] === 1);
+            return winCard;
+        }
+
+        function displayPullResult(card, container) {
+            const div = document.createElement('div');
+            div.className = 'mini-card';
+            let borderColor = '#9ca3af'; // N
+            if(card.rarity=='R') borderColor='#3b82f6';
+            if(card.rarity=='SR') borderColor='#eab308';
+            if(card.rarity=='SQR') borderColor='#ffd700';
+            
+            div.style.borderColor = borderColor;
+            div.innerHTML = `
+                <img src="${card.path}" style="width:100%; height:100%; object-fit:cover;">
+                <div style="position:absolute; bottom:0; width:100%; background:rgba(0,0,0,0.7); font-size:0.6rem; color:white;">${card.rarity}</div>
+                ${card.isNew ? '<div class="mini-new-badge">NEW</div>' : ''}
+            `;
+            container.appendChild(div);
+        }
+
+        // --- 測驗與其他功能 (維持原樣) ---
+        function startQuiz() {
+            if(allQuestions.length===0 && tempSelectedCategory!=='ALL') return alert("無題目");
+            document.getElementById('dashboard').classList.add('hidden'); document.getElementById('quiz-screen').classList.remove('hidden');
+            const hd=document.getElementById('hearts-container'); const sd=document.getElementById('score-display'); const td=document.getElementById('timer-display');
+            if(isChallengeMode) { hd.style.display='block'; hd.innerText="❤".repeat(currentHearts); sd.style.display='none'; td.style.display=isTimerMode?'block':'none'; }
+            else { hd.style.display='none'; td.style.display='none'; sd.style.display='inline'; }
+            let f=tempSelectedCategory==='ALL'?allQuestions:allQuestions.filter(q=>q.section===tempSelectedCategory);
+            if(f.length===0) f=allQuestions;
+            quizList=f.sort(()=>Math.random()-0.5).slice(0,Math.min(tempSelectedCount,f.length));
+            currentIdx=0; score=0; isGameOver=false; pendingHeal=false; showQuestion();
+        }
+        function showQuestion() {
+            if(timerInterval) clearInterval(timerInterval);
+            const q=quizList[currentIdx];
+            document.getElementById('q-progress').innerText=`Q.${currentIdx+1}/${quizList.length}`;
+            document.getElementById('score-display').innerText = "SCORE:" + score;
+            document.getElementById('q-category-tag').innerText=q.section;
+            document.getElementById('q-db-id').innerText=q.id;
+            document.getElementById('q-text').innerHTML=q.question;
+            document.getElementById('next-btn').style.display='none';
+            document.getElementById('exp-box').style.display='none';
+            document.getElementById('copy-msg').style.display='none';
+            document.getElementById('hearts-container').classList.remove('shake-anim','heal-anim');
+            const btnBug=document.getElementById('btn-report-bug'); btnBug.innerHTML="⚠ 題目異常"; btnBug.classList.remove('disabled');
+            const c=document.getElementById('options-container'); c.innerHTML='';
+            let ops=q.options.map((t,i)=>({t:t,ok:(i===q.answer)})).sort(()=>Math.random()-0.5);
+            ops.forEach(o=>{
+                const b=document.createElement('button'); b.className='option-btn'; b.innerText=o.t;
+                if(o.ok) b.dataset.correct="true";
+                b.onclick=function(){checkAnswer(this,false)}; c.appendChild(b);
+            });
+            if(isTimerMode) startTimer();
+        }
+        function startTimer() {
+            timeLeft=timeLimit; document.getElementById('timer-display').innerText=`⏳ ${timeLeft}s`;
+            timerInterval=setInterval(()=>{
+                timeLeft--; document.getElementById('timer-display').innerText=`⏳ ${timeLeft}s`;
+                if(timeLeft<=0) { clearInterval(timerInterval); checkAnswer(null,true); }
+            },1000);
+        }
+        function checkAnswer(btn, timeout) {
+            if(timerInterval) clearInterval(timerInterval);
+            document.querySelectorAll('.option-btn').forEach(b=>b.style.pointerEvents='none');
+            const q=quizList[currentIdx];
+            let right=false; if(!timeout && btn) right=(btn.dataset.correct==="true");
+            if(right) {
+                if(btn) btn.classList.add('correct'); score++;
+                if(!isChallengeMode) confetti({particleCount:30,origin:{y:0.7}});
+                if(wrongQuestions.includes(q.id)) { wrongQuestions=wrongQuestions.filter(id=>id!==q.id); localStorage.setItem('jlpt_n5_wrong_list',JSON.stringify(wrongQuestions)); }
+                if(isChallengeMode && pendingHeal) { if(currentHearts<maxHearts) { currentHearts++; document.getElementById('hearts-container').innerText="❤".repeat(currentHearts); document.getElementById('hearts-container').classList.add('heal-anim'); } pendingHeal=false; }
+                userStats.correct++; userStats.streak++;
+            } else {
+                if(btn) btn.classList.add('wrong');
+                document.querySelectorAll('.option-btn').forEach(b=>{if(b.dataset.correct==="true")b.classList.add('correct')});
+                if(!wrongQuestions.includes(q.id)) { wrongQuestions.push(q.id); localStorage.setItem('jlpt_n5_wrong_list',JSON.stringify(wrongQuestions)); }
+                userStats.streak=0; pendingHeal=false;
+                if(isChallengeMode) {
+                    currentHearts--; document.getElementById('hearts-container').innerText="❤".repeat(currentHearts); document.getElementById('hearts-container').classList.add('shake-anim');
+                    if(currentHearts<=0) isGameOver=true;
+                }
+            }
+            userStats.total++; localStorage.setItem('jlpt_n5_stats_v18', JSON.stringify(userStats));
+            document.getElementById('exp-box').style.display='block';
+            document.getElementById('static-exp-text').innerHTML=q.explanation||"無解析";
+            const nb=document.getElementById('next-btn'); nb.style.display='block';
+            nb.innerText=(isGameOver||currentIdx===quizList.length-1)?"查看報告":"下一張 ❯";
+        }
+        function nextQuestion() {
+            if(isGameOver) { showResult(); return; }
+            currentIdx++; if(currentIdx<quizList.length) showQuestion(); else showResult();
+        }
+        function showResult() {
+            document.getElementById('quiz-screen').classList.add('hidden');
+            document.getElementById('result-view').classList.remove('hidden');
+            document.getElementById('reward-container').style.display = 'none';
+            const fs=Math.round((score/quizList.length)*100);
+            document.getElementById('final-score').innerText=fs;
+            const failImg=document.getElementById('fail-img-wrapper');
+            const title=document.getElementById('result-title');
+            const fbText=document.getElementById('feedback-text');
+            const scoreCircle=document.getElementById('final-score');
+            let earnedShards=0;
+            if(score>0){
+                let base=score*5; let multiplier=1;
+                if(isChallengeMode){
+                    multiplier*=(6-maxHearts)*1.1;
+                    if(isTimerMode){ if(timeLimit===5)multiplier*=2; else if(timeLimit===12)multiplier*=1.5; else if(timeLimit===20)multiplier*=1.1; }
+                }
+                earnedShards=Math.ceil(base*multiplier);
+            }
+            if(isChallengeMode && isGameOver) {
+                failImg.style.display='block';
+                title.innerText="MISSION FAILED"; title.style.color="#ef4444"; scoreCircle.style.borderColor="#ef4444";
+                fbText.innerText=`同步率歸零。\n本次獲得 0 碎片。`;
+            } else {
+                failImg.style.display='none';
+                title.innerText="MISSION COMPLETE"; title.style.color="white"; scoreCircle.style.borderColor="#2d8cf0";
+                userShards+=earnedShards; localStorage.setItem('jlpt_n5_shards',userShards);
+                updateDashboard();
+                fbText.innerHTML=`委託完成。<br>獲得 <span style="color:#ffd700; font-weight:bold;">💠 ${earnedShards}</span> 時光碎片`;
+            }
+        }
+        function openSetup(cat) { tempSelectedCategory=cat; document.getElementById('setup-modal').style.display='flex'; document.getElementById('challenge-toggle').checked=false; toggleChallengeMode(); }
+        function closeSetup() { document.getElementById('setup-modal').style.display='none'; }
+        function selectCount(n,b) { tempSelectedCount=n; document.querySelectorAll('.count-btn').forEach(x=>x.classList.remove('active')); b.classList.add('active'); }
+        function toggleChallengeMode() { const chk=document.getElementById('challenge-toggle').checked; document.getElementById('heart-setting').style.display=chk?'block':'none'; if(!chk) { document.getElementById('timer-toggle').checked=false; toggleTimerMode(); } }
+        function toggleTimerMode() { const chk=document.getElementById('timer-toggle').checked; document.getElementById('timer-setting').style.display=chk?'block':'none'; }
+        function confirmStart() {
+            isChallengeMode=document.getElementById('challenge-toggle').checked; isTimerMode=false;
+            if(isChallengeMode) { maxHearts=parseInt(document.getElementById('heart-count').value); currentHearts=maxHearts; if(document.getElementById('timer-toggle').checked) { isTimerMode=true; timeLimit=parseInt(document.getElementById('time-limit').value); } }
+            closeSetup(); startQuiz();
+        }
+        function openGallery() { document.getElementById('dashboard').classList.add('hidden'); document.getElementById('gallery-screen').classList.remove('hidden'); renderGallery(); }
+        function closeGallery() { document.getElementById('dashboard').classList.remove('hidden'); document.getElementById('gallery-screen').classList.add('hidden'); }
+        function renderGallery() { 
+            const c=document.getElementById('gallery-content'); c.innerHTML='';
+            const sort=document.getElementById('gallery-sort').value;
+            const cc=Array.from(document.querySelectorAll('#filter-chars input:checked')).map(x=>x.value);
+            const rc=Array.from(document.querySelectorAll('#filter-ranks input:checked')).map(x=>x.value);
+            let f=photoDB.filter(p=>{ const cm=cc.some(c=>p.character.includes(c)||(c==="程小時&陸光"&&p.character.includes("&"))); const rm=rc.includes(p.rarity); return cm&&rm; });
+            let grp={}; f.forEach(p=>{ let k=sort==='char'?(p.character.includes("&")?"程小時&陸光":p.character.includes("程")?"程小時":p.character.includes("陸")?"陸光":"其他"):p.rarity; if(!grp[k]) grp[k]=[]; grp[k].push(p); });
+            const co=["程小時&陸光","程小時","陸光"]; const ro=["SQR","SR","R","N"];
+            let sk=Object.keys(grp).sort((a,b)=>sort==='char'?(co.indexOf(a)-co.indexOf(b)):(ro.indexOf(a)-ro.indexOf(b)));
+            sk.forEach(k=>{
+                const t=document.createElement('div'); t.className='group-title'; t.innerText=k; c.appendChild(t);
+                const g=document.createElement('div'); g.className='gallery-grid';
+                grp[k].forEach(p=>{
+                    const count = collectedPhotos[p.id] || 0; const own = count > 0;
+                    const d=document.createElement('div'); d.className=`photo-card border-${p.rarity}`; d.onclick=()=>{if(own)openLightbox(p)};
+                    d.innerHTML=`${own?`<img src="${p.path}" class="photo-img">`:`<div style="height:100%;background:#111;display:flex;justify-content:center;align-items:center;">🔒</div>`}<div class="photo-overlay">${own?p.title:"???"}</div>${own ? `<div class="qty-badge">x${count}</div>` : ''}`;
+                    g.appendChild(d);
+                });
+                c.appendChild(g);
+            });
+        }
+        function openLightbox(p){document.getElementById('lightbox').style.display='flex';document.getElementById('lightbox-img').src=p.path;document.getElementById('lightbox-title').innerText=p.title;document.getElementById('lightbox-rarity').innerText=`[${p.rarity}] ${p.character}`;}
+        function closeLightbox(){document.getElementById('lightbox').style.display='none';}
+        function openDarkroom() { if(wrongQuestions.length==0) return alert("暗房是空的"); quizList=allQuestions.filter(q=>wrongQuestions.includes(q.id)).sort(()=>Math.random()-0.5); document.getElementById('dashboard').classList.add('hidden'); document.getElementById('quiz-screen').classList.remove('hidden'); currentIdx=0;score=0;isChallengeMode=false; showQuestion(); }
+        function openReportCenter() {
+            const c = document.getElementById('report-list-container'); c.innerHTML='';
+            if(reportList.length==0) c.innerHTML='<div style="color:#aaa;padding:10px;">無回報紀錄</div>';
+            else reportList.forEach(i=>{ const fullQ=allQuestions.find(q=>q.id==i.id)||{question:"未知題目"}; const div=document.createElement('div'); div.className='report-item'; div.innerHTML=`<input type="checkbox" class="report-check" value="${i.id}"><div><div class="report-id">ID:${i.id}</div><div style="font-size:0.8rem;color:#cbd5e1;">${fullQ.question.substring(0,20)}...</div></div>`; c.appendChild(div); });
+            document.getElementById('report-modal').style.display='flex';
+        }
+        function closeReportCenter() { document.getElementById('report-modal').style.display='none'; }
+        function toggleSelectAllReports() { document.querySelectorAll('.report-check').forEach(c=>c.checked=!c.checked); }
+        function resolveReports() { const ids=Array.from(document.querySelectorAll('.report-check:checked')).map(c=>parseInt(c.value)); if(ids.length==0) return alert("未勾選"); reportList=reportList.filter(i=>!ids.includes(i.id)); localStorage.setItem('jlpt_n5_reports', JSON.stringify(reportList)); openReportCenter(); }
+        function reportCurrentQuestion() { const q=quizList[currentIdx]; if(!reportList.some(i=>i.id===q.id)) { reportList.push({id:q.id}); localStorage.setItem('jlpt_n5_reports',JSON.stringify(reportList)); const btn=document.getElementById('btn-report-bug'); btn.innerHTML="✅ 已回報"; btn.classList.add('disabled'); if(isChallengeMode) { pendingHeal=true; alert("回報成功！下一題答對可回血。"); } else alert("已記錄ID"); } }
+        function resetStats(){if(confirm("確定要重置所有紀錄(含相片)嗎?")){localStorage.clear();location.reload();}}
+        function copyToClipboard() { const q = quizList[currentIdx]; let text = `題目：${q.question.replace(/<[^>]*>/g, '')}\n選項：\n`; q.options.forEach((opt, i) => { text += `${i+1}. ${opt}\n`; }); text += `\n請詳細解析這題 N5 日文。`; navigator.clipboard.writeText(text).then(() => { const msg = document.getElementById('copy-msg'); msg.style.display = 'inline-block'; setTimeout(() => { msg.style.display = 'none'; }, 2000); }); }
+        function copyId(){navigator.clipboard.writeText(document.getElementById('q-db-id').innerText);alert("ID已複製");}
+        function closeGacha(){document.getElementById('gacha-overlay').style.display='none';document.getElementById('gacha-card-reveal').classList.remove('show');}
+    </script>
+</body>
+</html>
