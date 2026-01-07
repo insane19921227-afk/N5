@@ -7105,5 +7105,4011 @@
       "model": "models/gemini-2.5-pro",
       "batch": "v07"
     }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-01"
+    ],
+    "type": "kanji_reading",
+    "question": "「病院」這個詞的正確讀音是什麼？",
+    "options": [
+      "びょういん",
+      "びょうえん",
+      "びょうや",
+      "びょうかん"
+    ],
+    "answer": 0,
+    "explanation": "「病院」讀作「びょういん」，意思是醫院。N4 常見場所用語之一。其他選項如「びょうえん」「びょうや」「びょうかん」都不是正確詞彙。",
+    "id": "N4-語彙-v08-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-02"
+    ],
+    "type": "kanji_reading",
+    "question": "「急ぐ」這個動詞的讀音是？",
+    "options": [
+      "いそぐ",
+      "はやぐ",
+      "きゅうぐ",
+      "おそぐ"
+    ],
+    "answer": 0,
+    "explanation": "「急ぐ」讀作「いそぐ」，意思是「趕快、著急」。「急行（きゅうこう）」雖然有「きゅう」的音，但這裡是訓讀「いそぐ」。",
+    "id": "N4-語彙-v08-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-03"
+    ],
+    "type": "kanji_meaning",
+    "question": "「予定」這個詞最接近哪一個意思？",
+    "options": [
+      "興趣",
+      "計畫",
+      "經驗",
+      "約定的地點"
+    ],
+    "answer": 1,
+    "explanation": "「予定（よてい）」是「計畫、預定」的意思，常用於「旅行の予定」「明日の予定」等。不是興趣（興味）、經驗（経験），也不是約定地點（待ち合わせ場所）。",
+    "id": "N4-語彙-v08-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N4",
+      "v08",
+      "N4-語彙-v08-04"
+    ],
+    "type": "word_usage",
+    "question": "要表達「剛才、剛剛」的意思，最適合用哪一個詞？",
+    "options": [
+      "さっき",
+      "さきに",
+      "すぐに",
+      "もっと"
+    ],
+    "answer": 0,
+    "explanation": "「さっき」表示「剛才、剛剛」。\n「さきに」是「先、先走一步」的意思，「すぐに」是「馬上」，「もっと」是「更多」。",
+    "id": "N4-語彙-v08-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N4",
+      "v08",
+      "N4-語彙-v08-05"
+    ],
+    "type": "word_usage",
+    "question": "要說「習慣了日本的生活」，最適合的動詞是？\n日本の生活に＿＿＿＿。",
+    "options": [
+      "あつまった",
+      "なれた",
+      "きまった",
+      "たりた"
+    ],
+    "answer": 1,
+    "explanation": "句子應為「日本の生活に慣れた。」意思是「習慣了日本的生活」。\n「慣れる（なれる）」= 習慣。\n「あつまる」= 聚集，「きまる」= 決定，「たりる」= 足夠。",
+    "id": "N4-語彙-v08-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-06"
+    ],
+    "type": "kanji_reading",
+    "question": "「特に」這個副詞的正確讀音是？",
+    "options": [
+      "とくに",
+      "どくに",
+      "とっくに",
+      "ときに"
+    ],
+    "answer": 0,
+    "explanation": "「特に」讀作「とくに」，意思是「特別、尤其」。\n「とっくに」是另外一個詞，意思是「早就～」。",
+    "id": "N4-語彙-v08-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-07"
+    ],
+    "type": "kanji_meaning",
+    "question": "「残念」這個詞的意思是？",
+    "options": [
+      "麻煩",
+      "危險",
+      "遺憾、可惜",
+      "簡單"
+    ],
+    "answer": 2,
+    "explanation": "「残念（ざんねん）」意思是「遺憾、可惜」，常用於「残念ですが…」。\n麻煩是「面倒」、危險是「危険」、簡單是「簡単」。",
+    "id": "N4-語彙-v08-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N4",
+      "v08",
+      "N4-語彙-v08-08"
+    ],
+    "type": "word_usage",
+    "question": "要表達「把書放進包包裡」，空格中最適合填入哪一個？\n本をかばんに＿＿＿＿。",
+    "options": [
+      "おく",
+      "はいる",
+      "いれる",
+      "だす"
+    ],
+    "answer": 2,
+    "explanation": "正解是「入れる（いれる）」，句子為「本をかばんに入れる。」= 把書放進包包裡。\n「おく」是放置但通常不帶目標容器的「に」這種結構；「はいる」是自動詞「進去」，「だす」是「拿出」。",
+    "id": "N4-語彙-v08-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N4",
+      "v08",
+      "N4-語彙-v08-09"
+    ],
+    "type": "word_usage",
+    "question": "要說「我來幫忙打掃」，最適合哪一個動詞？\nそうじを＿＿＿＿。",
+    "options": [
+      "てつだいます",
+      "ならいます",
+      "あそびます",
+      "あびます"
+    ],
+    "answer": 0,
+    "explanation": "「手伝います（てつだいます）」是「幫忙」的意思，和「掃除（そうじ）」一起用，表示幫忙打掃。\n「ならいます」= 學習（跟老師學）、\n「あそびます」= 玩、\n「あびます」= 沐浴（シャワーをあびます）。",
+    "id": "N4-語彙-v08-09",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-10"
+    ],
+    "type": "kanji_reading",
+    "question": "「送る」這個動詞的正確讀音是？",
+    "options": [
+      "おこる",
+      "おくる",
+      "おそる",
+      "おりる"
+    ],
+    "answer": 1,
+    "explanation": "「送る」讀作「おくる」，意思是「寄送、送行」。\n「おこる」= 生氣（怒る）或發生（起こる），「おそる」不是常用基本形，「おりる」= 下（車、樓梯）。",
+    "id": "N4-語彙-v08-10",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v08",
+      "N4-文法-v08-01"
+    ],
+    "type": "multiple_choice",
+    "question": "要表達「因為感冒了，所以今天不去公司」，最自然的句子是？",
+    "options": [
+      "かぜですから、今日は会社へ行きません。",
+      "かぜでしたが、今日は会社へ行きません。",
+      "かぜですが、今日は会社へ行きません。",
+      "かぜだから、今日は会社へ行きません。"
+    ],
+    "answer": 0,
+    "explanation": "在較有禮貌、正式的場合，常用「～ですから」來表達原因，句子「かぜですから、今日は会社へ行きません。」最自然。\n「～だから」較口語，對上司說通常不用。「～ですが」有轉折或鋪陳的感覺，與後句「不去公司」的直接原因關係不如「から」明確。",
+    "id": "N4-文法-v08-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v08",
+      "N4-文法-v08-02"
+    ],
+    "type": "multiple_choice",
+    "question": "空格中應該填入哪一個？\n日本に＿＿＿＿、すぐ日本語学校に入りました。",
+    "options": [
+      "行くと",
+      "行ったら",
+      "行くなら",
+      "行っても"
+    ],
+    "answer": 1,
+    "explanation": "句子表示「一到日本就立刻～」，使用「～たら、すぐ～」的順接用法最自然：「日本に行ったら、すぐ日本語学校に入りました。」\n「行くと」有「一～就～」的習慣性含意，不太合過去一次性的事件。",
+    "id": "N4-文法-v08-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v08",
+      "N4-文法-v08-03"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依序排列成正確句子：\n★ ほうがいいです　★ 早く　★ 寝た　★ あなたは",
+    "options": [
+      "あなたは早く寝たほうがいいです。",
+      "早くあなたは寝たほうがいいです。",
+      "あなたはほうがいいです早く寝た。",
+      "寝たあなたは早くほうがいいです。"
+    ],
+    "answer": 0,
+    "explanation": "正確順序是「あなたは／早く／寝た／ほうがいいです。」\n文型「Vたほうがいいです」表示「最好～、還是～比較好」，前面接過去形。",
+    "id": "N4-文法-v08-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v08",
+      "N4-文法-v08-04"
+    ],
+    "type": "star_ordering",
+    "question": "請選出最自然的句子：\n★ 雨が　★ と　★ 出かける　★ 降る",
+    "options": [
+      "雨が降ると出かける。",
+      "雨が出かけると降る。",
+      "雨が降ると、出かけません。",
+      "出かけると雨が降る。"
+    ],
+    "answer": 2,
+    "explanation": "在 N4 常見的條件句「～と、…」中，「雨が降ると、出かけません。」= 「一旦下雨，就不出門。」最自然。\n其他選項不是一般會說的習慣句。",
+    "id": "N4-文法-v08-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v08",
+      "N4-文法-v08-05"
+    ],
+    "type": "star_ordering",
+    "question": "請選出文法正確的句子：\n★ 見て　★ ください　★ この書類を",
+    "options": [
+      "この書類を見てください。",
+      "見てこの書類をください。",
+      "くださいこの書類を見て。",
+      "この書類をください見て。"
+    ],
+    "answer": 0,
+    "explanation": "「～てください」是請求別人做某事的基本句型，結構為「名詞を Vて ください」。\n所以「この書類を見てください。」最正確自然。",
+    "id": "N4-文法-v08-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v08",
+      "N4-文法-v08-06"
+    ],
+    "type": "star_ordering",
+    "question": "請將片語排成自然的句子：\n★ なら　★ 安い　★ この店　★ ほうが",
+    "options": [
+      "安いならこの店ほうが。",
+      "この店なら安いほうが。",
+      "この店なら安いほうがいいです。",
+      "安いほうがこの店ならいいです。"
+    ],
+    "answer": 2,
+    "explanation": "完整自然的句子是「この店なら安いほうがいいです。」\n實際會說：「買うなら、この店のほうが安いです。」等，N4 重點是「～なら」「～ほうがいい」的用法。",
+    "id": "N4-文法-v08-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v08",
+      "N4-文法-v08-07"
+    ],
+    "type": "multiple_choice",
+    "question": "要表達「不必帶來」，哪一個句子最合適？\n「明日は資料を＿＿＿＿もいいです。」",
+    "options": [
+      "持ってこなくて",
+      "持ってこないで",
+      "持ってきて",
+      "持ってきたら"
+    ],
+    "answer": 0,
+    "explanation": "「Vない形＋なくていいです」= 「不做也可以、不必做」。\n所以是「明日は資料を持ってこなくてもいいです。」縮短時常說「持ってこなくていいです。」\n「持ってこないで」偏向「請不要帶來」。",
+    "id": "N4-文法-v08-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v08",
+      "N4-文法-v08-08"
+    ],
+    "type": "multiple_choice",
+    "question": "要說「我打算明年回國」，最正確的是哪一句？",
+    "options": [
+      "来年、国へ帰るつもりです。",
+      "来年、国へ帰ったつもりです。",
+      "来年、国へ帰ることです。",
+      "来年、国へ帰ったことです。"
+    ],
+    "answer": 0,
+    "explanation": "「V辞書形＋つもりです」表示「打算、打算要～」，「来年、国へ帰るつもりです。」最自然。\n「帰ったつもり」是「以為自己已經回去了」的奇怪用法。",
+    "id": "N4-文法-v08-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-11"
+    ],
+    "type": "kanji_reading",
+    "question": "「旅行」的讀音是哪一個？",
+    "options": [
+      "りょこう",
+      "りょぎょう",
+      "りょこ",
+      "りょあん"
+    ],
+    "answer": 0,
+    "explanation": "「旅行」讀作「りょこう」，意思是旅行。N4 常見動詞名詞。",
+    "id": "N4-語彙-v08-11",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-12"
+    ],
+    "type": "kanji_reading",
+    "question": "「住所」的讀音是什麼？",
+    "options": [
+      "じゅうしょ",
+      "じゅうそ",
+      "じゅしょ",
+      "じゅうじょ"
+    ],
+    "answer": 0,
+    "explanation": "「住所」讀作「じゅうしょ」，意思是住址。N4 常見生活用語。",
+    "id": "N4-語彙-v08-12",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-13"
+    ],
+    "type": "kanji_reading",
+    "question": "「急ぐ」的假名寫法是？",
+    "options": [
+      "いそぐ",
+      "いそび",
+      "きゅうぐ",
+      "はやぐ"
+    ],
+    "answer": 0,
+    "explanation": "「急ぐ」讀作「いそぐ」，意思是「趕緊、急忙」。其他選項為錯誤讀音。",
+    "id": "N4-語彙-v08-13",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-14"
+    ],
+    "type": "kanji_meaning",
+    "question": "「約束」的意思是什麼？",
+    "options": [
+      "約會",
+      "承諾、約定",
+      "預約車票",
+      "保證書"
+    ],
+    "answer": 1,
+    "explanation": "「約束（やくそく）」主要意思是「約定、約好、承諾」，例如「友だちと約束する」。不一定是戀愛的約會。",
+    "id": "N4-語彙-v08-14",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-15"
+    ],
+    "type": "kanji_meaning",
+    "question": "「場合」的正確意思是？",
+    "options": [
+      "場所",
+      "時間",
+      "情況、場合",
+      "理由"
+    ],
+    "answer": 2,
+    "explanation": "「場合（ばあい）」是「情況、場合」的意思，例如「雨の場合は試合を中止します。」",
+    "id": "N4-語彙-v08-15",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-16"
+    ],
+    "type": "kanji_meaning",
+    "question": "「遠慮する」最接近的意思是？",
+    "options": [
+      "客氣、推辭",
+      "遠足",
+      "擔心",
+      "討論"
+    ],
+    "answer": 0,
+    "explanation": "「遠慮する（えんりょする）」常用來表示「客氣、推辭」，例如「どうぞ、遠慮しないでください。」",
+    "id": "N4-語彙-v08-16",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v08",
+      "N4-語彙-v08-17"
+    ],
+    "type": "kanji_meaning",
+    "question": "「連絡する」的意思是什麼？",
+    "options": [
+      "練習",
+      "聯絡",
+      "連續",
+      "連接"
+    ],
+    "answer": 1,
+    "explanation": "「連絡する（れんらくする）」是「聯絡」的意思，例如「あとで連絡します。」",
+    "id": "N4-語彙-v08-17",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "particle",
+      "N4",
+      "v08",
+      "N4-文法-v08-09"
+    ],
+    "type": "multiple_choice",
+    "question": "明日、友だち___映画を見に行きます。",
+    "options": [
+      "で",
+      "と",
+      "に",
+      "が"
+    ],
+    "answer": 1,
+    "explanation": "和朋友一起做某事時用助詞「と」，表示「與～一起」。句子意思是「明天要和朋友去看電影」。",
+    "id": "N4-文法-v08-09",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "te-form",
+      "N4",
+      "v08",
+      "N4-文法-v08-10"
+    ],
+    "type": "multiple_choice",
+    "question": "ご飯を食べてから、宿題を___。",
+    "options": [
+      "します",
+      "して",
+      "したい",
+      "しません"
+    ],
+    "answer": 0,
+    "explanation": "「～てから」後面接「完成的動作」。整句是「吃完飯之後做作業」，用普通現在形「します」最自然。",
+    "id": "N4-文法-v08-10",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v08",
+      "N4-文法-v08-11"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確語序排列。\n\n1. から\n2. 雨が\n3. 行きません\n4. 今日の試合には\n5. たくさん降っている\n\n正確順序是哪一個？",
+    "options": [
+      "2 → 5 → 1 → 4 → 3",
+      "4 → 3 → 2 → 5 → 1",
+      "4 → 2 → 5 → 1 → 3",
+      "2 → 5 → 4 → 1 → 3"
+    ],
+    "answer": 2,
+    "explanation": "正解句子是：「今日の試合には雨がたくさん降っているから行きません。」\n結構：原因「雨がたくさん降っているから」＋結果「行きません」。所以順序是 4 → 2 → 5 → 1 → 3。",
+    "id": "N4-文法-v08-11",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v08",
+      "N4-文法-v08-12"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確語序排列。\n\n1. 日本語を\n2. のに\n3. 役に立つ\n4. この辞書は\n5. 勉強する\n\n正確順序是哪一個？",
+    "options": [
+      "4 → 1 → 5 → 2 → 3",
+      "4 → 3 → 1 → 5 → 2",
+      "4 → 3 → 5 → 1 → 2",
+      "4 → 1 → 2 → 5 → 3"
+    ],
+    "answer": 0,
+    "explanation": "正解句子是：「この辞書は日本語を勉強するのに役に立つ。」\n「V辞書形＋のに＋役に立つ」表示「對～有幫助」。順序為 4（この辞書は）→1（日本語を）→5（勉強する）→2（のに）→3（役に立つ）。",
+    "id": "N4-文法-v08-12",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v08",
+      "N4-文法-v08-13"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確語序排列。\n\n1. ので\n2. 早く\n3. 会社を\n4. 今日は\n5. 帰ります\n\n正確順序是哪一個？",
+    "options": [
+      "4 → 3 → 2 → 5 → 1",
+      "4 → 2 → 3 → 1 → 5",
+      "4 → 3 → 1 → 2 → 5",
+      "4 → 1 → 3 → 2 → 5"
+    ],
+    "answer": 2,
+    "explanation": "正解句子是：「今日は会社を早く帰りますので。」較自然的完整句可為「今日は会社を早く帰りますので、先に失礼します。」\n這裡考的是「ので」表示原因，放在原因子句句尾。順序為 4 → 3 → 1 → 2 → 5。",
+    "id": "N4-文法-v08-13",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "comparison",
+      "N4",
+      "v08",
+      "N4-文法-v08-14"
+    ],
+    "type": "multiple_choice",
+    "question": "東京___大阪のほうが人が多いです。",
+    "options": [
+      "より",
+      "から",
+      "まで",
+      "しか"
+    ],
+    "answer": 0,
+    "explanation": "比較句型「AよりBのほうが～」表示「比起A，B更～」。這裡是「比起東京，大阪人更多」。",
+    "id": "N4-文法-v08-14",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v08",
+      "N4-讀解-v08-01"
+    ],
+    "type": "short_reading",
+    "question": "請閱讀下列短文，回答問題。\n\n来週の土曜日に学校で日本語スピーチコンテストがあります。参加したい人は、今週の金曜日までに先生に申し込んでください。スピーチの時間は3分から5分までです。優勝した人には辞書がプレゼントされます。\n\n【問題】\nスピーチコンテストに参加したい人は、いつまでに申し込まなければなりませんか。",
+    "options": [
+      "今日",
+      "来週の土曜日",
+      "今週の金曜日",
+      "来週の金曜日"
+    ],
+    "answer": 2,
+    "explanation": "文中寫著「今週の金曜日までに先生に申し込んでください。」所以必須在「今週の金曜日」之前報名。",
+    "id": "N4-讀解-v08-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:52:43",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-01"
+    ],
+    "type": "kanji_reading",
+    "question": "「旅行」の読み方はどれですか。",
+    "options": [
+      "りょこう",
+      "りょぎょう",
+      "りょあん",
+      "りょうこう"
+    ],
+    "answer": 0,
+    "explanation": "「旅行」的正確讀音是「りょこう」。\n「旅」讀作「たび／りょ」，「行」在這裡讀作「こう」，合起來就是「りょこう」，意思是「旅行」。其他選項為不存在或錯誤讀音。",
+    "id": "N4-語彙-v09-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-02"
+    ],
+    "type": "kanji_reading",
+    "question": "「住所」の読み方はどれですか。",
+    "options": [
+      "じゅうところ",
+      "じゅうしょ",
+      "すまいしょ",
+      "じゅうす"
+    ],
+    "answer": 1,
+    "explanation": "「住所」的讀音是「じゅうしょ」，意思是「住址」。\n「住」讀作「じゅう」，「所」讀作「しょ」。其他選項不是正確的慣用讀法。",
+    "id": "N4-語彙-v09-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-03"
+    ],
+    "type": "kanji_reading",
+    "question": "「運転」の読み方はどれですか。",
+    "options": [
+      "うんてん",
+      "うんでん",
+      "うんてい",
+      "うんどん"
+    ],
+    "answer": 0,
+    "explanation": "「運転」讀作「うんてん」，意思是「駕駛、開車」。\n「運」讀「うん」，「転」讀「てん」，合起來為「うんてん」。其他選項為錯誤發音。",
+    "id": "N4-語彙-v09-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-04"
+    ],
+    "type": "kanji_reading",
+    "question": "「始める」の読み方はどれですか。",
+    "options": [
+      "はじめる",
+      "はじまる",
+      "はじける",
+      "そめる"
+    ],
+    "answer": 0,
+    "explanation": "「始める」讀作「はじめる」，是「開始做某事」的他動詞。\n「はじまる」是自動詞「始まる」，意思是「某事開始」。題目問的是「始める」，所以選「はじめる」。",
+    "id": "N4-語彙-v09-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-05"
+    ],
+    "type": "kanji_reading",
+    "question": "「特に」の読み方はどれですか。",
+    "options": [
+      "とくに",
+      "とっきに",
+      "とくり",
+      "とくじ"
+    ],
+    "answer": 0,
+    "explanation": "「特に」讀作「とくに」，意思是「特別、尤其」。\n「特」的音讀為「とく」，加上副詞助詞「に」，成為「とくに」。",
+    "id": "N4-語彙-v09-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-06"
+    ],
+    "type": "kanji_reading",
+    "question": "「最近」の読み方はどれですか。",
+    "options": [
+      "さいしん",
+      "さいご",
+      "さいきん",
+      "さいじつ"
+    ],
+    "answer": 2,
+    "explanation": "「最近」讀作「さいきん」，意思是「最近、近來」。\n「さいしん」通常寫作「最新」(最新的)；「さいご」是「最後」；「さいじつ」是「祭日」。",
+    "id": "N4-語彙-v09-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-07"
+    ],
+    "type": "kanji_reading",
+    "question": "「お祝い」の読み方はどれですか。",
+    "options": [
+      "おいわい",
+      "おいあい",
+      "おいわえ",
+      "おいあえ"
+    ],
+    "answer": 0,
+    "explanation": "「お祝い」讀作「おいわい」，意思是「祝賀、慶祝、禮金」。\n動詞「祝う（いわう）」名詞化後為「祝い（いわい）」，加上美化語「お」成為「おいわい」。",
+    "id": "N4-語彙-v09-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-08"
+    ],
+    "type": "kanji_reading",
+    "question": "「趣味」の読み方はどれですか。",
+    "options": [
+      "しゅみ",
+      "しゅうみ",
+      "すみ",
+      "しゅび"
+    ],
+    "answer": 0,
+    "explanation": "「趣味」讀作「しゅみ」，意思是「興趣、嗜好」。\n「趣」在這裡讀「しゅ」，「味」讀「み」，合起來為「しゅみ」。",
+    "id": "N4-語彙-v09-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Particle",
+      "N4",
+      "v09",
+      "N4-文法-v09-01"
+    ],
+    "type": "multiple_choice",
+    "question": "父は新聞を読み_____、テレビを見ます。",
+    "options": [
+      "ながら",
+      "すぎて",
+      "やすくて",
+      "かもしれない"
+    ],
+    "answer": 0,
+    "explanation": "「Vます形＋ながら」表示「一邊做A一邊做B」。\n句子意思是「爸爸一邊看報紙，一邊看電視。」\n其他選項：\n- すぎて：太～而…\n- やすくて：容易而…（通常接形容詞或動詞可能形）\n- かもしれない：也許、可能。",
+    "id": "N4-文法-v09-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Te-form",
+      "N4",
+      "v09",
+      "N4-文法-v09-02"
+    ],
+    "type": "multiple_choice",
+    "question": "窓を______、部屋の空気を変えました。",
+    "options": [
+      "開いて",
+      "開きに",
+      "開くと",
+      "開かせて"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要接續動作，表示「打開窗戶，改變了房間的空氣」。\n「Vて、〜」用來表示動作的先後或原因，所以用「開いて」。\n- 開きに：沒有這種用法\n- 開くと：一～就～，語氣不同\n- 開かせて：使役形「讓…打開」，不合文意。",
+    "id": "N4-文法-v09-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-03"
+    ],
+    "type": "star_ordering",
+    "question": "下列語句請依照正確語序排列：\n★ 料理を\n★ ために\n★ 日本へ\n★ 勉強する\n★ 行きました",
+    "options": [
+      "日本へ → 行きました → 料理を → 勉強する → ために",
+      "料理を → 勉強する → ために → 日本へ → 行きました",
+      "日本へ → 料理を → 勉強する → 行きました → ために",
+      "ために → 料理を → 勉強する → 日本へ → 行きました"
+    ],
+    "answer": 1,
+    "explanation": "正確語序是「料理を 勉強する ために 日本へ 行きました。」\n文型：「V辞書形／Nの＋ために」表示「為了～而…」。\n所以要先「料理を 勉強する」，再接「ために」，最後加地點與動作「日本へ 行きました」。",
+    "id": "N4-文法-v09-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-04"
+    ],
+    "type": "star_ordering",
+    "question": "下列語句請依照正確語序排列：\n★ 行かなければ\n★ なりません\n★ 明日\n★ 学校へ",
+    "options": [
+      "明日 → 学校へ → 行かなければ → なりません",
+      "学校へ → 明日 → 行かなければ → なりません",
+      "明日 → 行かなければ → 学校へ → なりません",
+      "行かなければ → 明日 → 学校へ → なりません"
+    ],
+    "answer": 0,
+    "explanation": "正確語序是「明日 学校へ 行かなければ なりません。」\n「Vなければなりません」表示「必須、一定要」。\n時間「明日」通常放在句首，接著是方向「学校へ」，最後是義務表現「行かなければ なりません」。",
+    "id": "N4-文法-v09-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-05"
+    ],
+    "type": "star_ordering",
+    "question": "下列語句請依照正確語序排列：\n★ 雨が\n★ そうです\n★ 降る\n★ から\n★ 洗濯しません",
+    "options": [
+      "雨が → 降る → から → 洗濯しません → そうです",
+      "雨が → 降る → そうです → から → 洗濯しません",
+      "雨が → 降る → から → そうです → 洗濯しません",
+      "洗濯しません → から → 雨が → 降る → そうです"
+    ],
+    "answer": 1,
+    "explanation": "正確語序是「雨が 降る そうです から 洗濯しません。」\n「V普通形＋そうです」表示傳聞「聽說～」。\n再接「から」表示原因，「因為聽說會下雨，所以不洗衣服」。",
+    "id": "N4-文法-v09-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-06"
+    ],
+    "type": "star_ordering",
+    "question": "下列語句請依照正確語序排列：\n★ すぎて\n★ 食べ\n★ ケーキを\n★ おなかが\n★ 痛いです",
+    "options": [
+      "ケーキを → 食べ → すぎて → おなかが → 痛いです",
+      "おなかが → 痛いです → ケーキを → 食べ → すぎて",
+      "ケーキを → すぎて → 食べ → おなかが → 痛いです",
+      "食べ → ケーキを → すぎて → おなかが → 痛いです"
+    ],
+    "answer": 0,
+    "explanation": "正確語序是「ケーキを 食べすぎて おなかが 痛いです。」\n「Vます形去ます＋すぎる」表示「～過頭」。\n「食べすぎて」= 吃太多，接續表示結果「おなかが痛いです」。",
+    "id": "N4-文法-v09-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-07"
+    ],
+    "type": "star_ordering",
+    "question": "下列語句請依照正確語序排列：\n★ なら\n★ 日本語が\n★ 話せます\n★ 彼\n★ 少し",
+    "options": [
+      "彼 → 日本語が → 少し → 話せます → なら",
+      "彼 → なら → 日本語が → 少し → 話せます",
+      "日本語が → 少し → 話せます → なら → 彼",
+      "彼 → 日本語が → 話せます → 少し → なら"
+    ],
+    "answer": 1,
+    "explanation": "正確語序是「彼 なら 日本語が 少し 話せます。」\n「Nなら」表示「如果是～的話」。\n意思是「如果是他的話，他會說一點日文。」所以「彼」後面接「なら」，再接能力表現「日本語が少し話せます」。",
+    "id": "N4-文法-v09-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Multiple_choice",
+      "N4",
+      "v09",
+      "N4-文法-v09-08"
+    ],
+    "type": "multiple_choice",
+    "question": "この本は子ども_____読めます。",
+    "options": [
+      "しか",
+      "でも",
+      "だけ",
+      "より"
+    ],
+    "answer": 1,
+    "explanation": "「Nでも」表示「連～也…」，常用來說明範圍寬、容易。\n「この本は子どもでも読めます。」=「這本書連小孩都看得懂。」\n- しか＋否定：只～（而且不其他）\n- だけ：只有～（語氣不同，沒有「連…也」的感覺）\n- より：比～。",
+    "id": "N4-文法-v09-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Multiple_choice",
+      "N4",
+      "v09",
+      "N4-文法-v09-09"
+    ],
+    "type": "multiple_choice",
+    "question": "雨が降る_____、試合は中止になります。",
+    "options": [
+      "ので",
+      "のに",
+      "のを",
+      "のか"
+    ],
+    "answer": 0,
+    "explanation": "「〜ので」表示原因、理由，語氣較柔和。\n「雨が降るので、試合は中止になります。」=「因為下雨，比賽要取消。」\n- のに：明明～卻～（轉折）\n- のを：多用作名詞化或受詞\n- のか：疑問或反問。",
+    "id": "N4-文法-v09-09",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Multiple_choice",
+      "N4",
+      "v09",
+      "N4-文法-v09-10"
+    ],
+    "type": "multiple_choice",
+    "question": "日本へ行く_____、パスポートがいります。",
+    "options": [
+      "とき",
+      "まで",
+      "のに",
+      "ために"
+    ],
+    "answer": 3,
+    "explanation": "「V辞書形＋ために」表示「為了～（目的）」。\n「日本へ行くために、パスポートがいります。」=「為了去日本，需要護照。」\n- とき：～的時候\n- まで：到～為止\n- のに：雖然～卻～（或「為了～」但後面接動作，不是名詞「パスポートがいります」這種句型）。",
+    "id": "N4-文法-v09-10",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_text",
+      "N4",
+      "v09",
+      "N4-讀解-v09-01"
+    ],
+    "type": "multiple_choice",
+    "question": "次の文を読んで、質問に答えてください。\n\n山田さんは毎朝6時に起きます。顔を洗ってから、朝ご飯を食べます。そのあとで、新聞を読みます。8時に家を出て、会社へ行きます。\n\n【質問】山田さんは朝ご飯のあと、何をしますか。",
+    "options": [
+      "会社へ行きます。",
+      "顔を洗います。",
+      "新聞を読みます。",
+      "家を出ます。"
+    ],
+    "answer": 2,
+    "explanation": "文中順序：\n6點起床 → 洗臉 → 吃早餐 → 之後讀報紙 → 8點出門去公司。\n問題：「早餐之後做什麼？」答案是「新聞を読みます。」",
+    "id": "N4-讀解-v09-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_text",
+      "N4",
+      "v09",
+      "N4-讀解-v09-02"
+    ],
+    "type": "multiple_choice",
+    "question": "次の文を読んで、質問に答えてください。\n\n私は毎週土曜日に図書館へ行きます。図書館では、本を借りたり、勉強したりします。図書館の近くに大きい公園があって、天気がいい日は散歩もします。\n\n【質問】私はどこで本を借りますか。",
+    "options": [
+      "家で借ります。",
+      "公園で借ります。",
+      "図書館で借ります。",
+      "学校で借ります。"
+    ],
+    "answer": 2,
+    "explanation": "文中說「図書館では、本を借りたり、勉強したりします。」\n所以借書的地方是「図書館で」。",
+    "id": "N4-讀解-v09-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_text",
+      "N4",
+      "v09",
+      "N4-讀解-v09-03"
+    ],
+    "type": "multiple_choice",
+    "question": "次のメールを読んで、質問に答えてください。\n\n田中さんへ\n\n来週の金曜日にパーティーをします。6時から始まります。場所は駅の近くのレストランです。一緒に来ませんか。返事をください。\n\n佐藤\n\n【質問】パーティーはいつ始まりますか。",
+    "options": [
+      "来週の木曜日の6時",
+      "来週の金曜日の6時",
+      "今週の金曜日の6時",
+      "来週の金曜日の7時"
+    ],
+    "answer": 1,
+    "explanation": "信中寫「来週の金曜日にパーティーをします。6時から始まります。」\n所以是「下週五的6點」開始。",
+    "id": "N4-讀解-v09-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_text",
+      "N4",
+      "v09",
+      "N4-讀解-v09-04"
+    ],
+    "type": "multiple_choice",
+    "question": "次のお知らせを読んで、質問に答えてください。\n\n【図書館からのお知らせ】\n8月10日から8月15日まで、図書館は休みです。本を返す人は、8月9日までに返してください。休みの間、本を返すことはできません。\n\n【質問】8月12日に本を返すことができますか。",
+    "options": [
+      "はい、できます。",
+      "午前だけできます。",
+      "午後だけできます。",
+      "いいえ、できません。"
+    ],
+    "answer": 3,
+    "explanation": "公告說「8月10日から8月15日まで、図書館は休みです。」且「休みの間、本を返すことはできません。」\n8月12日在休館期間內，所以不能還書。",
+    "id": "N4-讀解-v09-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_text",
+      "N4",
+      "v09",
+      "N4-讀解-v09-05"
+    ],
+    "type": "multiple_choice",
+    "question": "次の文を読んで、質問に答えてください。\n\n私は去年からギターを習っています。最初はとても難しかったですが、毎日30分ぐらい練習しました。今は少し弾けるようになりました。来月、友だちの前で一曲（いっきょく）弾くつもりです。\n\n【質問】今、私はギターをどうすることができますか。",
+    "options": [
+      "全然弾けません。",
+      "少し弾けます。",
+      "とても上手に弾けます。",
+      "習っていません。"
+    ],
+    "answer": 1,
+    "explanation": "文中寫「今は少し弾けるようになりました。」\n意思是「現在已經能夠彈一點了」，所以選「少し弾けます。」",
+    "id": "N4-讀解-v09-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-09"
+    ],
+    "type": "kanji_reading",
+    "question": "「研究」的正確讀音是？",
+    "options": [
+      "けんきゅう",
+      "けんきょう",
+      "げんきゅう",
+      "げんきょう"
+    ],
+    "answer": 0,
+    "explanation": "「研究」讀作「けんきゅう」，意思是研究。常見於學校、公司相關的文章。其餘選項為錯誤讀音。",
+    "id": "N4-語彙-v09-09",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-10"
+    ],
+    "type": "kanji_reading",
+    "question": "「運転」的正確讀音是？",
+    "options": [
+      "うんてん",
+      "うんでん",
+      "うんどん",
+      "うんてい"
+    ],
+    "answer": 0,
+    "explanation": "「運転」讀作「うんてん」，意思是「開車、駕駛」。N4 常見於交通相關題目。其他讀音不正確。",
+    "id": "N4-語彙-v09-10",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-11"
+    ],
+    "type": "kanji_reading",
+    "question": "「習慣」的正確讀音是？",
+    "options": [
+      "しゅうかん",
+      "しゅうけん",
+      "しゅうかい",
+      "しゅうこん"
+    ],
+    "answer": 0,
+    "explanation": "「習慣」讀作「しゅうかん」，意思是習慣。N4 讀解常出現。其他選項為類似音但不正確。",
+    "id": "N4-語彙-v09-11",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-12"
+    ],
+    "type": "kanji_reading",
+    "question": "「準備」的正確讀音是？",
+    "options": [
+      "じゅんび",
+      "じゅんぴ",
+      "しゅんび",
+      "しゅんぴ"
+    ],
+    "answer": 0,
+    "explanation": "「準備」讀作「じゅんび」，意思是準備。是 N4 非常常見的動作名詞。其他三個為錯誤讀音。",
+    "id": "N4-語彙-v09-12",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-13"
+    ],
+    "type": "kanji_reading",
+    "question": "「最近」的正確讀音是？",
+    "options": [
+      "さいきん",
+      "さいこん",
+      "さいじん",
+      "さいげん"
+    ],
+    "answer": 0,
+    "explanation": "「最近」讀作「さいきん」，意思是最近、近來。其餘選項是其他漢字的讀音或不存在的詞。",
+    "id": "N4-語彙-v09-13",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-14"
+    ],
+    "type": "kanji_reading",
+    "question": "「会議」的正確讀音是？",
+    "options": [
+      "かいぎ",
+      "かいじ",
+      "かいご",
+      "かいき"
+    ],
+    "answer": 0,
+    "explanation": "「会議」讀作「かいぎ」，意思是會議、開會。N4 會話或商務情境常出現。其他讀音不正確。",
+    "id": "N4-語彙-v09-14",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v09",
+      "N4-語彙-v09-15"
+    ],
+    "type": "kanji_reading",
+    "question": "「必要」的正確讀音是？",
+    "options": [
+      "ひつよう",
+      "ひっよう",
+      "ひつよ",
+      "ひっよ"
+    ],
+    "answer": 0,
+    "explanation": "「必要」讀作「ひつよう」，意思是必要、需要。N4 常出現在說明或規則文中。其他選項為誤寫或不完整形。",
+    "id": "N4-語彙-v09-15",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "te_form",
+      "N4",
+      "v09",
+      "N4-文法-v09-11"
+    ],
+    "type": "multiple_choice",
+    "question": "ご飯を食べ___、宿題をします。",
+    "options": [
+      "てから",
+      "たり",
+      "ながら",
+      "そう"
+    ],
+    "answer": 0,
+    "explanation": "「〜てから」表示「做完前面的事之後，再做後面的事」。句子意思是「吃完飯之後做作業」，所以用「食べてから」。",
+    "id": "N4-文法-v09-11",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-12"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確順序排列，組成自然的句子：\n★ から　★ 日本　★ 帰って　★ 来ました",
+    "options": [
+      "日本から帰って来ました",
+      "日本帰ってから来ました",
+      "帰って来ましたから日本",
+      "から日本帰って来ました"
+    ],
+    "answer": 0,
+    "explanation": "正確句型為「日本から帰って来ました」，意思是「從日本回來了」。助詞「から」要接在地點名詞「日本」之後，構成「日本から」。",
+    "id": "N4-文法-v09-12",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "potential",
+      "N4",
+      "v09",
+      "N4-文法-v09-13"
+    ],
+    "type": "multiple_choice",
+    "question": "日本語が少し___ようになりました。",
+    "options": [
+      "話す",
+      "話して",
+      "話せる",
+      "話そう"
+    ],
+    "answer": 2,
+    "explanation": "「〜ようになりました」前面常接可能形，表示「變得能夠～」。所以用「話せる」，「話せるようになりました」=「變得能說一點日文了」。",
+    "id": "N4-文法-v09-13",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-14"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確順序排列，組成自然的句子：\n★ 雨　★ そう　★ 降り　★ です",
+    "options": [
+      "雨降りそうです",
+      "雨が降りそうです",
+      "雨そう降りです",
+      "降りそう雨がです"
+    ],
+    "answer": 1,
+    "explanation": "「雨が降りそうです」表示「好像要下雨了」。需要主語助詞「が」，「降りそう」是「看起來要下（雨）」的樣態表現。",
+    "id": "N4-文法-v09-14",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "tara",
+      "N4",
+      "v09",
+      "N4-文法-v09-15"
+    ],
+    "type": "multiple_choice",
+    "question": "家に___、すぐシャワーを浴びます。",
+    "options": [
+      "帰ったら",
+      "帰るとき",
+      "帰っても",
+      "帰りながら"
+    ],
+    "answer": 0,
+    "explanation": "「〜たら」表示「一…就…」，「家に帰ったら、すぐ〜」=「一回到家，就立刻～」。其他選項語氣或意思不同。",
+    "id": "N4-文法-v09-15",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-16"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確順序排列，組成自然的句子：\n★ なる　★ 暑く　★ だんだん　★ なってきました",
+    "options": [
+      "だんだん暑くなってきました",
+      "暑くなるだんだんなってきました",
+      "だんだんなる暑くなってきました",
+      "暑くなってきましただんだんなる"
+    ],
+    "answer": 0,
+    "explanation": "正確為「だんだん暑くなってきました」，意思是「漸漸變熱了」。副詞「だんだん」通常放在形容詞變化前面，整體用「〜なってきました」表示變化的進行。",
+    "id": "N4-文法-v09-16",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "nakereba_naranai",
+      "N4",
+      "v09",
+      "N4-文法-v09-17"
+    ],
+    "type": "multiple_choice",
+    "question": "明日テストがあるので、今晩勉強し___なりません。",
+    "options": [
+      "たい",
+      "ては",
+      "なくては",
+      "そうで"
+    ],
+    "answer": 2,
+    "explanation": "「〜なくてはなりません」=「必須～、一定要～」。所以應為「勉強しなくてはなりません」。",
+    "id": "N4-文法-v09-17",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v09",
+      "N4-文法-v09-18"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確順序排列，組成自然的句子：\n★ する　★ 前に　★ 寝る　★ 準備を",
+    "options": [
+      "寝る前に準備をする",
+      "準備を寝る前にする",
+      "前に寝る準備をする",
+      "寝る準備を前にする"
+    ],
+    "answer": 0,
+    "explanation": "最自然的語序是「寝る前に準備をする」，意思是「在睡覺之前做準備」。N4 常考「〜前に」時間順序表現。",
+    "id": "N4-文法-v09-18",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "ShortText",
+      "N4",
+      "v09",
+      "N4-讀解-v09-06"
+    ],
+    "type": "reading",
+    "question": "【短文】\n私は毎朝６時に起きて、ジョギングをします。そのあとでシャワーを浴びて、朝ご飯を食べます。会社は８時半からですが、電車がよく遅れるので、いつも早めに家を出ます。\n\n問１：筆者は朝、起きたあと、最初に何をしますか。",
+    "options": [
+      "シャワーを浴びる",
+      "ジョギングをする",
+      "朝ご飯を食べる",
+      "電車に乗る"
+    ],
+    "answer": 1,
+    "explanation": "文中順序：「６時に起きて、ジョギングをします。そのあとでシャワーを浴びて、朝ご飯を食べます。」所以起床後最先做的是「ジョギングをする」。",
+    "id": "N4-讀解-v09-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "ShortText",
+      "N4",
+      "v09",
+      "N4-讀解-v09-07"
+    ],
+    "type": "reading",
+    "question": "【短文】\n田中さんは去年まで東京の大学で勉強していましたが、今年から大阪の会社で働いています。新しい仕事は大変ですが、同僚はみんな親切で、上司もよく話を聞いてくれます。\n\n問２：田中先生現在在做什麼？",
+    "options": [
+      "在東京念大學",
+      "在大阪工作",
+      "在家休息",
+      "在大阪念大學"
+    ],
+    "answer": 1,
+    "explanation": "文中：「去年まで東京の大学で勉強していましたが、今年から大阪の会社で働いています。」表示現在是在大阪的公司工作，所以選「在大阪工作」。",
+    "id": "N4-讀解-v09-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "ShortText",
+      "N4",
+      "v09",
+      "N4-讀解-v09-08"
+    ],
+    "type": "reading",
+    "question": "【短文】\n私は毎週金曜日に日本語学校へ行っています。クラスには中国人や韓国人だけでなく、ヨーロッパから来た学生もいます。授業では、日本の文化について話し合うことが多いです。\n\n問４：筆者のクラスについて正しいことはどれですか。",
+    "options": [
+      "學生全部來自亞洲。",
+      "每天都有日本語課。",
+      "也有從歐洲來的學生。",
+      "只學文法，不談文化。"
+    ],
+    "answer": 2,
+    "explanation": "文中有「ヨーロッパから来た学生もいます」，表示「也有從歐洲來的學生」，所以選項 3 正確。其他選項都與文章內容不符。",
+    "id": "N4-讀解-v09-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:59:58",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N4",
+      "v10",
+      "N4-語彙-v10-01"
+    ],
+    "type": "word_meaning",
+    "question": "「運転する」的意思是？",
+    "options": [
+      "開車、駕駛",
+      "運動",
+      "搬運東西",
+      "練習"
+    ],
+    "answer": 0,
+    "explanation": "「運転する」是「駕駛、開車」的意思，多用於開車、開巴士等。運動是「運動する」，搬運是「運ぶ」，練習是「練習する」。",
+    "id": "N4-語彙-v10-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Usage",
+      "N4",
+      "v10",
+      "N4-語彙-v10-02"
+    ],
+    "type": "fill_blank",
+    "question": "明日から日本で（  ）します。\n要表達「留學」，應該填入哪一個？",
+    "options": [
+      "留学",
+      "勉強",
+      "研究",
+      "旅行"
+    ],
+    "answer": 0,
+    "explanation": "「留学する」是「留學」的固定說法。句子「日本で留学します」表示「在日本留學」。雖然「日本で勉強します」也通順，但題目明示要表達「留學」，所以選「留学」。",
+    "id": "N4-語彙-v10-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Usage",
+      "N4",
+      "v10",
+      "N4-語彙-v10-03"
+    ],
+    "type": "fill_blank",
+    "question": "この料理はとても（  ）ですから、気をつけて食べてください。\n要表達「燙」，應該填入哪一個？",
+    "options": [
+      "熱い",
+      "暑い",
+      "厚い",
+      "暖かい"
+    ],
+    "answer": 0,
+    "explanation": "形容「東西本身很燙」用「熱い」。天氣炎熱用「暑い」，東西厚用「厚い」，溫暖則是「暖かい」。這裡是料理很燙，所以選「熱い」。",
+    "id": "N4-語彙-v10-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Usage",
+      "N4",
+      "v10",
+      "N4-語彙-v10-04"
+    ],
+    "type": "fill_blank",
+    "question": "仕事が（  ）から、今週は遊びに行けません。\n要表達「忙」，應該選哪一個？",
+    "options": [
+      "忙しい",
+      "細かい",
+      "早い",
+      "大変な"
+    ],
+    "answer": 0,
+    "explanation": "「忙しい」是「忙碌」的形容詞。雖然「大変な」也可表示「辛苦、不得了」，但最直接表達「忙」的是「忙しい」。",
+    "id": "N4-語彙-v10-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Usage",
+      "N4",
+      "v10",
+      "N4-語彙-v10-05"
+    ],
+    "type": "fill_blank",
+    "question": "毎日日本語のニュースを（  ）ようにしています。\n要表達「收看、看」，應該選哪一個？",
+    "options": [
+      "見る",
+      "読む",
+      "聞く",
+      "習う"
+    ],
+    "answer": 0,
+    "explanation": "看電視、影片、新聞節目用「見る」。雖然「ニュースを聞く」也常用，但前面有「ニュースを」且多指電視新聞，搭配「見る」最自然。",
+    "id": "N4-語彙-v10-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N4",
+      "v10",
+      "N4-語彙-v10-06"
+    ],
+    "type": "word_meaning",
+    "question": "「準備」這個名詞在日文中常用來表示什麼？",
+    "options": [
+      "事前的準備",
+      "結果",
+      "計畫書",
+      "說明"
+    ],
+    "answer": 0,
+    "explanation": "「準備（じゅんび）」指事前的準備、預備，如：旅行の準備をします。其他選項都是不同概念。",
+    "id": "N4-語彙-v10-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Conjugation",
+      "N4",
+      "v10",
+      "N4-文法-v10-01"
+    ],
+    "type": "fill_blank",
+    "question": "毎朝6時に（  ）ことができます。\n要表達「起床」，應該填入哪一個？",
+    "options": [
+      "起きる",
+      "起きられる",
+      "起こす",
+      "起こされる"
+    ],
+    "answer": 1,
+    "explanation": "句型「V辞書形ことができます」表示「能夠做～」，但「起きることができます」較少用，一般會用可能形「起きられることができます」嗎？其實更自然是「6時に起きることができます」或「起きられます」。在四個中，搭配「～ことができます」時，原形「起きる」最自然，但題目要求「能夠」，實際上「V辞書形ことができます」本身就有能力的意思，所以應選「起きる」。然而為避免混淆，這題改為：此句型應使用「起きる」，表示「能在六點起床」。",
+    "id": "N4-文法-v10-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_Ordering",
+      "N4",
+      "v10",
+      "N4-文法-v10-02"
+    ],
+    "type": "star_ordering",
+    "question": "請將星號標記的片語重新排列成正確的句子：\n（1）私は ★ を ★ ことが ★ 好きです ★ 読む ★ 本\n正確句子是？",
+    "options": [
+      "私は本を読むことが好きです。",
+      "私は読む本をことが好きです。",
+      "私は本が読むことを好きです。",
+      "私はことが本を読む好きです。"
+    ],
+    "answer": 0,
+    "explanation": "「～を読むことが好きです」是固定句型，「我喜歡讀書」。正確語序為「本を読むことが好きです」，前面加主語「私は」。",
+    "id": "N4-文法-v10-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Te-form",
+      "N4",
+      "v10",
+      "N4-文法-v10-03"
+    ],
+    "type": "fill_blank",
+    "question": "窓を（  ）、部屋を明るくしました。\n要填入「開ける」的て形，應該選哪一個？",
+    "options": [
+      "開けて",
+      "開けた",
+      "開いて",
+      "開きて"
+    ],
+    "answer": 0,
+    "explanation": "動詞「開ける」是一類動詞（上一段），て形是「開けて」。句子意思是「把窗戶打開，讓房間變亮」。",
+    "id": "N4-文法-v10-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_Ordering",
+      "N4",
+      "v10",
+      "N4-文法-v10-04"
+    ],
+    "type": "star_ordering",
+    "question": "請將星號標記的片語重新排列成正確的句子：\n（2）雨 ★ ので ★ 出かけません ★ から ★ 降っている\n正確句子是？",
+    "options": [
+      "雨が降っているので出かけません。",
+      "雨が降っているから出かけませんので。",
+      "雨ので降っているから出かけません。",
+      "雨は降っているので出かけませんから。"
+    ],
+    "answer": 0,
+    "explanation": "原因理由句型「～ので」：雨が降っているので出かけません（因為下雨，所以不出門）。其他選項語尾或助詞使用不自然。",
+    "id": "N4-文法-v10-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_Ordering",
+      "N4",
+      "v10",
+      "N4-文法-v10-05"
+    ],
+    "type": "star_ordering",
+    "question": "請將星號標記的片語重新排列成正確的句子：\n（3）日本へ ★ 行った ★ ことが ★ あります ★ か\n正確句子是？",
+    "options": [
+      "日本へ行ったことがありますか。",
+      "日本へことが行ったありますか。",
+      "日本へ行きたことがありますか。",
+      "日本へ行ったがありますことか。"
+    ],
+    "answer": 0,
+    "explanation": "「Vたことがある」表示「有～過的經驗」。句子是「你有去過日本嗎？」所以是「日本へ行ったことがありますか」。",
+    "id": "N4-文法-v10-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Comparison",
+      "N4",
+      "v10",
+      "N4-文法-v10-06"
+    ],
+    "type": "fill_blank",
+    "question": "大阪は東京（  ）あまり大きくありません。",
+    "options": [
+      "ほど",
+      "より",
+      "まで",
+      "だけ"
+    ],
+    "answer": 0,
+    "explanation": "「AはBほど～ない」表示「A沒有B那麼～」。這裡是「大阪沒有東京那麼大」，所以用「ほど」。",
+    "id": "N4-文法-v10-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_Ordering",
+      "N4",
+      "v10",
+      "N4-文法-v10-07"
+    ],
+    "type": "star_ordering",
+    "question": "請將星號標記的片語重新排列成正確的句子：\n（4）食べて ★ から ★ 宿題を ★ します ★ 晩ご飯を\n正確句子是？",
+    "options": [
+      "晩ご飯を食べてから宿題をします。",
+      "晩ご飯から食べて宿題をします。",
+      "宿題をしてから晩ご飯を食べます。",
+      "食べて晩ご飯をから宿題をします。"
+    ],
+    "answer": 0,
+    "explanation": "「VてからV2」表示「做完V再做V2」。題目要求的語序是「吃完晚飯之後再寫作業」，故為「晩ご飯を食べてから宿題をします」。",
+    "id": "N4-文法-v10-07",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_Ordering",
+      "N4",
+      "v10",
+      "N4-文法-v10-08"
+    ],
+    "type": "star_ordering",
+    "question": "請將星號標記的片語重新排列成正確的句子：\n（5）駅まで ★ かかります ★ ぐらい ★ 歩いて ★ 10分\n正確句子是？",
+    "options": [
+      "駅まで歩いて10分ぐらいかかります。",
+      "駅まで10分ぐらい歩いてかかります。",
+      "駅までかかります歩いて10分ぐらい。",
+      "駅まで歩いてかかります10分ぐらい。"
+    ],
+    "answer": 0,
+    "explanation": "時間表達常用「歩いて10分ぐらいかかります」（走路大約要10分鐘）。語序為「駅まで＋歩いて＋10分ぐらい＋かかります」。",
+    "id": "N4-文法-v10-08",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Request",
+      "N4",
+      "v10",
+      "N4-文法-v10-09"
+    ],
+    "type": "fill_blank",
+    "question": "もう一度（  ）ください。\n要表達「請再說一次」，應該選哪一個？",
+    "options": [
+      "言って",
+      "話して",
+      "聞いて",
+      "読んで"
+    ],
+    "answer": 0,
+    "explanation": "「もう一度言ってください」是「請再說一次」。「話して」偏向聊天、說話的動作，「聞いて」是聽，「読んで」是讀。",
+    "id": "N4-文法-v10-09",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_Passage",
+      "N4",
+      "v10",
+      "N4-讀解-v10-01"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀下列短文，回答問題。\n\n田中さんは毎朝7時に家を出ます。会社までは電車で30分ぐらいです。会社に着いてから、まずメールを読みます。それから、9時から会議があります。お昼ご飯はいつも会社の食堂で食べます。\n\n問：田中先生大約幾點到公司？",
+    "options": [
+      "7點30分左右",
+      "7點半以前",
+      "8點左右",
+      "8點半左右"
+    ],
+    "answer": 2,
+    "explanation": "文中說「毎朝7時に家を出ます。会社までは電車で30分ぐらいです。」所以大約7:30到附近，再加上走路等，最接近的是「8點左右」。題目是「大約」，故選8點左右。",
+    "id": "N4-讀解-v10-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_Passage",
+      "N4",
+      "v10",
+      "N4-讀解-v10-02"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀下列短文，回答問題。\n\n昨日はとても忙しい一日でした。朝、部屋を掃除して、洗濯してから、友達と映画を見に行きました。映画のあとで、レストランで晩ご飯を食べました。家に帰ったのは夜の10時ごろでした。\n\n問：作者是什麼時候吃晚餐的？",
+    "options": [
+      "看電影之前",
+      "看電影之後",
+      "回家之後",
+      "早上"
+    ],
+    "answer": 1,
+    "explanation": "短文中寫「映画のあとで、レストランで晩ご飯を食べました。」意思是「看完電影之後，在餐廳吃晚餐」，所以選「看電影之後」。",
+    "id": "N4-讀解-v10-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_Passage",
+      "N4",
+      "v10",
+      "N4-讀解-v10-03"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀下列短文，回答問題。\n\n山田さんは去年、日本の大学を卒業しました。今は東京の会社で働いています。仕事は大変ですが、とてもやりがいがあります。将来は自分の店を持ちたいと思っています。\n\n問：山田先生現在在做什麼？",
+    "options": [
+      "在東京的公司工作",
+      "在日本的大學念書",
+      "在家開店",
+      "在國外留學"
+    ],
+    "answer": 0,
+    "explanation": "文中說「去年、日本の大学を卒業しました。今は東京の会社で働いています。」表示現在在東京的公司工作。",
+    "id": "N4-讀解-v10-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_Passage",
+      "N4",
+      "v10",
+      "N4-讀解-v10-04"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀下列短文，回答問題。\n\nこの店は安くておいしいので、いつもお客さんが多いです。特にお昼の時間はとても込んでいます。ゆっくり食事をしたい人は、少し早い時間か、遅い時間に来たほうがいいです。\n\n問：如果想慢慢吃飯，最好什麼時候來？",
+    "options": [
+      "中午最忙的時候",
+      "早一點或晚一點的時間",
+      "店剛開門的時候以外",
+      "什麼時候都一樣"
+    ],
+    "answer": 1,
+    "explanation": "短文說「ゆっくり食事をしたい人は、少し早い時間か、遅い時間に来たほうがいいです。」意思是「想慢慢吃的人，最好早一點或晚一點來」。",
+    "id": "N4-讀解-v10-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_Passage",
+      "N4",
+      "v10",
+      "N4-讀解-v10-05"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀下列短文，回答問題。\n\n私は毎週土曜日に日本語学校へ通っています。クラスは10人ぐらいで、先生はとても親切です。授業では会話の練習をたくさんします。宿題もありますが、日本語が少しずつ上手になってきたので、うれしいです。\n\n問：關於作者，下列哪一項是正確的？",
+    "options": [
+      "每週六去日文學校上課",
+      "每天都去日文學校",
+      "不喜歡做會話練習",
+      "覺得日文越來越難"
+    ],
+    "answer": 0,
+    "explanation": "短文開頭說「毎週土曜日に日本語学校へ通っています」，表示每週六去。後面說「日本語が少しずつ上手になってきたので、うれしいです」，是開心而不是覺得變難。",
+    "id": "N4-讀解-v10-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short_Passage",
+      "N4",
+      "v10",
+      "N4-讀解-v10-06"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀下列短文，回答問題。\n\n田中さんは健康のために、毎日30分ぐらい歩いています。雨の日でも、家の中でストレッチをしたり、簡単な運動をしたりします。夜はあまり遅くまで起きないで、12時前には寝るようにしています。\n\n問：田中先生為了健康，沒有做的是哪一項？",
+    "options": [
+      "每天走路",
+      "在家做伸展運動",
+      "故意熬夜到很晚",
+      "做簡單的運動"
+    ],
+    "answer": 2,
+    "explanation": "文中說他「毎日30分ぐらい歩いています」，雨天「ストレッチをしたり、簡単な運動をしたり」且「12時前には寝るようにしています」，表示不會熬夜到很晚，所以「故意熬夜到很晚」是沒有做的。",
+    "id": "N4-讀解-v10-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Conjunction",
+      "N4",
+      "v10",
+      "N4-文法-v10-10"
+    ],
+    "type": "multiple_choice",
+    "question": "明日は日曜日 ___ 、会社へ行かなければなりません。\n要選出最適合填入空格的助詞或接續詞。",
+    "options": [
+      "だから",
+      "それでも",
+      "しかし",
+      "それに"
+    ],
+    "answer": 1,
+    "explanation": "句意：「明天是星期天，儘管如此，還是必須去公司。」\n- 正解「それでも」：表示「即便那樣、儘管如此」，前後文有「預期外」或「相反」的情況，很符合「明天是休假日，卻還要去公司」的語氣。\n- 「だから」：表示因果「所以」，用在這裡會變成「明天是星期天，所以必須去公司」，語意不自然。\n- 「しかし」：多用於書面語轉折，通常接在句首，較少用在這種中間接續，且語氣比「それでも」更正式。\n- 「それに」：表示「而且、再加上」，用來追加同方向資訊，與此處「轉折」語氣不合。",
+    "id": "N4-文法-v10-10",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N4",
+      "v10",
+      "N4-文法-v10-11"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依順序排列，組成最自然的句子：\n\n1. * から\n2. * 雨が\n3. * 行きません\n4. * 公園へ\n\n（請選出正確的排列順序）",
+    "options": [
+      "2 → 1 → 4 → 3",
+      "2 → 4 → 1 → 3",
+      "4 → 2 → 1 → 3",
+      "4 → 3 → 2 → 1"
+    ],
+    "answer": 0,
+    "explanation": "四個片語分別是：\n- 雨が（2）：主語「下雨」\n- から（1）：表示原因的接續助詞「因為～所以」\n- 公園へ（4）：去的地方「到公園」\n- 行きません（3）：否定動詞「不去」\n\n正確句子應為：\n「雨が から 公園へ 行きません」→ 需要補上「降っている」才是完整自然的日文：「雨が降っているから、公園へ行きません。」\n在這種 N4 練習中，常省略已知的部分，只考語序概念。\n\n語序說明：\n- 原因子句在前：「雨が（降っている）から」\n- 結果子句在後：「公園へ行きません」\n所以順序是：2（雨が） → 1（から） → 4（公園へ） → 3（行きません），對應選項 0。",
+    "id": "N4-文法-v10-11",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v10",
+      "N4-語彙-v10-07"
+    ],
+    "type": "kanji_reading",
+    "question": "「地下鉄」的正確讀音是？",
+    "options": [
+      "ちかでつ",
+      "ちかてつ",
+      "じかてつ",
+      "じかでつ"
+    ],
+    "answer": 1,
+    "explanation": "「地下鉄」意思是「地鐵」，正確讀音為「ちかてつ」。\n- 「地」（ち），\n- 「下」（か），合起來「地下」（ちか）是「地面下」，\n- 「鉄」（てつ）是「鐵」。\n因此合起來是「ちかてつ」。其他選項把音讀錯置或發音錯誤。",
+    "id": "N4-語彙-v10-07",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v10",
+      "N4-語彙-v10-08"
+    ],
+    "type": "kanji_reading",
+    "question": "請選出「急ぐ」的正確讀音。",
+    "options": [
+      "いそぐ",
+      "いそび",
+      "きゅうぐ",
+      "きゅうび"
+    ],
+    "answer": 0,
+    "explanation": "「急ぐ」是動詞，意思是「趕快、著急」，讀作「いそぐ」。\n- 這裡是訓讀（和語讀法），所以不用「きゅう」這個音讀。\n- 「きゅう」多用在名詞或複合詞，如「急行（きゅうこう）」。\n因此只有「いそぐ」是正確的讀音。",
+    "id": "N4-語彙-v10-08",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v10",
+      "N4-語彙-v10-09"
+    ],
+    "type": "kanji_reading",
+    "question": "次の文の★に入る最もよい言葉を、並べかえて選んでください。\n\nきのうは ★ ので、会社を休みました。\n\n（1）熱　（2）が　（3）高かった",
+    "options": [
+      "熱が高かった",
+      "高かったが熱",
+      "が熱高かった",
+      "高かった熱が"
+    ],
+    "answer": 0,
+    "explanation": "這題是星號重組題，考日文語序與詞彙運用。\n\n原句：「きのうは ★ ので、会社を休みました。」\n意思是「因為昨天～，所以請假沒去公司。」\n\n正確的自然日文應該是：「きのうは熱が高かったので、会社を休みました。」\n\n詞語順序：\n- 熱（名詞）\n- が（主語助詞）\n- 高かった（形容詞「高い」過去式）\n\n所以正確排列是「熱が高かった」，對應選項 0。其他選項語序不自然或文法錯誤。",
+    "id": "N4-語彙-v10-09",
+    "metadata": {
+      "generated_at": "2025-12-09 00:17:34",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N4",
+      "v11",
+      "N4-語彙-v11-01"
+    ],
+    "type": "kanji_reading",
+    "question": "「旅行」はどう読みますか。",
+    "options": [
+      "りょこう",
+      "りょぎょう",
+      "りょこうえき",
+      "りょこ"
+    ],
+    "answer": 0,
+    "explanation": "「旅行」讀作「りょこう」，意思是旅行。N4 常見名詞。其他選項不是標準讀音或多了不必要的字。",
+    "id": "N4-語彙-v11-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "WordMeaning",
+      "N4",
+      "v11",
+      "N4-語彙-v11-02"
+    ],
+    "type": "word_meaning",
+    "question": "「都合がいい」の意味として最も適切なものはどれですか。",
+    "options": [
+      "気分がいい",
+      "都合がよい・便利だ",
+      "にぎやかだ",
+      "つらい"
+    ],
+    "answer": 1,
+    "explanation": "「都合がいい」指時間、狀況上「方便、合適」。不是心情或氣氛。",
+    "id": "N4-語彙-v11-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Usage",
+      "N4",
+      "v11",
+      "N4-語彙-v11-03"
+    ],
+    "type": "usage",
+    "question": "あてはまることばをえらびなさい。\n明日、友だちと映画を（   ）。",
+    "options": [
+      "見る",
+      "洗う",
+      "切る",
+      "売る"
+    ],
+    "answer": 0,
+    "explanation": "看電影用「映画を見る」。洗（洗う）、切（切る）、賣（売る）都不自然。",
+    "id": "N4-語彙-v11-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Usage",
+      "N4",
+      "v11",
+      "N4-語彙-v11-04"
+    ],
+    "type": "usage",
+    "question": "最も自然な文になるように（　　）に入る言葉を選びなさい。\n毎朝7時に家を（   ）。",
+    "options": [
+      "出る",
+      "開ける",
+      "閉める",
+      "止める"
+    ],
+    "answer": 0,
+    "explanation": "離開家用「家を出る」。開門「ドアを開ける」，關「閉める」，停止「止める」，都不合句意。",
+    "id": "N4-語彙-v11-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Usage",
+      "N4",
+      "v11",
+      "N4-語彙-v11-05"
+    ],
+    "type": "usage",
+    "question": "最も適切なことばを選びなさい。\n熱が高いので、（   ）へ行きました。",
+    "options": [
+      "学校",
+      "会社",
+      "病院",
+      "駅"
+    ],
+    "answer": 2,
+    "explanation": "發高燒應該去「病院（醫院）」。去學校或公司不合邏輯。",
+    "id": "N4-語彙-v11-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Conjugation",
+      "N4",
+      "v11",
+      "N4-文法-v11-01"
+    ],
+    "type": "fill_blank",
+    "question": "正しい形を選びなさい：\n毎日日本語を勉強しなければ（   ）。",
+    "options": [
+      "いけません",
+      "できません",
+      "なりません",
+      "ありません"
+    ],
+    "answer": 0,
+    "explanation": "「〜なければいけません」是「必須～」的常用文型。雖然「〜なければなりません」也對，但選項中只有「いけません」與前面構成完整固定句型。",
+    "id": "N4-文法-v11-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Particle",
+      "N4",
+      "v11",
+      "N4-文法-v11-02"
+    ],
+    "type": "fill_blank",
+    "question": "駅（   ）友だちと会いました。",
+    "options": [
+      "を",
+      "に",
+      "で",
+      "へ"
+    ],
+    "answer": 2,
+    "explanation": "在車站這個場所發生「會面」的動作，要用場所助詞「で」。",
+    "id": "N4-文法-v11-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "StarOrdering",
+      "N4",
+      "v11",
+      "N4-文法-v11-03"
+    ],
+    "type": "star_ordering",
+    "question": "並べかえなさい（正しい文にしてください）：\n★　行きます　★　日本　★　来年　★　に",
+    "options": [
+      "来年 日本 に 行きます。",
+      "日本 来年 に 行きます。",
+      "日本 に 来年 行きます。",
+      "に 日本 来年 行きます。"
+    ],
+    "answer": 0,
+    "explanation": "自然的語序是「来年 日本 に 行きます。」時間（来年）→目的地（日本に）→動詞（行きます）。",
+    "id": "N4-文法-v11-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "StarOrdering",
+      "N4",
+      "v11",
+      "N4-文法-v11-04"
+    ],
+    "type": "star_ordering",
+    "question": "並べかえなさい：\n★　から　★　雨　★　出かけません　★　降っている",
+    "options": [
+      "雨 から 降っている 出かけません。",
+      "雨 が 降っている から 出かけません。",
+      "降っている 雨 が から 出かけません。",
+      "出かけません から 雨 が 降っている。"
+    ],
+    "answer": 1,
+    "explanation": "原因「雨が降っている」＋「から」＋結果「出かけません」，所以「雨が降っているから出かけません。」最自然。",
+    "id": "N4-文法-v11-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "StarOrdering",
+      "N4",
+      "v11",
+      "N4-文法-v11-05"
+    ],
+    "type": "star_ordering",
+    "question": "並べかえなさい：\n★　見て　★　映画を　★　あとで　★　ご飯を食べます",
+    "options": [
+      "あとで 映画を 見て ご飯を食べます。",
+      "映画を あとで 見て ご飯を食べます。",
+      "映画を 見て あとで ご飯を食べます。",
+      "ご飯を食べます 映画を 見て あとで。"
+    ],
+    "answer": 0,
+    "explanation": "「あとで」通常放在句首表示「之後」，整句為「あとで映画を見てご飯を食べます。」表示先看電影再吃飯。",
+    "id": "N4-文法-v11-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "StarOrdering",
+      "N4",
+      "v11",
+      "N4-文法-v11-06"
+    ],
+    "type": "star_ordering",
+    "question": "並べかえなさい：\n★　なりました　★　先生　★　山田さんは　★　有名な",
+    "options": [
+      "山田さんは 有名な 先生 なりました。",
+      "有名な 山田さんは 先生 なりました。",
+      "山田さんは 有名な 先生 に なりました。",
+      "先生 に 山田さんは 有名な なりました。"
+    ],
+    "answer": 2,
+    "explanation": "變成某種身分用「〜に なります」，所以是「山田さんは 有名な 先生 に なりました。」",
+    "id": "N4-文法-v11-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "TeForm",
+      "N4",
+      "v11",
+      "N4-文法-v11-07"
+    ],
+    "type": "fill_blank",
+    "question": "（   ）てから、晩ご飯を食べます。\n※動詞：宿題をする",
+    "options": [
+      "宿題をし",
+      "宿題して",
+      "宿題をして",
+      "宿題し"
+    ],
+    "answer": 2,
+    "explanation": "「〜てから」前面要接動詞て形。「宿題をする」→「宿題をして」。助詞「を」不能省略。",
+    "id": "N4-文法-v11-07",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Conjugation",
+      "N4",
+      "v11",
+      "N4-文法-v11-08"
+    ],
+    "type": "fill_blank",
+    "question": "正しい形を選びなさい：\nこれは私が（   ）本です。\n※動詞：借りる",
+    "options": [
+      "借りた",
+      "借ります",
+      "借りて",
+      "借りるの"
+    ],
+    "answer": 0,
+    "explanation": "用來修飾名詞「本」要用簡體過去形「借りた本」。表示「我借的書」。",
+    "id": "N4-文法-v11-08",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Expression",
+      "N4",
+      "v11",
+      "N4-文法-v11-09"
+    ],
+    "type": "fill_blank",
+    "question": "いっしょに映画を見に（   ）か。",
+    "options": [
+      "行きません",
+      "行きましょう",
+      "行きたい",
+      "行かなかった"
+    ],
+    "answer": 0,
+    "explanation": "「〜ませんか」是較禮貌的邀請表現。「行きませんか」＝「要不要一起去？」",
+    "id": "N4-文法-v11-09",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "StarOrdering",
+      "N4",
+      "v11",
+      "N4-文法-v11-10"
+    ],
+    "type": "star_ordering",
+    "question": "並べかえなさい：\n★　ほうがいいです　★　早く　★　寝た　★　よ",
+    "options": [
+      "早く 寝た ほうがいいです よ。",
+      "早く 寝た ほうがいいですよ。",
+      "寝た 早く ほうがいいですよ。",
+      "ほうがいいです 早く 寝た よ。"
+    ],
+    "answer": 1,
+    "explanation": "勸告表現「〜たほうがいいです」之前接過去形：「早く寝たほうがいいですよ。」語尾「よ」加在整句最後。",
+    "id": "N4-文法-v11-10",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Conditional",
+      "N4",
+      "v11",
+      "N4-文法-v11-11"
+    ],
+    "type": "fill_blank",
+    "question": "お金が（   ）なら、旅行に行きたいです。",
+    "options": [
+      "ある",
+      "あり",
+      "あって",
+      "あれば"
+    ],
+    "answer": 3,
+    "explanation": "條件句用「〜ば」形，「あれば」表示「如果有錢的話」。",
+    "id": "N4-文法-v11-11",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v11",
+      "N4-讀解-v11-01"
+    ],
+    "type": "reading",
+    "question": "次の文章を読んで、質問に答えなさい。\n\n山田さんは毎朝6時に起きます。起きてから、コーヒーを飲んで新聞を読みます。それから、7時に家を出て、電車で会社へ行きます。会社は8時半からですが、山田さんはいつも8時ごろ会社に着きます。\n\n【質問】\n山田さんはいつも何時ごろ会社に着きますか。",
+    "options": [
+      "6時ごろ",
+      "7時ごろ",
+      "8時ごろ",
+      "8時半ごろ"
+    ],
+    "answer": 2,
+    "explanation": "文中寫「山田さんはいつも8時ごろ会社に着きます。」所以答案是「8時ごろ」。",
+    "id": "N4-讀解-v11-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v11",
+      "N4-讀解-v11-02"
+    ],
+    "type": "reading",
+    "question": "次の文章を読んで、質問に答えなさい。\n\n私は去年の4月から日本で働いています。最初は日本語があまりわかりませんでしたが、毎日会社の人と話したり、日本語の本を読んだりして、少しずつ上手になりました。今は日本語で会議にも出ることができます。\n\n【質問】\n筆者はどうやって日本語が上手になりましたか。",
+    "options": [
+      "毎日テレビを見たから",
+      "日本語学校に行ったから",
+      "毎日会社の人と話したり、本を読んだりしたから",
+      "友だちに全部教えてもらったから"
+    ],
+    "answer": 2,
+    "explanation": "文中提到「会社の人と話したり、日本語の本を読んだりして、少しずつ上手になりました。」所以選第三項。",
+    "id": "N4-讀解-v11-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v11",
+      "N4-讀解-v11-03"
+    ],
+    "type": "reading",
+    "question": "次のメールを読んで、質問に答えなさい。\n\n田中さんへ\n\nこんにちは。来週の土曜日にうちでパーティーをします。よかったら来てください。パーティーは6時から始まりますが、田中さんは仕事があるので、7時ごろでもいいですよ。何か飲み物を一つ持ってきてください。\n\n山本\n\n【質問】\n田中さんは何時ごろ来てもいいですか。",
+    "options": [
+      "5時ごろ",
+      "6時ごろ",
+      "7時ごろ",
+      "9時ごろ"
+    ],
+    "answer": 2,
+    "explanation": "信中寫「田中さんは仕事があるので、7時ごろでもいいですよ。」所以7點左右來也可以。",
+    "id": "N4-讀解-v11-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v11",
+      "N4-讀解-v11-04"
+    ],
+    "type": "reading",
+    "question": "次の文章を読んで、質問に答えなさい。\n\n私の趣味は料理を作ることです。休みの日には、新しいレシピをインターネットで探して、いろいろな料理を作ってみます。家族は私の料理が大好きで、「おいしい」とよく言ってくれます。将来は自分のレストランを持ちたいと思っています。\n\n【質問】\n筆者の将来の夢は何ですか。",
+    "options": [
+      "有名な料理の本を書くこと",
+      "自分のレストランを持つこと",
+      "料理のテレビ番組に出ること",
+      "インターネットでレシピを作ること"
+    ],
+    "answer": 1,
+    "explanation": "文末有「将来は自分のレストランを持ちたいと思っています。」所以夢想是開自己的餐廳。",
+    "id": "N4-讀解-v11-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v11",
+      "N4-讀解-v11-05"
+    ],
+    "type": "reading",
+    "question": "次の案内を読んで、質問に答えなさい。\n\n【図書館からのお知らせ】\n夏休み中、図書館は月曜日から土曜日まで朝9時から夜7時まで開いています。日曜日は休みです。本を借りることができるのは10冊までで、2週間借りることができます。返す日を忘れないでください。\n\n【質問】\n図書館はいつ休みですか。",
+    "options": [
+      "月曜日",
+      "土曜日",
+      "日曜日",
+      "毎日開いている"
+    ],
+    "answer": 2,
+    "explanation": "公告中寫「日曜日は休みです。」所以星期天休館。",
+    "id": "N4-讀解-v11-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v11",
+      "N4-讀解-v11-06"
+    ],
+    "type": "reading",
+    "question": "次の文章を読んで、質問に答えなさい。\n\n私は毎週金曜日の夜に日本語クラスに通っています。クラスには中国人や韓国人だけでなく、アメリカ人やフランス人もいます。みんな日本語で話そうとするので、とてもいい勉強になります。授業のあとで、よくクラスメートとご飯を食べに行きます。\n\n【質問】\nこのクラスについて正しいのはどれですか。",
+    "options": [
+      "日本人だけがいるクラスだ。",
+      "いろいろな国の人がいるクラスだ。",
+      "授業のあとで、すぐ家に帰る。",
+      "金曜日の朝にクラスがある。"
+    ],
+    "answer": 1,
+    "explanation": "文中提到「中国人や韓国人だけでなく、アメリカ人やフランス人もいます。」表示有各國學生，所以選「いろいろな国の人がいるクラスだ。」",
+    "id": "N4-讀解-v11-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:35:38",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N4",
+      "v12",
+      "N4-語彙-v12-01"
+    ],
+    "type": "choose_word",
+    "question": "_____が降ってきたので、傘をさしました。",
+    "options": [
+      "雪",
+      "雨",
+      "霧",
+      "風"
+    ],
+    "answer": 1,
+    "explanation": "「雨」是雨，符合句意。",
+    "id": "N4-語彙-v12-01",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N4",
+      "v12",
+      "N4-語彙-v12-02"
+    ],
+    "type": "choose_word",
+    "question": "夜、星が_____見えます。",
+    "options": [
+      "きれいに",
+      "大きく",
+      "小さく",
+      "早く"
+    ],
+    "answer": 0,
+    "explanation": "「きれいに」是美麗地，符合句意。",
+    "id": "N4-語彙-v12-02",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v12",
+      "N4-文法-v12-01"
+    ],
+    "type": "choose_word",
+    "question": "もうすぐ雨が_____そうです。",
+    "options": [
+      "降り",
+      "降る",
+      "降って",
+      "降った"
+    ],
+    "answer": 1,
+    "explanation": "「降るそうです」が未来の予測を示す表現です。",
+    "id": "N4-文法-v12-01",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v12",
+      "N4-文法-v12-02"
+    ],
+    "type": "choose_word",
+    "question": "彼は昨日、図書館で本を_____。",
+    "options": [
+      "借りた",
+      "借りる",
+      "借ります",
+      "借りて"
+    ],
+    "answer": 0,
+    "explanation": "「借りた」は過去の行動を示す形です。",
+    "id": "N4-文法-v12-02",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v12",
+      "N4-文法-v12-03"
+    ],
+    "type": "choose_word",
+    "question": "私は彼に何も_____。",
+    "options": [
+      "言わなかった",
+      "言った",
+      "言う",
+      "言え"
+    ],
+    "answer": 0,
+    "explanation": "「何も言わなかった」は否定を表します。",
+    "id": "N4-文法-v12-03",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v12",
+      "N4-文法-v12-04"
+    ],
+    "type": "choose_word",
+    "question": "この本はとても面白い_____。",
+    "options": [
+      "です",
+      "だ",
+      "で",
+      "な"
+    ],
+    "answer": 0,
+    "explanation": "「です」は丁寧な表現です。",
+    "id": "N4-文法-v12-04",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v12",
+      "N4-文法-v12-05"
+    ],
+    "type": "choose_word",
+    "question": "毎日運動するのは体に_____。",
+    "options": [
+      "いい",
+      "良い",
+      "良く",
+      "いいです"
+    ],
+    "answer": 0,
+    "explanation": "「いい」は一般的に使われる形です。",
+    "id": "N4-文法-v12-05",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N4",
+      "v12",
+      "N4-文法-v12-06"
+    ],
+    "type": "choose_word",
+    "question": "私はそれを_____もいいですか。",
+    "options": [
+      "見て",
+      "見た",
+      "見る",
+      "見ます"
+    ],
+    "answer": 0,
+    "explanation": "「見てもいいですか」は許可を求める表現です。",
+    "id": "N4-文法-v12-06",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v12",
+      "N4-讀解-v12-01"
+    ],
+    "type": "choose_word",
+    "question": "私の趣味は旅行です。先月、私は京都に行きました。京都は日本の伝統的な都市で、美しい寺院や神社がたくさんあります。私はまず金閣寺を訪れました。金閣寺はその名の通り、金色に輝く美しい建物です。その後、清水寺へ行きました。清水寺は高い場所にあり、そこからの景色は素晴らしかったです。昼食には京都の伝統的な料理を楽しみました。特にお好み焼きが美味しかったです。午後は嵐山を訪れ、竹林を散歩しました。竹林の中はとても静かで、心が癒されました。京都の旅は本当に楽しかったです。また行きたいと思っています。",
+    "options": [
+      "旅行",
+      "食事",
+      "買い物",
+      "仕事"
+    ],
+    "answer": 0,
+    "explanation": "文章中に「私の趣味は旅行です」とあります。",
+    "id": "N4-讀解-v12-01",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v12",
+      "N4-讀解-v12-02"
+    ],
+    "type": "choose_word",
+    "question": "私は毎朝、早く起きてジョギングをしています。ジョギングを始めたのは一年ほど前です。最初はあまり好きではありませんでしたが、続けているうちに楽しくなりました。ジョギングをすると気分がすっきりして、一日を元気に始めることができます。また、健康にも良いので、毎日続けています。週末には公園でジョギングをすることが多いです。公園には美しい自然があり、季節ごとに違った景色を楽しむことができます。ジョギングを終えた後は、シャワーを浴びて朝食を食べます。私にとって、ジョギングはとても大切な習慣になっています。ジョギングを始めてからどのくらいですか。",
+    "options": [
+      "一年",
+      "二年",
+      "三年",
+      "半年"
+    ],
+    "answer": 0,
+    "explanation": "文章中有「ジョギングを始めたのは一年ほど前です」這一句，因此正確答案是「一年」。",
+    "id": "N4-讀解-v12-02",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v12",
+      "N4-讀解-v12-03"
+    ],
+    "type": "choose_word",
+    "question": "私の家族は4人です。父、母、姉、そして私です。父は会社員で、毎日忙しく働いています。母は主婦で、家のことをすべてやってくれます。姉は大学生で、経済学を勉強しています。私は高校生で、将来は医者になりたいと思っています。家族みんなで旅行に行くのが好きで、毎年夏には海に行きます。海で泳いだり、バーベキューをしたりして楽しい時間を過ごします。私たちは家族の時間を大切にしています。週末には一緒に映画を見たり、公園に行ったりします。私はこの家族が大好きです。",
+    "options": [
+      "3人",
+      "4人",
+      "5人",
+      "6人"
+    ],
+    "answer": 1,
+    "explanation": "文章中に「私の家族は4人です」とあります。",
+    "id": "N4-讀解-v12-03",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v12",
+      "N4-讀解-v12-04"
+    ],
+    "type": "choose_word",
+    "question": "私の学校は小さな町にあります。学校はとても古い建物ですが、中はきれいで、設備も整っています。私はこの学校で3年間勉強しています。先生たちは親切で、熱心に教えてくれます。私は数学が得意で、特に代数が好きです。放課後には友達と一緒にクラブ活動をします。私はテニス部に入っていて、毎日練習しています。テニスは楽しいですが、時々難しいと感じることもあります。試合で勝ったときはとても嬉しいです。私はこの学校での生活を楽しんでいます。",
+    "options": [
+      "1年",
+      "2年",
+      "3年",
+      "4年"
+    ],
+    "answer": 2,
+    "explanation": "文章中に「この学校で3年間勉強しています」とあります。",
+    "id": "N4-讀解-v12-04",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v12",
+      "N4-讀解-v12-05"
+    ],
+    "type": "choose_word",
+    "question": "私は最近、新しい趣味を始めました。それは料理です。最初は簡単な料理から始めましたが、今では少し難しい料理にも挑戦しています。料理をすることはとても楽しく、自分で作った料理を食べるときは特に嬉しいです。週末には友達を招いて一緒に料理を作ったり、食べたりします。友達も私の料理を気に入ってくれています。特に得意なのはカレーで、いろいろなスパイスを使って作ります。料理を通じて新しいことを学ぶのが好きです。これからももっとたくさんの料理に挑戦したいと思っています。",
+    "options": [
+      "料理",
+      "スポーツ",
+      "音楽",
+      "読書"
+    ],
+    "answer": 0,
+    "explanation": "文章中に「それは料理です」とあります。",
+    "id": "N4-讀解-v12-05",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N4",
+      "v12",
+      "N4-讀解-v12-06"
+    ],
+    "type": "choose_word",
+    "question": "先週末、私は友達と一緒に映画を見に行きました。その映画はとても人気があり、劇場はほぼ満席でした。映画はアクション映画で、ストーリーがとても面白かったです。特に主人公の演技が素晴らしく、感動しました。映画を見た後、友達とカフェに行き、お茶を飲みながら感想を話し合いました。友達も同じように映画を楽しんでいました。その日はとても楽しく、また一緒に映画を見に行きたいと思いました。映画を見ることは私たちの共通の趣味になっています。",
+    "options": [
+      "映画",
+      "公園",
+      "図書館",
+      "美術館"
+    ],
+    "answer": 0,
+    "explanation": "文章中に「映画を見に行きました」とあります。",
+    "id": "N4-讀解-v12-06",
+    "metadata": {
+      "generated_at": "2025-12-10 23:46:40",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "type": "paraphrase",
+    "question": "「彼女は　毎朝　ジョギングをします。」と同じ意味の文はどれですか。",
+    "options": [
+      "彼女は　毎朝　走ります。",
+      "彼女は　毎朝　泳ぎます。",
+      "彼女は　毎朝　寝ます。",
+      "彼女は　毎朝　食べます。"
+    ],
+    "answer": 0,
+    "explanation": "「ジョギングをします」は「走ります」と同じ意味です。",
+    "id": "N4-語彙-v13-01",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-01"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "彼は毎朝七時に______。",
+    "options": [
+      "起きます",
+      "起こします",
+      "起きる",
+      "起こす"
+    ],
+    "answer": 0,
+    "explanation": "文脈上，適當的動詞是「起きます」。",
+    "id": "N4-語彙-v13-02",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-02"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "昨日、友達と映画を______。",
+    "options": [
+      "見ました",
+      "見る",
+      "見て",
+      "見せる"
+    ],
+    "answer": 0,
+    "explanation": "過去式的動作應用「見ました」。",
+    "id": "N4-語彙-v13-03",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-03"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "この料理は辛くて______。",
+    "options": [
+      "食べられない",
+      "食べる",
+      "食べて",
+      "食べた"
+    ],
+    "answer": 0,
+    "explanation": "因為太辣所以無法吃，「食べられない」是正確的選擇。",
+    "id": "N4-語彙-v13-04",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-04"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "彼女は毎日日本語を______。",
+    "options": [
+      "勉強します",
+      "勉強し",
+      "勉強して",
+      "勉強した"
+    ],
+    "answer": 0,
+    "explanation": "動詞「勉強します」表示習慣性的動作。",
+    "id": "N4-語彙-v13-05",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-05"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "私は昨日、新しい服を______。",
+    "options": [
+      "買いました",
+      "買う",
+      "買って",
+      "買い"
+    ],
+    "answer": 0,
+    "explanation": "在過去的事件中，「買いました」是正確的形式。",
+    "id": "N4-語彙-v13-06",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-06"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "今日は天気がいいので、______。",
+    "options": [
+      "散歩します",
+      "散歩し",
+      "散歩して",
+      "散歩した"
+    ],
+    "answer": 0,
+    "explanation": "由於天氣好，適合進行「散步」的動作。",
+    "id": "N4-語彙-v13-07",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-07"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "明日、学校に______。",
+    "options": [
+      "行きます",
+      "行く",
+      "行って",
+      "行った"
+    ],
+    "answer": 0,
+    "explanation": "「行きます」表示未來的計劃。",
+    "id": "N4-語彙-v13-08",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-08"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "context",
+    "question": "田中さんはメールで「明日の会議は午前10時に始まります。場所は第2会議室です。ご都合が悪い場合は、事前にお知らせください。」と書きました。このメールの内容に関する質問です。田中さんは何を知らせていますか。",
+    "options": [
+      "会議の時間と場所",
+      "会議の参加者",
+      "会議の内容",
+      "会議の結果"
+    ],
+    "answer": 0,
+    "explanation": "メールは会議の時間と場所についての情報を提供しています。",
+    "id": "N4-語彙-v13-09",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-09"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "context",
+    "question": "以下はあるイベントの案内です。「来週の日曜日に市民公園で春祭りが開催されます。午前10時から午後4時まで行われ、様々な食べ物の屋台やステージでのパフォーマンスがあります。参加は無料ですので、ぜひご家族でお越しください。」このイベントの開催場所はどこですか。",
+    "options": [
+      "市民公園",
+      "学校",
+      "駅前広場",
+      "商店街"
+    ],
+    "answer": 0,
+    "explanation": "案内には「市民公園で春祭りが開催されます」と書かれています。",
+    "id": "N4-語彙-v13-10",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-10"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "次の文章を読んで、質問に答えてください。「私は毎朝7時に起きて、朝ごはんを食べます。その後、8時に家を出て、電車で会社に行きます。会社には9時に着きます。仕事が終わるのは午後6時です。」この人は何時に会社に着きますか。",
+    "options": [
+      "9時",
+      "7時",
+      "8時",
+      "6時"
+    ],
+    "answer": 0,
+    "explanation": "文章には「会社には9時に着きます」とあります。",
+    "id": "N4-語彙-v13-11",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-11"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "次の文章を読んで、質問に答えてください。「私は毎週土曜日に友達とテニスをします。テニスの後は、みんなで食事に行きます。日曜日は家でのんびりしています。」この人は日曜日に何をしますか。",
+    "options": [
+      "家でのんびりする",
+      "友達とテニスをする",
+      "みんなで食事に行く",
+      "仕事をする"
+    ],
+    "answer": 0,
+    "explanation": "文章には「日曜日は家でのんびりしています」とあります。",
+    "id": "N4-語彙-v13-12",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-12"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "以下の文章を読んで、質問に答えてください。「私の趣味は料理です。特にイタリア料理が好きで、毎週末に新しいレシピを試します。今週はパスタを作りました。」この人の趣味は何ですか。",
+    "options": [
+      "料理",
+      "音楽",
+      "旅行",
+      "読書"
+    ],
+    "answer": 0,
+    "explanation": "文章には「私の趣味は料理です」と書かれています。",
+    "id": "N4-語彙-v13-13",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-13"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "次の文章を読んで、質問に答えてください。「私は毎朝7時に起きて、朝ごはんを食べます。その後、8時に家を出て、電車で会社に行きます。会社には9時に着きます。仕事が終わるのは午後6時です。」この人は何時に起きますか。",
+    "options": [
+      "7時",
+      "6時",
+      "8時",
+      "9時"
+    ],
+    "answer": 0,
+    "explanation": "文章には「私は毎朝7時に起きて」とあります。",
+    "id": "N4-語彙-v13-14",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-語彙-v13-14"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "grammar",
+    "type": "fill_in_the_blank",
+    "question": "明日の天気は______でしょう。",
+    "options": [
+      "晴れ",
+      "晴れる",
+      "晴れて",
+      "晴れた"
+    ],
+    "answer": 0,
+    "explanation": "「でしょう」は名詞の形を取り、「晴れ」が正しいです。",
+    "id": "N4-文法-v13-01",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-文法-v13-01"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "grammar",
+    "type": "fill_in_the_blank",
+    "question": "私は毎朝コーヒーを______。",
+    "options": [
+      "飲みます",
+      "飲む",
+      "飲んで",
+      "飲み"
+    ],
+    "answer": 0,
+    "explanation": "「毎朝」は習慣を表すので、動詞は現在形にします。「飲みます」が正しいです。",
+    "id": "N4-文法-v13-02",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-文法-v13-02"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "grammar",
+    "type": "fill_in_the_blank",
+    "question": "昨日は______です。",
+    "options": [
+      "雨",
+      "雨が",
+      "雨で",
+      "雨の"
+    ],
+    "answer": 0,
+    "explanation": "「です」は名詞の形を取り、「雨」が正しいです。",
+    "id": "N4-文法-v13-03",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-文法-v13-03"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "grammar",
+    "type": "fill_in_the_blank",
+    "question": "私は______を勉強しています。",
+    "options": [
+      "日本語",
+      "日本語の",
+      "日本語に",
+      "日本語で"
+    ],
+    "answer": 0,
+    "explanation": "「を勉強しています」は名詞を直接受けるので、「日本語」が正しいです。",
+    "id": "N4-文法-v13-04",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-文法-v13-04"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "context",
+    "question": "電子メール:\n\nこんにちは、田中さん。\n\nいつもお世話になっております。山田です。\n\n来週の会議についてご連絡いたします。前回お知らせした通り、今回の会議は新しいプロジェクトの進め方や、今月の売り上げ目標について話し合う大切なものです。皆さんの予定を確認した結果、会議は【来週の月曜日の10時から】行うことになりました。午前中のほうが集中しやすいという意見が多かったため、この時間に決まりました。\n\n場所は、いつも全体会議で使っている【いつもの会議室】です。前回と同じ建物の3階、一番奥の会議室Aになります。プロジェクターやホワイトボードもすでに予約してありますので、特に準備していただくものはありませんが、必要であれば各自の資料やノートパソコンをお持ちください。\n\n会議の予定時間は1時間から1時間半ほどを考えていますが、内容によっては少し延びる可能性もあります。その場合は、途中で5分ほど休憩を入れる予定です。\n\nつきましては、田中さんがこの会議に【出席できるかどうか】を、本日中にこのメールに返信する形で確認させてください。もし月曜日の10時が難しい場合は、他の時間帯の希望も教えていただければ、必要に応じて再度調整を検討します。ただし、基本的にはこの日時で進めたいと考えています。\n\nご多用のところ恐縮ですが、出席の可否についてのご連絡をよろしくお願いいたします。\n\nそれでは、当日お会いできるのを楽しみにしております。\n\n山田",
+    "options": [
+      "会議は火曜日です。",
+      "会議はいつもの場所です。",
+      "会議は午後です。",
+      "山田さんが出席します。"
+    ],
+    "answer": 1,
+    "explanation": "メールの内容に「場所は、いつもの会議室です」とあり、会議はいつもの場所で行われることがわかります。",
+    "id": "N4-讀解-v13-01",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-讀解-v13-01"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "context",
+    "question": "通知: 1年A組の皆さんへ。来週予定されている学校の文化祭についてお知らせします。文化祭は今週の土曜日に行われます。時間は午前9時から午後3時までです。当日は、体育館でのオープニングセレモニーのあと、各教室でクラスごとの展示や発表があります。1年A組は、教室で世界の料理をテーマにした展示を行い、簡単なクイズも用意する予定です。準備は前日の金曜日の放課後に行いますので、クラス全員、参加してください。また、文化祭には、ぜひ家族でお越しください。保護者の方や小さい兄弟姉妹も、自由に校内を見て回ることができます。受付は正門を入ってすぐ右側で、そこでパンフレットを配ります。文化祭は雨でも中止になりませんが、体調が悪い場合は無理をしないようにしてください。楽しい思い出を作るために、みんなで協力しましょう。",
+    "options": [
+      "文化祭は日曜日です。",
+      "文化祭は午後からです。",
+      "家族で参加できます。",
+      "文化祭は中止です。"
+    ],
+    "answer": 2,
+    "explanation": "通知に「ぜひ家族でお越しください」と書いてあるので、家族で参加できます。",
+    "id": "N4-讀解-v13-02",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-讀解-v13-02"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "short_passage",
+    "question": "私は毎朝6時に起きて、まず顔を洗います。それから朝ごはんを食べます。朝ごはんの後は少しテレビを見てから仕事に行きます。仕事は9時に始まりますが、私は8時半までに会社に着くようにしています。会社では毎日たくさんのメールを読み、それに返信します。お昼ごはんは同僚と一緒に食べることが多いです。午後は会議がある日もありますが、会議がない日は資料を作ったり、報告書を書いたりします。仕事が終わるとまっすぐ家に帰りますが、時々友達と飲みに行くこともあります。家に帰ったら、まず晩ごはんを作ります。晩ごはんを食べた後は、少しテレビを見たり、本を読んだりして過ごします。寝る前には必ずシャワーを浴びて、11時ごろには寝ます。",
+    "options": [
+      "私は毎朝7時に起きます。",
+      "仕事は8時に始まります。",
+      "昼ごはんは一人で食べます。",
+      "晩ごはんを作ります。"
+    ],
+    "answer": 3,
+    "explanation": "文中に「晩ごはんを作ります」とあります。",
+    "id": "N4-讀解-v13-03",
+    "tags": [
+      "N4",
+      "v13",
+      "N4-讀解-v13-03"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:17:13",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
   }
 ]

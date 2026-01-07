@@ -6792,5 +6792,4577 @@
       "model": "models/gemini-2.5-pro",
       "batch": "v07"
     }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-01"
+    ],
+    "type": "kanji_reading",
+    "question": "「学校」這個詞的正確讀音是？",
+    "options": [
+      "がっこう",
+      "がくこ",
+      "がこう",
+      "がくごう"
+    ],
+    "answer": 0,
+    "explanation": "「学校」在日文中讀作「がっこう」。其中「学」讀作「がく」，和後面的「こ」連在一起時產生促音「っ」，變成「がっこう」。其他選項並非正確讀音。",
+    "id": "N5-語彙-v08-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-02"
+    ],
+    "type": "kanji_meaning",
+    "question": "「先生」在日文中的意思是？",
+    "options": [
+      "醫生",
+      "老師／先生",
+      "學生",
+      "朋友"
+    ],
+    "answer": 1,
+    "explanation": "「先生（せんせい）」在日文中指「老師」或在某領域有專業的人，也可稱為「先生」。N5 常見用法是指學校老師。",
+    "id": "N5-語彙-v08-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-03"
+    ],
+    "type": "word_choice",
+    "question": "要表示「我每天喝水」，空格中最適合填入哪一個詞？\nまいにち　＿＿＿ を　のみます。",
+    "options": [
+      "みず",
+      "おゆ",
+      "おちゃ",
+      "ジュース"
+    ],
+    "answer": 0,
+    "explanation": "「みず」是「水」的日文，句子「まいにち みずを のみます。」是「我每天喝水」。其他選項是熱水、茶、果汁，與題目「水」不符。",
+    "id": "N5-語彙-v08-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-04"
+    ],
+    "type": "word_choice",
+    "question": "要說「我有一隻狗」，應該用哪一個名詞？\nいぬ が ＿＿＿。",
+    "options": [
+      "います",
+      "いきます",
+      "たべます",
+      "のみます"
+    ],
+    "answer": 0,
+    "explanation": "這題考動詞的基本用法。「いぬが います。」是「有一隻狗」或「狗在（那裡）」。います用於有生命的存在。其他是「去」「吃」「喝」，語意不合。",
+    "id": "N5-語彙-v08-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-05"
+    ],
+    "type": "kanji_reading",
+    "question": "「日本」這個詞的正確讀音是？",
+    "options": [
+      "にっぽん",
+      "にほん",
+      "にちほん",
+      "にちぽん"
+    ],
+    "answer": 1,
+    "explanation": "在日常會話與N5程度，最常見讀法是「にほん」。雖然「にっぽん」也正確，但在初級考題通常以「にほん」為標準答案。",
+    "id": "N5-語彙-v08-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-06"
+    ],
+    "type": "kanji_meaning",
+    "question": "「月曜日」在日文中是指星期幾？",
+    "options": [
+      "星期日",
+      "星期一",
+      "星期二",
+      "星期三"
+    ],
+    "answer": 1,
+    "explanation": "「月曜日（げつようび）」是星期一。「日曜日」才是星期日，「火曜日」是星期二，「水曜日」是星期三。",
+    "id": "N5-語彙-v08-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-07"
+    ],
+    "type": "word_choice",
+    "question": "要說「這本書很便宜」，空格中應該填入哪個形容詞？\nこの ほん は ＿＿＿ です。",
+    "options": [
+      "たかい",
+      "やすい",
+      "おおきい",
+      "あたらしい"
+    ],
+    "answer": 1,
+    "explanation": "題目要表達「便宜」，日文是「やすい」。\nたかい：高的／貴的；おおきい：大的；あたらしい：新的。",
+    "id": "N5-語彙-v08-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-08"
+    ],
+    "type": "kanji_reading",
+    "question": "「友だち」這個詞的正確讀音是？",
+    "options": [
+      "ともだち",
+      "ゆうだち",
+      "ゆうとも",
+      "ともたち"
+    ],
+    "answer": 0,
+    "explanation": "「友だち」讀作「ともだち」，意思是「朋友」。其他選項不是正確讀音或不存在的詞。",
+    "id": "N5-語彙-v08-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-09"
+    ],
+    "type": "word_choice",
+    "question": "要說「我在圖書館讀書」，空格中最適合填入哪一個詞？\nとしょかん で ＿＿＿ を よみます。",
+    "options": [
+      "ほん",
+      "えいが",
+      "でんしゃ",
+      "うた"
+    ],
+    "answer": 0,
+    "explanation": "在圖書館最自然的行為是「讀書」，日文是「本（ほん）を よみます」。其他像電影、電車、歌都不會用「讀」這個動詞。",
+    "id": "N5-語彙-v08-09",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-10"
+    ],
+    "type": "kanji_meaning",
+    "question": "「駅」這個漢字在日文中的意思是？",
+    "options": [
+      "醫院",
+      "車站",
+      "學校",
+      "公司"
+    ],
+    "answer": 1,
+    "explanation": "「駅（えき）」是「車站」的意思，多指電車站或地鐵站。醫院是「病院」、學校是「学校」、公司是「会社」。",
+    "id": "N5-語彙-v08-10",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Particles",
+      "N5",
+      "v08",
+      "N5-文法-v08-01"
+    ],
+    "type": "particle_choice",
+    "question": "私は 日本＿＿ 行きます。",
+    "options": [
+      "を",
+      "に",
+      "で",
+      "が"
+    ],
+    "answer": 1,
+    "explanation": "表示「去某個地方」時，地點後面用助詞「に」。\n「日本に 行きます。」=「我要去日本。」\n「を」是賓語、「で」是動作場所、「が」是主語。",
+    "id": "N5-文法-v08-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-02"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確語序排列，組成一句自然的日文句子：\n★ たべます　★ てんぷらを　★ わたしは",
+    "options": [
+      "わたしは → てんぷらを → たべます",
+      "てんぷらを → わたしは → たべます",
+      "たべます → わたしは → てんぷらを",
+      "わたしは → たべます → てんぷらを"
+    ],
+    "answer": 0,
+    "explanation": "日文基本語序是「主語 + 受詞 + 動詞」。\n「わたしは（主語）→ てんぷらを（受詞）→ たべます（動詞）」\n整句意思是「我吃天婦羅」。",
+    "id": "N5-文法-v08-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-03"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確語序排列：\n★ きのう　★ えいがを　★ みました",
+    "options": [
+      "きのう → えいがを → みました",
+      "えいがを → きのう → みました",
+      "みました → きのう → えいがを",
+      "きのう → みました → えいがを"
+    ],
+    "answer": 0,
+    "explanation": "時間詞通常放在句首，接著是受詞，最後是動詞：\n「きのう（昨天）→ えいがを（電影）→ みました（看了）」\n整句是「昨天看了電影」。",
+    "id": "N5-文法-v08-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-04"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確語序排列：\n★ ７じに　★ おきます　★ わたしは",
+    "options": [
+      "わたしは → ７じに → おきます",
+      "７じに → わたしは → おきます",
+      "おきます → ７じに → わたしは",
+      "わたしは → おきます → ７じに"
+    ],
+    "answer": 0,
+    "explanation": "主語在前，時間用「〜に」，動詞在句尾：\n「わたしは（我）→ ７じに（在七點）→ おきます（起床）」\n意思是「我七點起床」。",
+    "id": "N5-文法-v08-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Desu",
+      "N5",
+      "v08",
+      "N5-文法-v08-05"
+    ],
+    "type": "form_choice",
+    "question": "下列哪一句是正確的現在肯定句？",
+    "options": [
+      "これは ほん です。",
+      "これは ほん でした。",
+      "これは ほん じゃないです。",
+      "これは ほん じゃありませんでした。"
+    ],
+    "answer": 0,
+    "explanation": "題目問「現在肯定句」，所以要用「です」。\n① これは ほん です。= 這是書。（現在肯定）\n② 是過去肯定；③ 是否定；④ 是過去否定。",
+    "id": "N5-文法-v08-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-06"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確語序排列：\n★ にほんごを　★ べんきょうします　★ まいにち",
+    "options": [
+      "まいにち → にほんごを → べんきょうします",
+      "にほんごを → まいにち → べんきょうします",
+      "べんきょうします → まいにち → にほんごを",
+      "まいにち → べんきょうします → にほんごを"
+    ],
+    "answer": 0,
+    "explanation": "時間（每天）→ 受詞（日文）→ 動詞（學習）：\n「まいにち にほんごを べんきょうします。」\n意思是「我每天學日文」。",
+    "id": "N5-文法-v08-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Particles",
+      "N5",
+      "v08",
+      "N5-文法-v08-07"
+    ],
+    "type": "particle_choice",
+    "question": "この くつ＿＿ いくらですか。",
+    "options": [
+      "に",
+      "で",
+      "が",
+      "は"
+    ],
+    "answer": 3,
+    "explanation": "「～はいくらですか。」是固定句型，用來問價格。\n「このくつは いくらですか。」=「這雙鞋多少錢？」\n因此要用提示主題的助詞「は」。",
+    "id": "N5-文法-v08-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Verb_form",
+      "N5",
+      "v08",
+      "N5-文法-v08-08"
+    ],
+    "type": "form_choice",
+    "question": "要表示「不去」，哪一個是否定形？",
+    "options": [
+      "いきます",
+      "いきません",
+      "いきました",
+      "いきませんでした"
+    ],
+    "answer": 1,
+    "explanation": "「いきません」是「行きます」的現在否定形，意思是「不去」。\n「いきました」是過去肯定，「いきませんでした」是過去否定。",
+    "id": "N5-文法-v08-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-09"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確語序排列：\n★ テーブルの　★ うえに　★ ねこが　★ います",
+    "options": [
+      "テーブルの → うえに → ねこが → います",
+      "ねこが → テーブルの → うえに → います",
+      "テーブルの → ねこが → うえに → います",
+      "ねこが → います → テーブルの → うえに"
+    ],
+    "answer": 0,
+    "explanation": "表示位置時，先說場所＋の＋方位，再接「に」，然後主語＋います：\n「テーブルの うえに ねこが います。」=「桌子上有一隻貓。」",
+    "id": "N5-文法-v08-09",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Question",
+      "N5",
+      "v08",
+      "N5-文法-v08-10"
+    ],
+    "type": "form_choice",
+    "question": "要把「どこですか。」變成完整的問句，最自然的是哪一句？",
+    "options": [
+      "トイレは どこですか。",
+      "トイレは どこでしたか。",
+      "トイレは どこじゃないですか。",
+      "トイレは どこじゃありませんでしたか。"
+    ],
+    "answer": 0,
+    "explanation": "最基本、最常用的問法是現在肯定的疑問句：「トイレは どこですか。」=「洗手間在哪裡？」其餘為過去或否定，語意不自然。",
+    "id": "N5-文法-v08-10",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-11"
+    ],
+    "type": "kanji_reading",
+    "question": "「先生」在日文中的正確讀音是？",
+    "options": [
+      "せんせ",
+      "せんせい",
+      "さんせい",
+      "せいせん"
+    ],
+    "answer": 1,
+    "explanation": "「先生」念作「せんせい」，意思是「老師、先生」。N5 常見。其他選項不是正確的慣用讀音。",
+    "id": "N5-語彙-v08-11",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-12"
+    ],
+    "type": "kanji_reading",
+    "question": "「水」這個漢字的讀音是？",
+    "options": [
+      "みす",
+      "みず",
+      "すい",
+      "みずう"
+    ],
+    "answer": 1,
+    "explanation": "「水」的常用訓讀是「みず」，意思是「水」。雖然音讀有「すい」，但在單獨一字、N5 生活用語中多用「みず」。",
+    "id": "N5-語彙-v08-12",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-13"
+    ],
+    "type": "kanji_reading",
+    "question": "「山」這個漢字在「山にのぼります」中的讀音是？",
+    "options": [
+      "やま",
+      "さん",
+      "やまう",
+      "せん"
+    ],
+    "answer": 0,
+    "explanation": "「山にのぼります」（爬山）中的「山」讀作「やま」，是訓讀。音讀「さん」多用在「富士山（ふじさん）」等詞。",
+    "id": "N5-語彙-v08-13",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-14"
+    ],
+    "type": "kanji_reading",
+    "question": "「大きい」的意思是？",
+    "options": [
+      "小的",
+      "高的",
+      "大的",
+      "短的"
+    ],
+    "answer": 2,
+    "explanation": "「大きい」（おおきい）意思是「大的」。N5 常見形容詞。對應反義詞為「小さい」（ちいさい，小的）。",
+    "id": "N5-語彙-v08-14",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-15"
+    ],
+    "type": "kanji_reading",
+    "question": "「高い」在「このビルは高いです。」中的意思是？",
+    "options": [
+      "便宜的",
+      "高的（高度高）",
+      "矮的",
+      "安靜的"
+    ],
+    "answer": 1,
+    "explanation": "「このビルは高いです。」表示「這棟大樓很高」。此處「高い」指高度高。也可以表示「價格高」，要看語境。",
+    "id": "N5-語彙-v08-15",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-16"
+    ],
+    "type": "kanji_reading",
+    "question": "「毎日」這個詞的正確意思是？",
+    "options": [
+      "每天",
+      "每週",
+      "每年",
+      "每月"
+    ],
+    "answer": 0,
+    "explanation": "「毎日」（まいにち）意思是「每天」。與之對應的還有「毎週（まいしゅう）」、「毎年（まいとし／まいねん）」。",
+    "id": "N5-語彙-v08-16",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-17"
+    ],
+    "type": "kanji_reading",
+    "question": "「友だち」的正確中文意思是？",
+    "options": [
+      "老師",
+      "朋友",
+      "家人",
+      "同學（限定學校）"
+    ],
+    "answer": 1,
+    "explanation": "「友だち」（ともだち）是「朋友」的意思，不限定是否同學或同事，只要是朋友都可以用。",
+    "id": "N5-語彙-v08-17",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v08",
+      "N5-語彙-v08-18"
+    ],
+    "type": "kanji_reading",
+    "question": "「駅」在句子「駅まで歩きます。」中最適合的中文意思是？",
+    "options": [
+      "車站",
+      "學校",
+      "公司",
+      "公園"
+    ],
+    "answer": 0,
+    "explanation": "「駅」（えき）指的是「車站」，通常是電車、地鐵站。「駅まで歩きます。」就是「走路到車站」。",
+    "id": "N5-語彙-v08-18",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-11"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確的語序：\n（去日本  明年  我）",
+    "options": [
+      "来年＊日本へ＊行きます＊私は",
+      "私は＊来年＊日本へ＊行きます",
+      "日本へ＊私は＊行きます＊来年",
+      "来年＊私は＊行きます＊日本へ"
+    ],
+    "answer": 1,
+    "explanation": "最自然、初級教科書常用的語序為「私は＊来年＊日本へ＊行きます。」主語→時間→目的地→動詞，結構清楚。",
+    "id": "N5-文法-v08-11",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v08",
+      "N5-文法-v08-12"
+    ],
+    "type": "particle_choice",
+    "question": "毎朝７時＿＿起きます。",
+    "options": [
+      "で",
+      "に",
+      "へ",
+      "を"
+    ],
+    "answer": 1,
+    "explanation": "表示「在幾點做某事」時，用時間助詞「に」。所以是「７時に起きます。」＝「七點起床」。",
+    "id": "N5-文法-v08-12",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v08",
+      "N5-文法-v08-13"
+    ],
+    "type": "form_choice",
+    "question": "ご飯を＿＿から、宿題をします。（先吃飯）",
+    "options": [
+      "食べ",
+      "食べて",
+      "食べた",
+      "食べます"
+    ],
+    "answer": 1,
+    "explanation": "接續動作「～てから」：動詞て形＋から。「ご飯を食べてから、宿題をします。」＝「吃完飯之後寫作業。」",
+    "id": "N5-文法-v08-13",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-14"
+    ],
+    "type": "star_ordering",
+    "question": "請選出最自然的語序：\n（在圖書館  書  讀  我）",
+    "options": [
+      "図書館で＊私は＊本を＊読みます",
+      "私は＊本を＊図書館で＊読みます",
+      "本を＊図書館で＊私は＊読みます",
+      "私は＊図書館で＊本を＊読みます"
+    ],
+    "answer": 3,
+    "explanation": "「私は＊図書館で＊本を＊読みます。」主語→場所→受詞→動詞，對初學者來說最標準、自然。",
+    "id": "N5-文法-v08-14",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v08",
+      "N5-文法-v08-15"
+    ],
+    "type": "polite_form",
+    "question": "「行きます」的普通形是？",
+    "options": [
+      "行く",
+      "行った",
+      "行こう",
+      "行きたい"
+    ],
+    "answer": 0,
+    "explanation": "動詞「行きます」的辭書形（普通形）是「行く」。N5 常見的敬體⇔普通體對應。",
+    "id": "N5-文法-v08-15",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-16"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確語序：\n（不  很  日本語  難）",
+    "options": [
+      "日本語は＊とても＊難しくないです",
+      "日本語は＊あまり＊難しくないです",
+      "日本語は＊あまり＊難しいです",
+      "日本語は＊とても＊難しいないです"
+    ],
+    "answer": 1,
+    "explanation": "表示「不太～」時，用「あまり～ない」。所以是「日本語はあまり難しくないです。」＝「日文不太難。」",
+    "id": "N5-文法-v08-16",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v08",
+      "N5-文法-v08-17"
+    ],
+    "type": "particle_choice",
+    "question": "この本＿＿だれのですか。",
+    "options": [
+      "は",
+      "が",
+      "の",
+      "を"
+    ],
+    "answer": 0,
+    "explanation": "話題提示用「は」：「この本はだれのですか。」＝「這本書是誰的？」表示「這本書」是話題。",
+    "id": "N5-文法-v08-17",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-18"
+    ],
+    "type": "star_ordering",
+    "question": "請選出最自然的句子：\n（買いました  昨日  新しい  くつを）",
+    "options": [
+      "昨日＊新しい＊くつを＊買いました",
+      "新しい＊昨日＊くつを＊買いました",
+      "くつを＊昨日＊新しい＊買いました",
+      "昨日＊くつを＊新しい＊買いました"
+    ],
+    "answer": 0,
+    "explanation": "標準語序：時間→形容詞＋名詞→動詞。「昨日＊新しい＊くつを＊買いました。」＝「昨天買了新鞋。」",
+    "id": "N5-文法-v08-18",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v08",
+      "N5-文法-v08-19"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確語序：\n（會  一點  我  日文）",
+    "options": [
+      "私は＊日本語が＊少し＊できます",
+      "日本語が＊私は＊少し＊できます",
+      "少し＊私は＊日本語が＊できます",
+      "私は＊少し＊日本語が＊できます"
+    ],
+    "answer": 3,
+    "explanation": "「私は＊少し＊日本語が＊できます。」主語→程度副詞→能力對象→動詞，語感最自然；N5 教材常見說法。",
+    "id": "N5-文法-v08-19",
+    "metadata": {
+      "generated_at": "2025-12-08 23:50:04",
+      "model": "gpt-5.1",
+      "batch": "v08"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N5",
+      "v09",
+      "N5-語彙-v09-01"
+    ],
+    "type": "word_meaning",
+    "question": "「高い」在下列哪一個意思最常見？",
+    "options": [
+      "便宜的",
+      "高的／貴的",
+      "新的",
+      "安靜的"
+    ],
+    "answer": 1,
+    "explanation": "「高い（たかい）」常用來表示「高的」或「價錢貴的」。便宜是「安い」、新的「新しい」、安靜的「静かな」。",
+    "id": "N5-語彙-v09-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N5",
+      "v09",
+      "N5-語彙-v09-02"
+    ],
+    "type": "word_meaning",
+    "question": "「朝」在日文中一般是指？",
+    "options": [
+      "中午",
+      "晚上",
+      "早上",
+      "下午"
+    ],
+    "answer": 2,
+    "explanation": "「朝（あさ）」是「早上、清晨」的意思。中午是「昼（ひる）」、下午可說「午後（ごご）」、晚上是「夜（よる）」。",
+    "id": "N5-語彙-v09-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v09",
+      "N5-語彙-v09-03"
+    ],
+    "type": "kanji_reading",
+    "question": "「山」這個漢字在日文中的讀音是哪一個？（單獨一字）",
+    "options": [
+      "やま",
+      "かわ",
+      "はな",
+      "そら"
+    ],
+    "answer": 0,
+    "explanation": "「山」單獨一字時讀作「やま」，意思是「山」。「かわ」是川（河川）、「はな」是花／鼻、「そら」是空。",
+    "id": "N5-語彙-v09-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v09",
+      "N5-語彙-v09-04"
+    ],
+    "type": "kanji_reading",
+    "question": "「車」的讀音是？（單獨一字）",
+    "options": [
+      "くち",
+      "くるま",
+      "くらま",
+      "しゃ"
+    ],
+    "answer": 1,
+    "explanation": "「車」常見的訓讀是「くるま」，意思是「車子」。「くち」是口、「しゃ」多用於複合字如「電車（でんしゃ）」。",
+    "id": "N5-語彙-v09-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Particle",
+      "N5",
+      "v09",
+      "N5-文法-v09-01"
+    ],
+    "type": "multiple_choice",
+    "question": "私は日本語＿勉強します。",
+    "options": [
+      "を",
+      "が",
+      "で",
+      "に"
+    ],
+    "answer": 0,
+    "explanation": "「～を勉強します」表示「學習～」。「日本語を勉強します」=「學日文」。此處「を」標示動作的直接受詞。",
+    "id": "N5-文法-v09-01",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Particle",
+      "N5",
+      "v09",
+      "N5-文法-v09-02"
+    ],
+    "type": "multiple_choice",
+    "question": "図書館＿本を読みます。",
+    "options": [
+      "を",
+      "が",
+      "で",
+      "に"
+    ],
+    "answer": 2,
+    "explanation": "在場所進行某動作時，用助詞「で」。「図書館で本を読みます」=「在圖書館看書」。",
+    "id": "N5-文法-v09-02",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Copula",
+      "N5",
+      "v09",
+      "N5-文法-v09-03"
+    ],
+    "type": "multiple_choice",
+    "question": "これは私の本＿。",
+    "options": [
+      "です",
+      "ます",
+      "でした",
+      "ません"
+    ],
+    "answer": 0,
+    "explanation": "句尾需要判斷句「是～」的禮貌形，用「です」。「これは私の本です。」=「這是我的書。」",
+    "id": "N5-文法-v09-03",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-04"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確順序排列成一句通順的句子：\n「学校へ★行きます★明日★。」",
+    "options": [
+      "明日★学校へ★行きます★。",
+      "学校へ★明日★行きます★。",
+      "行きます★明日★学校へ★。",
+      "学校へ★行きます★明日★。"
+    ],
+    "answer": 0,
+    "explanation": "自然的語序為「明日、学校へ行きます。」表示「明天要去學校」。時間（明日）通常放在句首，之後是場所＋へ＋動詞。",
+    "id": "N5-文法-v09-04",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-05"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依正確順序排列：\n「日本語を★田中さんは★勉強します★。」",
+    "options": [
+      "田中さんは★日本語を★勉強します★。",
+      "日本語を★勉強します★田中さんは★。",
+      "勉強します★田中さんは★日本語を★。",
+      "日本語を★田中さんは★勉強します★。"
+    ],
+    "answer": 0,
+    "explanation": "標準語序是「田中さんは日本語を勉強します。」主題（田中さんは）在前，之後是受詞＋を＋動詞。",
+    "id": "N5-文法-v09-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-06"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確的語序：\n「映画を★見ます★夜★。」",
+    "options": [
+      "映画を★夜★見ます★。",
+      "夜★映画を★見ます★。",
+      "見ます★映画を★夜★。",
+      "映画を★見ます★夜★。"
+    ],
+    "answer": 1,
+    "explanation": "最自然的說法是「夜、映画を見ます。」時間（夜）在前，其次是受詞（映画を）、最後是動詞（見ます）。",
+    "id": "N5-文法-v09-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-07"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語排成正確句子：\n「公園で★犬と★遊びます★私は★。」",
+    "options": [
+      "私は★公園で★犬と★遊びます★。",
+      "公園で★私は★犬と★遊びます★。",
+      "犬と★公園で★私は★遊びます★。",
+      "私は★犬と★公園で★遊びます★。"
+    ],
+    "answer": 0,
+    "explanation": "基本語序為「私は公園で犬と遊びます。」主語（私は）在最前，其次是場所（公園で）、對象（犬と）、動詞（遊びます）。",
+    "id": "N5-文法-v09-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-08"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確的排列：\n「おいしいです★このケーキは★とても★。」",
+    "options": [
+      "このケーキは★とても★おいしいです★。",
+      "とても★このケーキは★おいしいです★。",
+      "おいしいです★このケーキは★とても★。",
+      "このケーキは★おいしいです★とても★。"
+    ],
+    "answer": 0,
+    "explanation": "正確句子是「このケーキはとてもおいしいです。」主題（このケーキは）在前，程度副詞「とても」修飾形容詞「おいしいです」。",
+    "id": "N5-文法-v09-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Verb_form",
+      "N5",
+      "v09",
+      "N5-文法-v09-09"
+    ],
+    "type": "multiple_choice",
+    "question": "空欄に入る最も適切なものは？\n毎朝７時に起き＿。",
+    "options": [
+      "です",
+      "ます",
+      "ました",
+      "ません"
+    ],
+    "answer": 1,
+    "explanation": "動詞「起きます」的現在肯定形用「ます」結尾。「毎朝７時に起きます。」=「每天早上七點起床。」",
+    "id": "N5-文法-v09-09",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Adjective",
+      "N5",
+      "v09",
+      "N5-文法-v09-10"
+    ],
+    "type": "multiple_choice",
+    "question": "この本はあの本より＿＿です。",
+    "options": [
+      "高い",
+      "高く",
+      "高かった",
+      "高くないで"
+    ],
+    "answer": 0,
+    "explanation": "形容詞在「～より～です」比較句中用基本形：「この本はあの本より高いです。」=「這本書比那本貴。」",
+    "id": "N5-文法-v09-10",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v09",
+      "N5-語彙-v09-05"
+    ],
+    "type": "kanji_meaning",
+    "question": "「学校」的意思是什麼？",
+    "options": [
+      "醫院",
+      "學校",
+      "圖書館",
+      "公司"
+    ],
+    "answer": 1,
+    "explanation": "「学校（がっこう）」意思是學校。醫院是「病院（びょういん）」，圖書館是「図書館（としょかん）」，公司是「会社（かいしゃ）」。",
+    "id": "N5-語彙-v09-05",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v09",
+      "N5-語彙-v09-06"
+    ],
+    "type": "word_choice",
+    "question": "要表達「早安」，應該使用哪一句？",
+    "options": [
+      "こんばんは",
+      "おはようございます",
+      "さようなら",
+      "ありがとう"
+    ],
+    "answer": 1,
+    "explanation": "「おはようございます」是早上使用的「早安」。こんばんは（晚上好）、さようなら（再見）、ありがとう（謝謝）。",
+    "id": "N5-語彙-v09-06",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v09",
+      "N5-語彙-v09-07"
+    ],
+    "type": "word_choice",
+    "question": "要說「謝謝」，最常用的是哪一個？",
+    "options": [
+      "ごめんなさい",
+      "はじめまして",
+      "ありがとう",
+      "いらっしゃいませ"
+    ],
+    "answer": 2,
+    "explanation": "「ありがとう」是一般的「謝謝」。ごめんなさい（對不起）、はじめまして（初次見面）、いらっしゃいませ（歡迎光臨）。",
+    "id": "N5-語彙-v09-07",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v09",
+      "N5-語彙-v09-08"
+    ],
+    "type": "word_choice",
+    "question": "下列哪一個是「書」的日文？",
+    "options": [
+      "えんぴつ",
+      "かみ",
+      "ノート",
+      "ほん"
+    ],
+    "answer": 3,
+    "explanation": "「ほん（本）」是書。えんぴつ（鉛筆）、かみ（紙）、ノート（筆記本）。",
+    "id": "N5-語彙-v09-08",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v09",
+      "N5-語彙-v09-09"
+    ],
+    "type": "word_choice",
+    "question": "要表達「我家」時，應該用哪一個詞？",
+    "options": [
+      "へや",
+      "いえ",
+      "くるま",
+      "みせ"
+    ],
+    "answer": 1,
+    "explanation": "「いえ」是「家、房子」的意思。へや（房間）、くるま（車）、みせ（店）。",
+    "id": "N5-語彙-v09-09",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v09",
+      "N5-語彙-v09-10"
+    ],
+    "type": "word_choice",
+    "question": "「先生」在日文裡最常指？",
+    "options": [
+      "醫生、老師等專業人士",
+      "學生",
+      "朋友",
+      "家人"
+    ],
+    "answer": 0,
+    "explanation": "「先生（せんせい）」常用來稱呼老師、醫生等有專業地位的人，不用來叫自己的家人或朋友。",
+    "id": "N5-語彙-v09-10",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v09",
+      "N5-語彙-v09-11"
+    ],
+    "type": "word_choice",
+    "question": "要說「學生」時，應該用哪一個？",
+    "options": [
+      "がくせい",
+      "せんせい",
+      "かいしゃいん",
+      "いしゃ"
+    ],
+    "answer": 0,
+    "explanation": "「がくせい（学生）」是學生。せんせい（先生，老師）、かいしゃいん（公司職員）、いしゃ（醫者，醫生）。",
+    "id": "N5-語彙-v09-11",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v09",
+      "N5-語彙-v09-12"
+    ],
+    "type": "kanji_meaning",
+    "question": "「月曜日」的意思是？",
+    "options": [
+      "星期一",
+      "星期二",
+      "星期三",
+      "星期日"
+    ],
+    "answer": 0,
+    "explanation": "「月曜日（げつようび）」是星期一。火曜日（かようび，星期二）、水曜日（すいようび，星期三）、日曜日（にちようび，星期日）。",
+    "id": "N5-語彙-v09-12",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v09",
+      "N5-文法-v09-11"
+    ],
+    "type": "fill_blank",
+    "question": "明日、友だち___映画を見ます。",
+    "options": [
+      "と",
+      "に",
+      "が",
+      "で"
+    ],
+    "answer": 0,
+    "explanation": "和誰一起做某事時，用「～と」。句子為「明日、友だちと映画を見ます。」意思是「明天和朋友看電影」。",
+    "id": "N5-文法-v09-11",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-12"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確語序：\n★ いきます　★ 学校へ　★ 明日",
+    "options": [
+      "明日★学校へ★いきます",
+      "学校へ★明日★いきます",
+      "いきます★明日★学校へ",
+      "明日★いきます★学校へ"
+    ],
+    "answer": 0,
+    "explanation": "自然語序是「明日、学校へいきます。」先說時間（明日），再說方向（学校へ），最後是動詞（いきます）。意思是「明天去學校」。",
+    "id": "N5-文法-v09-12",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-13"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確語序：\n★ 飲みます　★ 水を　★ 毎朝",
+    "options": [
+      "毎朝★水を★飲みます",
+      "水を★毎朝★飲みます",
+      "飲みます★毎朝★水を",
+      "毎朝★飲みます★水を"
+    ],
+    "answer": 0,
+    "explanation": "基本語序為「時間＋賓語＋動詞」，所以「毎朝、水を飲みます。」最自然。意思是「我每天早上喝水」。",
+    "id": "N5-文法-v09-13",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v09",
+      "N5-文法-v09-14"
+    ],
+    "type": "fill_blank",
+    "question": "これは田中さん___本です。",
+    "options": [
+      "を",
+      "が",
+      "の",
+      "に"
+    ],
+    "answer": 2,
+    "explanation": "名詞修飾名詞時用「の」，表示「～的」。句子為「これは田中さんの本です。」意思是「這是田中先生的書」。",
+    "id": "N5-文法-v09-14",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v09",
+      "N5-文法-v09-15"
+    ],
+    "type": "fill_blank",
+    "question": "図書館___勉強します。",
+    "options": [
+      "に",
+      "で",
+      "へ",
+      "が"
+    ],
+    "answer": 1,
+    "explanation": "在某場所做動作時用「で」。句子為「図書館で勉強します。」意思是「在圖書館學習」。",
+    "id": "N5-文法-v09-15",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-16"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確語序：\n★ ねます　★ １１時に　★ いつも",
+    "options": [
+      "いつも★１１時に★ねます",
+      "１１時に★いつも★ねます",
+      "ねます★いつも★１１時に",
+      "いつも★ねます★１１時に"
+    ],
+    "answer": 0,
+    "explanation": "頻率副詞（いつも）通常放在主語之後、動詞之前；時間（１１時に）也常放在動詞前。句子「いつも１１時にねます。」意思是「我總是十一點睡覺」。",
+    "id": "N5-文法-v09-16",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v09",
+      "N5-文法-v09-17"
+    ],
+    "type": "star_ordering",
+    "question": "請選出正確語序：\n★ たべます　★ パンを　★ あさごはんに",
+    "options": [
+      "あさごはんに★パンを★たべます",
+      "パンを★あさごはんに★たべます",
+      "たべます★パンを★あさごはんに",
+      "あさごはんに★たべます★パンを"
+    ],
+    "answer": 0,
+    "explanation": "「あさごはんに」表示在早餐時，「パンを」是受詞，最後是動詞「たべます」。句子「あさごはんにパンをたべます。」意思是「早餐吃麵包」。",
+    "id": "N5-文法-v09-17",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v09",
+      "N5-文法-v09-18"
+    ],
+    "type": "fill_blank",
+    "question": "今、何時___分ですか。",
+    "options": [
+      "を",
+      "が",
+      "に",
+      "です"
+    ],
+    "answer": 1,
+    "explanation": "疑問句中，主語常用「が」。「何時が分ですか」實際自然表達應是「今、何時何分ですか。」此題著重助詞用法，用「が」來標示疑問部分。",
+    "id": "N5-文法-v09-18",
+    "metadata": {
+      "generated_at": "2025-12-08 23:57:32",
+      "model": "gpt-5.1",
+      "batch": "v09"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N5",
+      "v10",
+      "N5-語彙-v10-01"
+    ],
+    "type": "word_meaning",
+    "question": "「いぬ」是什麼意思？",
+    "options": [
+      "貓",
+      "鳥",
+      "狗",
+      "馬"
+    ],
+    "answer": 2,
+    "explanation": "「いぬ」的漢字是「犬」，意思是狗。N5 常見動物單字。",
+    "id": "N5-語彙-v10-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N5",
+      "v10",
+      "N5-語彙-v10-02"
+    ],
+    "type": "word_meaning",
+    "question": "「きのう」的意思是？",
+    "options": [
+      "今天",
+      "明天",
+      "昨天",
+      "前天"
+    ],
+    "answer": 2,
+    "explanation": "「きのう」是「昨日」，意思是昨天。N5 常見時間副詞。",
+    "id": "N5-語彙-v10-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N5",
+      "v10",
+      "N5-語彙-v10-03"
+    ],
+    "type": "word_meaning",
+    "question": "「高い」在這裡最常見的意思是？",
+    "options": [
+      "便宜的",
+      "高的／貴的",
+      "小的",
+      "快的"
+    ],
+    "answer": 1,
+    "explanation": "「高い（たかい）」常用來表示「高的」或「價錢貴的」。在N5層級主要記憶為「高／貴」。",
+    "id": "N5-語彙-v10-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N5",
+      "v10",
+      "N5-語彙-v10-04"
+    ],
+    "type": "word_meaning",
+    "question": "「みず」是什麼意思？",
+    "options": [
+      "火",
+      "水",
+      "雨",
+      "雪"
+    ],
+    "answer": 1,
+    "explanation": "「みず」的漢字是「水」，意思是水。是非常基本的N5單字。",
+    "id": "N5-語彙-v10-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N5",
+      "v10",
+      "N5-語彙-v10-05"
+    ],
+    "type": "word_meaning",
+    "question": "「あおい」的意思是？",
+    "options": [
+      "紅的",
+      "藍的",
+      "黑的",
+      "白的"
+    ],
+    "answer": 1,
+    "explanation": "「あおい」是形容詞，意思是藍色的。N5 常見顏色單字。",
+    "id": "N5-語彙-v10-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Meaning",
+      "N5",
+      "v10",
+      "N5-語彙-v10-06"
+    ],
+    "type": "word_meaning",
+    "question": "「たべる」的意思是？",
+    "options": [
+      "喝",
+      "睡覺",
+      "吃",
+      "走路"
+    ],
+    "answer": 2,
+    "explanation": "「たべる」是動詞，意思是吃。是N5非常基本的動詞。",
+    "id": "N5-語彙-v10-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v10",
+      "N5-文法-v10-01"
+    ],
+    "type": "star_ordering",
+    "question": "把下列片語依正確語序排列：\n★ を / ★ で / ★ ごはん / ★ たべます",
+    "options": [
+      "ごはん を で たべます",
+      "で ごはん を たべます",
+      "ごはん を たべます で",
+      "で を ごはん たべます"
+    ],
+    "answer": 1,
+    "explanation": "正確語序是「（場所）で ごはん を たべます。」即「在～吃飯」。所以應為「で ごはん を たべます」。",
+    "id": "N5-文法-v10-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v10",
+      "N5-文法-v10-02"
+    ],
+    "type": "star_ordering",
+    "question": "請將句子排列成正確順序：\n★ 日本 / ★ に / ★ 行きたい / ★ です",
+    "options": [
+      "日本 行きたい に です",
+      "日本 に 行きたい です",
+      "に 日本 行きたい です",
+      "行きたい です 日本 に"
+    ],
+    "answer": 1,
+    "explanation": "正確句子為「日本 に 行きたい です。」表示「想去日本。」助詞「に」接在地點「日本」後面。",
+    "id": "N5-文法-v10-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Adjective",
+      "N5",
+      "v10",
+      "N5-文法-v10-03"
+    ],
+    "type": "adjective_form",
+    "question": "下列哪一個是い形容詞？",
+    "options": [
+      "きれい",
+      "しずか",
+      "たかい",
+      "ゆうめい"
+    ],
+    "answer": 2,
+    "explanation": "「たかい」結尾是「い」，且是い形容詞。「きれい」「しずか」「ゆうめい」是な形容詞。",
+    "id": "N5-文法-v10-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v10",
+      "N5-文法-v10-04"
+    ],
+    "type": "star_ordering",
+    "question": "請將句子排列成正確順序：\n★ きのう / ★ テレビ / ★ を / ★ みました",
+    "options": [
+      "きのう テレビ を みました",
+      "テレビ きのう を みました",
+      "きのう を テレビ みました",
+      "を きのう テレビ みました"
+    ],
+    "answer": 0,
+    "explanation": "正確句子為「きのう テレビ を みました。」日文中時間語通常放在句首或主語後面。",
+    "id": "N5-文法-v10-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v10",
+      "N5-文法-v10-05"
+    ],
+    "type": "star_ordering",
+    "question": "請將句子排列成正確順序：\n★ が / ★ あります / ★ いす / ★ ここ に",
+    "options": [
+      "ここ に いす が あります",
+      "いす が ここ に あります",
+      "ここ に が いす あります",
+      "が いす ここ に あります"
+    ],
+    "answer": 0,
+    "explanation": "最自然的基本句型是「ここ に いす が あります。」表示「這裡有椅子。」先說場所，再說存在的東西。",
+    "id": "N5-文法-v10-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Negative",
+      "N5",
+      "v10",
+      "N5-文法-v10-06"
+    ],
+    "type": "conjugation",
+    "question": "「飲みます」的否定形（敬體）是？",
+    "options": [
+      "飲まない",
+      "飲みません",
+      "飲みませんでした",
+      "飲めません"
+    ],
+    "answer": 1,
+    "explanation": "「飲みます」的否定敬體是「飲みません」，表示「不喝」。「飲まない」是否定普通形，「飲みませんでした」是否定過去形。",
+    "id": "N5-文法-v10-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Question",
+      "N5",
+      "v10",
+      "N5-文法-v10-07"
+    ],
+    "type": "particle_choice",
+    "question": "空欄に入るものはどれですか：\nこれはだれ___か。",
+    "options": [
+      "が",
+      "を",
+      "は",
+      "です"
+    ],
+    "answer": 2,
+    "explanation": "疑問詞「だれ」後面通常接主題助詞「は」： 「これは だれ は か」→實際上發音時常連成「これはだれですか。」但文法上助詞是「は」。",
+    "id": "N5-文法-v10-07",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v10",
+      "N5-文法-v10-08"
+    ],
+    "type": "star_ordering",
+    "question": "請將句子排列成正確順序：\n★ とても / ★ 日本語 / ★ むずかしい / ★ です",
+    "options": [
+      "日本語 は とても むずかしい です",
+      "とても 日本語 むずかしい です",
+      "日本語 とても むずかしい です",
+      "とても むずかしい 日本語 です"
+    ],
+    "answer": 0,
+    "explanation": "最基本的句型為「日本語 は とても むずかしい です。」雖然題目只給了四個片語，但自然會補出主題助詞「は」。語序是「主題＋は＋程度副詞＋形容詞＋です」。",
+    "id": "N5-文法-v10-08",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short Text",
+      "N5",
+      "v10",
+      "N5-讀解-v10-01"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀短文並回答問題。\n\n山田さんは大学の一年生です。家は学校の近くにあります。山田さんは毎日六時に起きます。目ざまし時計が六時に鳴きますが、山田さんはすぐに起きて、顔を洗って、歯をみがきます。それから、七時に台所で朝ごはんを食べます。朝ごはんはパンと卵と牛乳です。ときどきお母さんといっしょにテレビを見ながら食べます。\n\n七時半ごろ、山田さんはかばんに教科書やノートを入れます。そして、八時に家を出て学校へ行きます。学校までは歩いて十五分ぐらいです。友だちの田中さんも同じ時間に家を出ます。二人はいっしょに歩きながら話します。「おはよう」「今日の授業は何時まで？」「午後三時までだよ」などと、楽しく話しながら学校へ行きます。\n\n月曜日から金曜日まで、山田さんは毎日学校へ行きます。土曜日と日曜日は学校へ行きません。土曜日はよく図書館へ行って本を読みます。日曜日は家でゆっくり休みます。でも、学校へ行く日の朝の生活はいつも同じです。六時に起きて、七時に朝ごはんを食べて、八時に学校へ行きます。\n\n【問題】山田さんは何時に学校へ行きますか。",
+    "options": [
+      "六時",
+      "七時",
+      "八時",
+      "土曜日"
+    ],
+    "answer": 2,
+    "explanation": "文中寫「八時に家を出て学校へ行きます。」以及「六時に起きて、七時に朝ごはんを食べて、八時に学校へ行きます。」所以正確答案是「八時」。其他選項要不是起床時間就是吃早餐時間或星期。",
+    "id": "N5-讀解-v10-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short Text",
+      "N5",
+      "v10",
+      "N5-讀解-v10-02"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀短文並回答問題。\n\n私は田中です。二十八歳です。東京の会社で会社員として働いています。会社は家から電車で三十分ぐらいのところにあります。毎朝七時に起きて、シャワーを浴びてから朝ごはんを食べます。八時に家を出て、駅まで歩きます。それから電車に乗って会社へ行きます。\n\n会社では朝九時から五時まで働きます。九時に仕事が始まるので、八時四十五分ごろ会社に着いて、コーヒーを飲みながら今日の仕事を確認します。午前中は会議をしたり、パソコンで資料を作ったりしますから、少し忙しいです。\n\n昼ごはんは十二時に食べます。たいてい同じ会社の山田さんと一緒に、会社の近くの小さなレストランへ行きます。ときどきお弁当を持ってきて、会社の休憩室で食べることもあります。昼ごはんのあと、少しコーヒーを飲んでから、また仕事をします。午後はお客さんに電話をしたり、メールを書いたりします。\n\n仕事は五時に終わりますが、忙しい日は六時ごろまで会社にいることもあります。家に帰ってから、テレビを見たり、日本語の本を読んだりして、十一時ごろ寝ます。休みは土曜日と日曜日です。休みの日は友だちと映画を見に行ったり、公園を散歩したりして、ゆっくり過ごします。\n\n【問題】田中さんは何時に昼ごはんを食べますか。",
+    "options": [
+      "九時",
+      "十二時",
+      "五時",
+      "土曜日"
+    ],
+    "answer": 1,
+    "explanation": "短文中寫「昼ごはんは十二時に食べます。」所以答案是十二時。",
+    "id": "N5-讀解-v10-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short Text",
+      "N5",
+      "v10",
+      "N5-讀解-v10-03"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀短文並回答問題。\n\nここは駅の近くにある小さい喫茶店です。朝七時から夜八時まで開いています。店の中は少し暗いですが、とても静かで、音楽も小さく流れています。カウンターに三つ、窓のそばに四つテーブルがあります。一人で来るお客さんも、友だちと来るお客さんも多いです。\n\nこの店のメニューはとても簡単です。コーヒーは三百円、ケーキは二百五十円です。ケーキはチョコレートケーキとチーズケーキの二つがあります。どちらも同じ値段です。コーヒーとケーキのセットは五百円です。セットにすると、少し安くなります。\n\nきょう、田中さんは仕事のあとでこの喫茶店に来ました。「いらっしゃいませ。ご注文は？」と店員が聞きます。田中さんはメニューを見て、「コーヒーを一つと、ケーキを一つください。セットではなく、別々にお願いします。」と言いました。店員は「かしこまりました。」と答えて、レジでお金を計算します。\n\n【問題】コーヒーとケーキを別々に買うと、いくらですか。",
+    "options": [
+      "三百円",
+      "二百五十円",
+      "五百円",
+      "五百五十円"
+    ],
+    "answer": 3,
+    "explanation": "單點咖啡300円＋蛋糕250円＝550円，所以是「五百五十円」。短文中五百円是套餐價格，不是分開買的價錢。",
+    "id": "N5-讀解-v10-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short Text",
+      "N5",
+      "v10",
+      "N5-讀解-v10-04"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀短文並回答問題。\n\n私は毎朝、公園でジョギングをします。月曜日から金曜日まで、仕事がある日も、休みの日も、できるだけ走るようにしています。七時に家を出て、ゆっくり歩いて公園へ行きます。公園までは十分ぐらいかかります。\n\n公園に着いたら、まずストレッチをします。それから、七時十五分ごろから七時半までジョギングをします。公園には池や木がたくさんあって、朝は人が少なく、とても静かです。鳥の声も聞こえて、気持ちがいいです。\n\nときどき、近所の友だちも公園に来ます。「おはようございます。」とあいさつをして、いっしょに少し走ることもあります。七時半になったら、私は公園を出て家に帰ります。そして、家に帰ってからシャワーをあびて、朝ごはんを食べて、会社へ行きます。\n\n【問題】私はどこでジョギングをしますか。",
+    "options": [
+      "家",
+      "公園",
+      "学校",
+      "会社"
+    ],
+    "answer": 1,
+    "explanation": "文中第一句已說明「公園でジョギングをします。」所以答案是「公園」。",
+    "id": "N5-讀解-v10-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short Text",
+      "N5",
+      "v10",
+      "N5-讀解-v10-05"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀短文並回答問題。\n\n今日は日曜日です。朝、私は少し遅く起きました。天気はとてもいいです。空は青くて、雲がほとんどありません。外はあたたかくて、風も気持ちいいです。私は朝ごはんを食べながら、今日の予定を考えました。\n\n「今日は友だちと映画を見に行きます。とても楽しみです。」\n\n友だちとは駅で待ち合わせをします。約束の時間は午後一時です。私は十二時ごろ家を出て、歩いて駅へ行きます。駅に着くと、友だちはもう来ていました。\n\n「おはよう。いい天気だね。」\n「本当に。映画の後で、レストランで晩ごはんを食べよう。」\n\n私たちはいっしょに映画館へ行きます。映画館は駅から歩いて十分ぐらいです。映画を見た後で、近くのレストランで晩ごはんを食べる予定です。\n\n【問題】今日は何曜日ですか。",
+    "options": [
+      "土曜日",
+      "日曜日",
+      "月曜日",
+      "金曜日"
+    ],
+    "answer": 1,
+    "explanation": "短文第一句：「今日は日曜日です。」已直接給出答案。",
+    "id": "N5-讀解-v10-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "Short Text",
+      "N5",
+      "v10",
+      "N5-讀解-v10-06"
+    ],
+    "type": "reading_comprehension",
+    "question": "請閱讀短文並回答問題。\n\nこれは私のへやです。へやはあまり広くないです。でも、明るいです。まどが一つあって、まどの外には小さい公園が見えます。朝、カーテンを開けると、太陽の光が入って、とてもきれいです。\n\nへやにはつくえとベッドといすがあります。つくえの上に本とパソコンがあります。パソコンは黒いパソコンです。本は日本語の本と英語の本です。つくえの右に小さい本だながあって、その上に時計と写真があります。写真には家族がうつっています。\n\nベッドはつくえの左にあります。ベッドの下に小さい箱があります。その箱の中には手紙やノート、えんぴつなど、学校で使うものが入っています。私は毎日、このへやで勉強したり、本を読んだりします。小さいへやですが、私はこのへやがとても好きです。\n\n【問題】ベッドの下に何がありますか。",
+    "options": [
+      "本",
+      "パソコン",
+      "小さい箱",
+      "つくえ"
+    ],
+    "answer": 2,
+    "explanation": "文中寫「ベッドの下に小さい箱があります。」所以答案是「小さい箱」。",
+    "id": "N5-讀解-v10-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v10",
+      "N5-語彙-v10-07"
+    ],
+    "type": "kanji_reading",
+    "question": "「電車」的正確讀音是？",
+    "options": [
+      "でんしゃ",
+      "でんくるま",
+      "でしゃ",
+      "でんじしゃ"
+    ],
+    "answer": 0,
+    "explanation": "「電車」讀作「でんしゃ」，意思是「電車、火車」。\n- 「電」讀「でん」，「車」在這裡讀「しゃ」，合起來是「でんしゃ」。\n- 其他選項為不自然或錯誤的讀法。",
+    "id": "N5-語彙-v10-07",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "Particle",
+      "N5",
+      "v10",
+      "N5-文法-v10-09"
+    ],
+    "type": "multiple_choice",
+    "question": "私は毎朝７時___起きます。\n要填入最適合的助詞是？",
+    "options": [
+      "で",
+      "に",
+      "へ",
+      "を"
+    ],
+    "answer": 1,
+    "explanation": "表示「在某個時間做某事」時，要用助詞「に」。\n例：\n- ７時に起きます。→ 在七點起床。\n「で」多用來表示地點、「へ」多用來表示方向、「を」表示動作的直接受詞，因此都不適合放在時間之後。",
+    "id": "N5-文法-v10-09",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v10",
+      "N5-文法-v10-10"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依順序排列，組成正確句子：\n\n1. を\n2. 日本語\n3. べんきょうします\n4. 私は\n\n正確的語序是？",
+    "options": [
+      "4 → 2 → 1 → 3",
+      "4 → 1 → 2 → 3",
+      "2 → 4 → 1 → 3",
+      "4 → 3 → 2 → 1"
+    ],
+    "answer": 0,
+    "explanation": "正確句子是：「私は 日本語 を べんきょうします。」\n- 日文基本語序是「主語＋目的語＋動詞」。\n  - 主語：私は\n  - 目的語：日本語を\n  - 動詞：べんきょうします\n所以順序為：4（私は）→ 2（日本語）→ 1（を）→ 3（べんきょうします）。",
+    "id": "N5-文法-v10-10",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v10",
+      "N5-文法-v10-11"
+    ],
+    "type": "star_ordering",
+    "question": "請將下列片語依順序排列，組成正確句子：\n\n1. いきます\n2. 駅へ\n3. きょう\n4. 私は\n\n正確的語序是？",
+    "options": [
+      "4 → 3 → 2 → 1",
+      "3 → 4 → 2 → 1",
+      "4 → 2 → 3 → 1",
+      "3 → 2 → 4 → 1"
+    ],
+    "answer": 0,
+    "explanation": "自然的句子是：「私は きょう 駅へ いきます。」\n- 主語：私は\n- 時間：きょう（今天）\n- 方向：駅へ（往車站）\n- 動詞：いきます（去）\n日文常見語序為「主語 → 時間 → 場所/方向 → 動詞」，所以是 4 → 3 → 2 → 1。",
+    "id": "N5-文法-v10-11",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v10",
+      "N5-語彙-v10-08"
+    ],
+    "type": "star_ordering",
+    "question": "請選出「*きょう* *は* *がっこう* *へ* *いきます*」這句話中，最適合填入「學校」的詞語位置。\n\nきょう ＿ へ いきます。",
+    "options": [
+      "きょう",
+      "がっこう",
+      "へ",
+      "いきます"
+    ],
+    "answer": 1,
+    "explanation": "句子意思是「今天去學校。」\n- きょう：今天（時間詞）\n- がっこう：學校（地點）→ 應該放在助詞「へ」前面，表示「去學校」。\n- へ：表示方向的助詞「往、到」。\n- いきます：去。\n因此要填入表示「學校」的詞，正確答案是「がっこう」。",
+    "id": "N5-語彙-v10-08",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v10",
+      "N5-語彙-v10-09"
+    ],
+    "type": "star_ordering",
+    "question": "請選出「*わたし* *は* *せんせい* *です*」這句話中，最適合填入「老師」的詞語位置。\n\nわたし は ＿ です。",
+    "options": [
+      "わたし",
+      "は",
+      "せんせい",
+      "です"
+    ],
+    "answer": 2,
+    "explanation": "句子「わたし は せんせい です。」意思是「我是老師。」\n- わたし：我（主語）\n- は：主題助詞\n- せんせい：老師 → 描述身分的名詞，放在「です」前面。\n- です：判斷句結尾（是）。\n因此表示「老師」的詞應該是「せんせい」，放在空格處。",
+    "id": "N5-語彙-v10-09",
+    "metadata": {
+      "generated_at": "2025-12-09 00:14:12",
+      "model": "gpt-5.1",
+      "batch": "v10"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v11",
+      "N5-語彙-v11-01"
+    ],
+    "type": "choose_word",
+    "question": "「水」を表すとき、どのことばを使いますか。",
+    "options": [
+      "みず",
+      "おちゃ",
+      "ぎゅうにゅう",
+      "ジュース"
+    ],
+    "answer": 0,
+    "explanation": "「みず(水)」是水。おちゃ是茶，ぎゅうにゅう是牛奶，ジュース是果汁。",
+    "id": "N5-語彙-v11-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v11",
+      "N5-語彙-v11-02"
+    ],
+    "type": "word_meaning",
+    "question": "「高い」はここでは「値段が高い」という意味です。どの意味がいちばん近いですか。",
+    "options": [
+      "安い",
+      "高い・値段が高い",
+      "大きい",
+      "遠い"
+    ],
+    "answer": 1,
+    "explanation": "「高い」可以表示「高的」或「價錢貴的」。在N5多用來說東西很貴。",
+    "id": "N5-語彙-v11-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v11",
+      "N5-語彙-v11-03"
+    ],
+    "type": "choose_word",
+    "question": "「きょう」はどれですか。",
+    "options": [
+      "きのう",
+      "あした",
+      "きょう",
+      "あさって"
+    ],
+    "answer": 2,
+    "explanation": "「きょう」是今天。きのう是昨天，あした是明天，あさって是後天。",
+    "id": "N5-語彙-v11-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v11",
+      "N5-語彙-v11-04"
+    ],
+    "type": "choose_word",
+    "question": "「図書館」を表すことばはどれですか。",
+    "options": [
+      "がっこう",
+      "えき",
+      "としょかん",
+      "きっさてん"
+    ],
+    "answer": 2,
+    "explanation": "「としょかん(図書館)」是圖書館。がっこう是學校，えき是車站，きっさてん是咖啡店。",
+    "id": "N5-語彙-v11-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v11",
+      "N5-語彙-v11-05"
+    ],
+    "type": "word_meaning",
+    "question": "「じかん」のいみは？",
+    "options": [
+      "時間",
+      "空間",
+      "部屋",
+      "教室"
+    ],
+    "answer": 0,
+    "explanation": "「じかん(時間)」就是時間。空間是「くうかん」，房間是「へや」，教室是「きょうしつ」。",
+    "id": "N5-語彙-v11-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v11",
+      "N5-語彙-v11-06"
+    ],
+    "type": "choose_word",
+    "question": "「すこし」はどんなときに使いますか。",
+    "options": [
+      "たくさん",
+      "すこし",
+      "ぜんぜん",
+      "よく"
+    ],
+    "answer": 1,
+    "explanation": "「すこし」是「一點點、少量」。たくさん是很多，ぜんぜん(配否定)是完全不，よく是經常、很會。",
+    "id": "N5-語彙-v11-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v11",
+      "N5-文法-v11-01"
+    ],
+    "type": "fill_blank",
+    "question": "（助詞）\nわたしは日本人です。",
+    "options": [
+      "を",
+      "が",
+      "は",
+      "に"
+    ],
+    "answer": 2,
+    "explanation": "「わたしは日本人です。」主題助詞用「は」。N5自我介紹常用「～は～です」。",
+    "id": "N5-文法-v11-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v11",
+      "N5-文法-v11-02"
+    ],
+    "type": "fill_blank",
+    "question": "（て形用法）\n窓を開けて、空気を＿＿＿。",
+    "options": [
+      "入れます",
+      "入れません",
+      "入りました",
+      "入りませんでした"
+    ],
+    "answer": 0,
+    "explanation": "前面「開けて」是て形，後面通常接普通現在形「入れます」表示「打開窗戶，讓空氣進來」。其他選項時態或否定與語境不合。",
+    "id": "N5-文法-v11-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v11",
+      "N5-文法-v11-03"
+    ],
+    "type": "fill_blank",
+    "question": "（形容詞変化）\nこのりんごは＿＿＿です。",
+    "options": [
+      "おいしい",
+      "おいしかった",
+      "おいしくない",
+      "おいしくなかった"
+    ],
+    "answer": 0,
+    "explanation": "句尾用現在肯定形容詞：「おいしいです」。其他是過去或否定，與題目「好吃」不符。",
+    "id": "N5-文法-v11-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v11",
+      "N5-文法-v11-04"
+    ],
+    "type": "star_ordering",
+    "question": "（文の並べ替え）\n★ でんしゃで　★ がっこうへ　★ いきます　★ わたしは",
+    "options": [
+      "わたしは → でんしゃで → がっこうへ → いきます",
+      "がっこうへ → わたしは → いきます → でんしゃで",
+      "わたしは → がっこうへ → いきます → でんしゃで",
+      "でんしゃで → わたしは → がっこうへ → いきます"
+    ],
+    "answer": 0,
+    "explanation": "自然語序是「わたしは でんしゃで がっこうへ いきます。」主語(話題)→交通工具で→目的地へ→行きます。",
+    "id": "N5-文法-v11-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v11",
+      "N5-文法-v11-05"
+    ],
+    "type": "star_ordering",
+    "question": "（文の並べ替え）\nつぎのことばを　ならべかえて　ただしい　ぶんを　つくりましょう。\n★ にほんごを　★ まいにち　★ べんきょうします　★ わたしは",
+    "options": [
+      "まいにち → わたしは → にほんごを → べんきょうします",
+      "わたしは → まいにち → にほんごを → べんきょうします",
+      "わたしは → にほんごを → まいにち → べんきょうします",
+      "にほんごを → べんきょうします → まいにち → わたしは"
+    ],
+    "answer": 1,
+    "explanation": "最自然是「わたしは まいにち にほんごを べんきょうします。」話題→時間→受詞→動詞。",
+    "id": "N5-文法-v11-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v11",
+      "N5-文法-v11-06"
+    ],
+    "type": "star_ordering",
+    "question": "（です／ます形）\n★ せんせいです　★ たなかさんは\nならべかえましょう。",
+    "options": [
+      "せんせいです → たなかさんは",
+      "たなかさんは → せんせいです",
+      "たなかさんは → です → せんせい",
+      "せんせい → たなかさんは → です"
+    ],
+    "answer": 1,
+    "explanation": "正確句子是「たなかさんは せんせいです。」N5基本「AはBです」句型。",
+    "id": "N5-文法-v11-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v11",
+      "N5-文法-v11-07"
+    ],
+    "type": "fill_blank",
+    "question": "ねこは いすのした＿ います。",
+    "options": [
+      "を",
+      "に",
+      "で",
+      "が"
+    ],
+    "answer": 1,
+    "explanation": "表示存在地點時，用助詞「に」：いすのしたに います。",
+    "id": "N5-文法-v11-07",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v11",
+      "N5-文法-v11-08"
+    ],
+    "type": "fill_blank",
+    "question": "（願望／想要）\nわたしは 水が＿＿＿です。",
+    "options": [
+      "ほしい",
+      "すき",
+      "きらい",
+      "じょうず"
+    ],
+    "answer": 0,
+    "explanation": "表示「想要某物」用「～がほしいです」：「水がほしいです」。すき是喜歡，きらい是不喜歡，じょうず是擅長。",
+    "id": "N5-文法-v11-08",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v11",
+      "N5-文法-v11-09"
+    ],
+    "type": "fill_blank",
+    "question": "（動詞ます形）\n毎日 日本語を ＿＿＿。",
+    "options": [
+      "べんきょうします",
+      "べんきょうしました",
+      "べんきょうしませんでした",
+      "べんきょうしません"
+    ],
+    "answer": 0,
+    "explanation": "有「毎日」表示習慣，用現在肯定「べんきょうします」最自然。",
+    "id": "N5-文法-v11-09",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v11",
+      "N5-讀解-v11-01"
+    ],
+    "type": "reading_short",
+    "question": "（短文）\n田中さんは 会社員です。東京の 小さな 会社で 働いて います。毎朝６時に 起きます。目ざまし時計の 音で 起きて、まず 顔を 洗います。それから、服を 着がえて、ニュースを 見ながら、ゆっくり コーヒーを 作ります。\n\n７時に 朝ごはんを 食べます。パンと 卵と サラダを 食べることが 多いです。ときどき、家族と 話しながら 朝ごはんを 食べます。朝ごはんの あとで、歯を みがいて、かばんを じゅんびします。\n\nそれから、８時に 家を 出て、会社へ 行きます。いつも バスで 駅まで 行って、電車に のります。電車の 中で 本を 読んだり、音楽を 聞いたり します。９時ごろ 会社に ついて、しごとを 始めます。\n\n【問題】\n田中さんは 何時に 朝ごはんを 食べますか。",
+    "options": [
+      "６時",
+      "７時",
+      "８時",
+      "９時"
+    ],
+    "answer": 1,
+    "explanation": "文中に「７時に 朝ごはんを 食べます。」と あるので、答えは ７時です。",
+    "id": "N5-讀解-v11-01",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v11",
+      "N5-讀解-v11-02"
+    ],
+    "type": "reading_short",
+    "question": "（短文）\nわたしのしゅみは どくしょです。小さいときから 本が だいすきで、ひまなときは いつも 本を 読みます。学校の休み時間にも、クラスメートと あそばないで、一人で えほんや しょうせつを 読むことが 多いです。\n\n毎週土曜日に、朝ごはんを 食べてから、バスで 近くの 図書館へ 行きます。図書館は とても しずかで、ひろくて、たくさん 本が あります。子どもの本のコーナーや、えいごの本のコーナーも あって、とても たのしいです。\n\nわたしは 図書館で いろいろな 本を さがして、よさそうな 本を えらびます。そして、カウンターで かんたんな かみを 書いて、カードを つかって 本を 借ります。土曜日に 借りた 本は、家に もって帰って、へやで ゆっくり 読みます。ときどき、夜おそくまで 読んでしまいます。\n\n【問題】\nわたしは どこで 本を 借りますか。",
+    "options": [
+      "家",
+      "学校",
+      "図書館",
+      "会社"
+    ],
+    "answer": 2,
+    "explanation": "文中に「図書館で いろいろな 本を さがして…カードを つかって 本を 借ります」とあるので、本を 借りる場所は「図書館」です。",
+    "id": "N5-讀解-v11-02",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v11",
+      "N5-讀解-v11-03"
+    ],
+    "type": "reading_short",
+    "question": "（短文）\nきょうは 日曜日です。天気は とても いいです。空は 青くて、少し あたたかいです。山田さんは 朝 九時ごろ 起きました。朝ごはんを 食べてから、テレビで ニュースを 少し 見ました。\n\n山田さんは 友だちと 公園へ 行きます。十時に 駅の 前で 友だちと 会う やくそくを しました。山田さんは じてんしゃで 駅まで 行きます。駅で 友だちと 会ってから、いっしょに 公園まで 歩いて 行きます。\n\n公園には 子どもが たくさん います。犬と さんぽを している 人も います。山田さんと 友だちは 公園で サッカーを します。\n\n「じゃあ、まず はじめに パスの れんしゅうを しよう。」\n「うん。じかんが あるから、ゆっくり やろう。」\n\n山田さんたちは 一時間ぐらい サッカーを します。そして、とても つかれました。のども かわきました。山田さんは 友だちと 公園を 出て、近くの コンビニへ 行きます。コンビニで ジュースを 買って、外の いすに すわって 飲みます。\n\n「サッカーは たのしかったね。」\n「うん。また らいしゅうも しよう。」\n\n【問題】\n山田さんは きょう 何を しますか。",
+    "options": [
+      "テニスを します。",
+      "サッカーを します。",
+      "勉強を します。",
+      "仕事を します。"
+    ],
+    "answer": 1,
+    "explanation": "短文に「山田さんと 友だちは 公園で サッカーを します。」と あるので、正しい答えは「サッカーを します。」です。",
+    "id": "N5-讀解-v11-03",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v11",
+      "N5-讀解-v11-04"
+    ],
+    "type": "reading_short",
+    "question": "（短文）\nわたしは きのう スーパーへ 行きました。朝、雨が ふって いましたが、かさを もって、家の 近くの スーパーまで 歩いて 行きました。スーパーは あまり 大きく ありませんが、とても べんりです。中には パンや 牛乳や たまごの ほかに、やさいや くだものも たくさん あります。\n\nわたしは まず パン売りばへ 行きました。あたらしい パンの においが して、とても いい においでした。わたしは 小さい パンを 二つと 大きい パンを 一つ 買いました。それから、牛乳売りばで 牛乳を 一本 買いました。さいごに、たまご売りばで たまごを 一パック 買いました。お金を はらって、レシートを もらって から、スーパーを 出ました。\n\n家に かえって から、わたしは すぐ りょうりを しました。パンと たまごで サンドイッチを 作りました。牛乳は コップに 入れて、いっしょに 飲みました。とても おいしかったです。きのうは スーパーで いい 買い物が できて、うれしかったです。\n\n【問題】\nわたしは きのう どこへ 行きましたか。",
+    "options": [
+      "図書館",
+      "スーパー",
+      "学校",
+      "公園"
+    ],
+    "answer": 1,
+    "explanation": "文中第一句「きのう スーパーへ 行きました。」と あるので、行った ところは スーパーです。したがって、正しい 答えは ２番の「スーパー」です。",
+    "id": "N5-讀解-v11-04",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v11",
+      "N5-讀解-v11-05"
+    ],
+    "type": "reading_short",
+    "question": "（短文）\nわたしの へやは 小さいですが、とても きれいです。へやは アパートの 二かいに あります。まどが 一つ あって、ひるまは あかるいです。まどの そばに 白い カーテンが あります。へやには つくえと いすと ベッドが あります。つくえは まどの ちかくに あって、うえに パソコンと えんぴつと ノートが あります。いすは つくえの まえに あります。ベッドは 小さいですが、ふとんが やわらかいです。ベッドの 上には ほんが すこし あります。つくえの 下には かばんが あります。わたしは まいにち、つくえの いすに すわって パソコンで えいがを 見たり、日本語を べんきょうしたり します。\n\n【問題】\nパソコンは どこに ありますか。",
+    "options": [
+      "ベッドの上",
+      "いすの下",
+      "つくえの上",
+      "へやの外"
+    ],
+    "answer": 2,
+    "explanation": "文中に「つくえは まどの ちかくに あって、うえに パソコンと えんぴつと ノートが あります。」とあるので、パソコンは つくえの 上に あります。",
+    "id": "N5-讀解-v11-05",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v11",
+      "N5-讀解-v11-06"
+    ],
+    "type": "reading_short",
+    "question": "（短文）\nさくらさんは 学生です。東京の 大学の １年生で、毎日 電車で 学校へ 行きます。朝は ７時ごろ 起きて、朝ごはんを 食べてから 出かけます。８時から ３時まで 学校で 勉強します。クラスで 先生の 話を 聞いたり、友だちと 宿題を したり します。お昼ごはんは 学校の 食堂で 友だちと いっしょに 食べます。３時に 授業が 終わったあと、ときどき 図書館で 本を 読みますが、日本語の 勉強は しません。夕方 ６時ごろ 家に 帰ります。夜は テレビを 少し 見てから、部屋で 日本語を 勉強します。教科書を 読んだり、CDを 聞いたり、ノートに たくさん かんじを 書いたり します。さくらさんは 「もっと 日本語が 上手に なりたいです。」と 思って、毎晩 がんばって 勉強して います。\n\n【問題】\nさくらさんは どこで 日本語を 勉強しますか。",
+    "options": [
+      "学校で",
+      "図書館で",
+      "家で",
+      "会社で"
+    ],
+    "answer": 2,
+    "explanation": "文の中に「夜は テレビを 少し 見てから、部屋で 日本語を 勉強します。」と あります。「部屋」は さくらさんの 家の 中の へやですから、日本語は「家で」勉強して います。",
+    "id": "N5-讀解-v11-06",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v11",
+      "N5-語彙-v11-07"
+    ],
+    "type": "kanji_reading",
+    "question": "「先生」の正しい読み方はどれですか。",
+    "options": [
+      "せんしょう",
+      "せんせい",
+      "さんせい",
+      "せいせん"
+    ],
+    "answer": 1,
+    "explanation": "「先生」表示老師、先來的人，標準讀音是「せんせい」。\n- 「せんしょう」「さんせい」「せいせん」都不是這個詞的正確讀音。",
+    "id": "N5-語彙-v11-07",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v11",
+      "N5-語彙-v11-08"
+    ],
+    "type": "kanji_reading",
+    "question": "「月曜日」の正しい読み方はどれですか。",
+    "options": [
+      "げつようび",
+      "がつようび",
+      "つきようび",
+      "げつようにち"
+    ],
+    "answer": 0,
+    "explanation": "「月曜日」是星期一，正確讀音為「げつようび」。\n- 「月」在這裡讀「げつ」，不是「がつ」或「つき」。\n- 「び」表示「日（天）」，所以是「げつようび」，不是「げつようにち」。",
+    "id": "N5-語彙-v11-08",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "star_ordering",
+      "N5",
+      "v11",
+      "N5-文法-v11-10"
+    ],
+    "type": "star_ordering",
+    "question": "次の語句を正しい語順に並べかえて、自然な日本語の文を作りなさい。\n\n（1）毎日　（2）日本語を　（3）べんきょうします　（4）私は",
+    "options": [
+      "4 → 1 → 2 → 3",
+      "1 → 4 → 2 → 3",
+      "4 → 2 → 1 → 3",
+      "1 → 2 → 4 → 3"
+    ],
+    "answer": 0,
+    "explanation": "正確句子為：「私は 毎日 日本語を べんきょうします。」\n語序說明：\n- 主語「私は」通常在句首。\n- 表示時間的副詞「毎日」常放在主語之後。\n- 受詞「日本語を」放在動詞前。\n- 動詞「べんきょうします」在句尾。\n因此正確順序是 4（私は）→ 1（毎日）→ 2（日本語を）→ 3（べんきょうします）。",
+    "id": "N5-文法-v11-10",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v11",
+      "N5-文法-v11-11"
+    ],
+    "type": "fill_in_the_blank",
+    "question": "（　　　）本を読みます。\n\n「図書館で本を読みます」という文にするためには、空所にはどれを入れますか。",
+    "options": [
+      "へ",
+      "で",
+      "を",
+      "に"
+    ],
+    "answer": 1,
+    "explanation": "句子應為：「図書館で本を読みます。」表示「在圖書館看書」。\n- 「で」用來表示動作發生的場所。\n- 「へ」偏向「往～去」，表方向，不適合用來表示進行閱讀的場所。\n- 「を」標記受詞，應放在「本」之後，而不是圖書館之後。\n- 「に」可表示存在或時間，若說「図書館に行きます」就用「に」，但這裡要強調動作進行的場所，所以用「で」。",
+    "id": "N5-文法-v11-11",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "Kanji",
+      "N5",
+      "v11",
+      "N5-語彙-v11-09"
+    ],
+    "type": "star_ordering",
+    "question": "次のことばの順番として、いちばん自然なものをえらびなさい。\n★　く　＊　じ　＊　ん\n（ヒント：「九時」をあらわすことば）",
+    "options": [
+      "くじん",
+      "じくん",
+      "くじ",
+      "じく"
+    ],
+    "answer": 2,
+    "explanation": "題目要表達「九點」，日文說法是「九時」，讀作「くじ」。\n- 正確順序為「く」＋「じ」→「くじ」。\n- 選項 1「くじん」多了一個「ん」，不是正確時間說法。\n- 選項 2、4 的字序也不符合一般日文詞語。",
+    "id": "N5-語彙-v11-09",
+    "metadata": {
+      "generated_at": "2025-12-09 00:33:11",
+      "model": "gpt-5.1",
+      "batch": "v11"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-01"
+    ],
+    "type": "choose_word",
+    "question": "昨日、友達と＿＿＿をしました。",
+    "options": [
+      "勉強",
+      "遊び",
+      "買い物",
+      "仕事"
+    ],
+    "answer": 2,
+    "explanation": "句子中提到和朋友一起做的事情，符合語意的是「買い物」。",
+    "id": "N5-語彙-v12-01",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-02"
+    ],
+    "type": "choose_word",
+    "question": "____がとてもおいしいです。",
+    "options": [
+      "りんご",
+      "いす",
+      "ほん",
+      "くつ"
+    ],
+    "answer": 0,
+    "explanation": "句子中描述某物很美味，只有「りんご（蘋果）」是食物。",
+    "id": "N5-語彙-v12-02",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-03"
+    ],
+    "type": "choose_word",
+    "question": "母は毎朝＿＿＿を飲みます。",
+    "options": [
+      "水",
+      "手紙",
+      "電話",
+      "時間"
+    ],
+    "answer": 0,
+    "explanation": "母親每天早上喝的東西，只有「水」符合飲品的描述。",
+    "id": "N5-語彙-v12-03",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-04"
+    ],
+    "type": "choose_word",
+    "question": "彼は＿＿＿が上手です。",
+    "options": [
+      "歌",
+      "新聞",
+      "電車",
+      "学校"
+    ],
+    "answer": 0,
+    "explanation": "句子中提到某人擅長的事情，只有「歌」是一種技能。",
+    "id": "N5-語彙-v12-04",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-05"
+    ],
+    "type": "choose_word",
+    "question": "この＿＿＿はとても高いです。",
+    "options": [
+      "車",
+      "窓",
+      "木",
+      "部屋"
+    ],
+    "answer": 0,
+    "explanation": "句子中描述某物很昂貴，通常是「車」。",
+    "id": "N5-語彙-v12-05",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-06"
+    ],
+    "type": "choose_word",
+    "question": "この＿＿＿はとても広いです。",
+    "options": [
+      "公園",
+      "本",
+      "机",
+      "魚"
+    ],
+    "answer": 0,
+    "explanation": "句子中描述某物很寬廣，通常是「公園」。",
+    "id": "N5-語彙-v12-06",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-07"
+    ],
+    "type": "choose_word",
+    "question": "彼は毎朝＿＿＿をします。",
+    "options": [
+      "運動",
+      "絵",
+      "字",
+      "話"
+    ],
+    "answer": 0,
+    "explanation": "句子中提到某人每天早上做的事情，只有「運動」符合。",
+    "id": "N5-語彙-v12-07",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-08"
+    ],
+    "type": "choose_word",
+    "question": "＿＿＿を食べたことがありますか。",
+    "options": [
+      "寿司",
+      "本",
+      "机",
+      "窓"
+    ],
+    "answer": 0,
+    "explanation": "句子中詢問是否吃過某物，只有「寿司」符合食物的描述。",
+    "id": "N5-語彙-v12-08",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-01"
+    ],
+    "type": "fill_in_the_blank",
+    "question": "田中さんは日本人＿＿＿。",
+    "options": [
+      "です",
+      "ます",
+      "ません",
+      "でした"
+    ],
+    "answer": 0,
+    "explanation": "句子中描述田中先生是日本人，使用「です」結尾。",
+    "id": "N5-文法-v12-01",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-02"
+    ],
+    "type": "fill_in_the_blank",
+    "question": "＿＿＿は何ですか。",
+    "options": [
+      "これ",
+      "この",
+      "ここ",
+      "その"
+    ],
+    "answer": 0,
+    "explanation": "句子中詢問某物是什麼，應使用「これ」。",
+    "id": "N5-文法-v12-02",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-03"
+    ],
+    "type": "fill_in_the_blank",
+    "question": "私は＿＿＿が好きです。",
+    "options": [
+      "犬",
+      "犬の",
+      "犬に",
+      "犬を"
+    ],
+    "answer": 0,
+    "explanation": "句子中描述我喜歡某物，應使用「犬」。",
+    "id": "N5-文法-v12-03",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-04"
+    ],
+    "type": "fill_in_the_blank",
+    "question": "昨日、友達に会い＿＿＿。",
+    "options": [
+      "ました",
+      "ます",
+      "たい",
+      "いる"
+    ],
+    "answer": 0,
+    "explanation": "句子中描述過去的行為，應使用「ました」。",
+    "id": "N5-文法-v12-04",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-05"
+    ],
+    "type": "fill_in_the_blank",
+    "question": "私は＿＿＿に行きます。",
+    "options": [
+      "東京",
+      "東京で",
+      "東京が",
+      "東京を"
+    ],
+    "answer": 0,
+    "explanation": "句子中描述去某個地方，應使用「東京」。",
+    "id": "N5-文法-v12-05",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v12",
+      "N5-讀解-v12-01"
+    ],
+    "type": "comprehension",
+    "question": "昨日、私は友達と一緒に映画を見に行きました。映画はとても面白かったです。その後、近くのレストランで晩ご飯を食べました。私はパスタを注文して、友達はピザを注文しました。食事の後、少し散歩をして、家に帰りました。家に帰ってから、私は少しテレビを見て、お風呂に入りました。それから、寝る前に少し本を読みました。昨日はとても楽しかったです。",
+    "options": [
+      "昨日は映画を見ました。",
+      "昨日はテレビを見ませんでした。",
+      "昨日は家にいませんでした。",
+      "昨日はピザを食べませんでした。"
+    ],
+    "answer": 0,
+    "explanation": "文章中提到昨天去看了電影，故答案為「昨日は映画を見ました。」",
+    "id": "N5-讀解-v12-01",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v12",
+      "N5-讀解-v12-02"
+    ],
+    "type": "comprehension",
+    "question": "私は毎朝6時に起きます。起きてから、顔を洗って、朝ご飯を食べます。朝ご飯はパンとコーヒーです。それから、7時に家を出て、電車で会社に行きます。会社は9時に始まりますが、私は毎日8時半に着きます。仕事が終わったら、まっすぐ家に帰ります。家に帰ったら、すぐに晩ご飯を作ります。晩ご飯を食べた後、少しテレビを見て、10時に寝ます。",
+    "options": [
+      "毎朝6時に起きます。",
+      "会社は8時半に始まります。",
+      "晩ご飯の後、テレビを見ません。",
+      "晩ご飯は外で食べます。"
+    ],
+    "answer": 0,
+    "explanation": "文章中提到每天早上6點起床，故答案為「毎朝6時に起きます。」",
+    "id": "N5-讀解-v12-02",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v12",
+      "N5-讀解-v12-03"
+    ],
+    "type": "comprehension",
+    "question": "私の家族は4人です。父と母と妹と私です。父は会社員で、毎日忙しいです。母は主婦で、家のことをしています。妹はまだ学生で、毎日学校に行っています。私は大学生で、毎日電車で学校に通っています。週末になると、家族みんなで買い物に行ったり、公園に行ったりします。私たちの家族はとても仲が良いです。",
+    "options": [
+      "私の家族は5人です。",
+      "父は主婦です。",
+      "妹は学生です。",
+      "毎日車で学校に行きます。"
+    ],
+    "answer": 2,
+    "explanation": "文章中提到妹妹是學生，故答案為「妹は学生です。」",
+    "id": "N5-讀解-v12-03",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v12",
+      "N5-讀解-v12-04"
+    ],
+    "type": "comprehension",
+    "question": "私は犬を飼っています。犬の名前はポチです。ポチは毎日私と一緒に散歩に行きます。朝と夕方に散歩をします。ポチはとても元気で、走るのが大好きです。私はポチと一緒にいる時間がとても好きです。ポチは私の大切な家族の一員です。週末には、ポチと一緒に公園に行って、ボール遊びをします。ポチはとても賢くて、いろいろな芸を覚えています。",
+    "options": [
+      "ポチは猫です。",
+      "ポチは毎日散歩に行きます。",
+      "週末には公園に行きません。",
+      "ポチは芸を覚えません。"
+    ],
+    "answer": 1,
+    "explanation": "文章中提到ポチ每天會去散步，故答案為「ポチは毎日散歩に行きます。」",
+    "id": "N5-讀解-v12-04",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v12",
+      "N5-讀解-v12-05"
+    ],
+    "type": "comprehension",
+    "question": "昨日、私は友達と一緒に動物園に行きました。動物園にはたくさんの動物がいました。ライオンやゾウ、キリンなどがいました。私は特にキリンが好きです。キリンはとても背が高くて、首が長いです。友達はゾウが好きだと言っていました。ゾウはとても大きくて、ゆっくり歩いていました。動物園の後、みんなでカフェに行って、ケーキを食べました。とても楽しい一日でした。",
+    "options": [
+      "昨日は動物園に行きました。",
+      "友達はライオンが好きです。",
+      "キリンは背が低いです。",
+      "動物園の後、カフェに行きませんでした。"
+    ],
+    "answer": 0,
+    "explanation": "文章中提到昨天去了動物園，故答案為「昨日は動物園に行きました。」",
+    "id": "N5-讀解-v12-05",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "reading",
+    "tags": [
+      "Reading",
+      "N5",
+      "v12",
+      "N5-讀解-v12-06"
+    ],
+    "type": "comprehension",
+    "question": "私の趣味は料理をすることです。特に和食が好きで、よく作ります。昨日はカレーを作りました。カレーの作り方は簡単です。まず、野菜と肉を切ります。それから、鍋に油を入れて、野菜と肉を炒めます。次に、水とカレールーを入れて、煮込みます。最後に、少し塩を入れて味を整えます。カレーは家族みんなが好きなので、よく作ります。料理をすると、とてもリラックスできます。",
+    "options": [
+      "私の趣味は料理です。",
+      "昨日は寿司を作りました。",
+      "カレーは作るのが難しいです。",
+      "料理をすると緊張します。"
+    ],
+    "answer": 0,
+    "explanation": "文章中提到我的興趣是料理，故答案為「私の趣味は料理です。」",
+    "id": "N5-讀解-v12-06",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-09"
+    ],
+    "type": "choose_word",
+    "question": "毎朝、私は___を飲みます。",
+    "options": [
+      "お茶",
+      "本",
+      "車",
+      "家"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個早上會飲用的東西，選項中只有「お茶」是飲品。",
+    "id": "N5-語彙-v12-09",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-10"
+    ],
+    "type": "choose_word",
+    "question": "昨日、友達と___に行きました。",
+    "options": [
+      "学校",
+      "映画",
+      "電車",
+      "犬"
+    ],
+    "answer": 1,
+    "explanation": "這裡需要填入一個可以去的地方，選項中「映画」是指去看電影。",
+    "id": "N5-語彙-v12-10",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-11"
+    ],
+    "type": "choose_word",
+    "question": "___を作るのが好きです。",
+    "options": [
+      "料理",
+      "猫",
+      "机",
+      "学校"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個可以製作的東西，選項中「料理」是指做料理。",
+    "id": "N5-語彙-v12-11",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "tags": [
+      "Vocabulary",
+      "N5",
+      "v12",
+      "N5-語彙-v12-12"
+    ],
+    "type": "choose_word",
+    "question": "私の趣味は___を読むことです。",
+    "options": [
+      "新聞",
+      "音楽",
+      "箸",
+      "靴"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個可以閱讀的東西，選項中「新聞」是可以閱讀的。",
+    "id": "N5-語彙-v12-12",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-06"
+    ],
+    "type": "choose_word",
+    "question": "彼は毎日六時に___。",
+    "options": [
+      "起きます",
+      "食べます",
+      "寝ます",
+      "話します"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個每天六點會做的動作，選項中「起きます」是指起床。",
+    "id": "N5-文法-v12-06",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-07"
+    ],
+    "type": "choose_word",
+    "question": "これは___のかばんですか。",
+    "options": [
+      "誰",
+      "何",
+      "どこ",
+      "いつ"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個疑問詞，選項中「誰」可以用來詢問所有者。",
+    "id": "N5-文法-v12-07",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-08"
+    ],
+    "type": "choose_word",
+    "question": "私は日本語が___。",
+    "options": [
+      "好きです",
+      "走ります",
+      "忙しいです",
+      "寒いです"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個與語言相關的形容詞或動詞，選項中「好きです」是表示喜歡。",
+    "id": "N5-文法-v12-08",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-09"
+    ],
+    "type": "choose_word",
+    "question": "田中さんは学生___。",
+    "options": [
+      "です",
+      "あります",
+      "行きます",
+      "します"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個表示狀態的詞，選項中「です」是表示狀態的動詞。",
+    "id": "N5-文法-v12-09",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-10"
+    ],
+    "type": "choose_word",
+    "question": "この本はとても___。",
+    "options": [
+      "面白い",
+      "食べる",
+      "行く",
+      "飲む"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個形容詞來形容書本，選項中「面白い」是指有趣的。",
+    "id": "N5-文法-v12-10",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-11"
+    ],
+    "type": "choose_word",
+    "question": "私は毎日日本語を___。",
+    "options": [
+      "勉強します",
+      "泳ぎます",
+      "走ります",
+      "書きます"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個與日語學習相關的動詞，選項中「勉強します」是指學習。",
+    "id": "N5-文法-v12-11",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "category": "grammar",
+    "tags": [
+      "Grammar",
+      "N5",
+      "v12",
+      "N5-文法-v12-12"
+    ],
+    "type": "choose_word",
+    "question": "夏休みにどこかへ行きますか。___、行きません。",
+    "options": [
+      "いいえ",
+      "はい",
+      "あれ",
+      "これ"
+    ],
+    "answer": 0,
+    "explanation": "這裡需要填入一個否定回答，選項中「いいえ」是表示否定。",
+    "id": "N5-文法-v12-12",
+    "metadata": {
+      "generated_at": "2025-12-10 23:43:53",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v12"
+    }
+  },
+  {
+    "type": "paraphrase",
+    "question": "「彼は毎朝コーヒーを飲む。」と同じ意味の文はどれですか。",
+    "options": [
+      "彼は毎朝コーヒーを飲みます。",
+      "彼は毎朝お茶を飲む。",
+      "彼女は毎朝コーヒーを飲む。",
+      "彼は毎晩コーヒーを飲む。"
+    ],
+    "answer": 0,
+    "explanation": "「飲む」の丁寧形が「飲みます」です。",
+    "id": "N5-語彙-v13-01",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-01"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "paraphrase",
+    "question": "「彼女は毎日バスで通勤する。」と同じ意味の文はどれですか。",
+    "options": [
+      "彼女は毎日バスで働く。",
+      "彼女は毎日バスで学校に行く。",
+      "彼女は毎日バスで会社に行く。",
+      "彼女は毎日バスで帰る。"
+    ],
+    "answer": 2,
+    "explanation": "「通勤する」は「会社に行く」と同じ意味です。",
+    "id": "N5-語彙-v13-02",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-02"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "paraphrase",
+    "question": "「私は新しい靴を買った。」と同じ意味の文はどれですか。",
+    "options": [
+      "私は新しい靴を売った。",
+      "私は新しい靴を履いた。",
+      "私は新しい靴を買いました。",
+      "私は古い靴を買った。"
+    ],
+    "answer": 2,
+    "explanation": "「買った」の丁寧形が「買いました」です。",
+    "id": "N5-語彙-v13-03",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-03"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "paraphrase",
+    "question": "「彼は毎晩テレビを見る。」と同じ意味の文はどれですか。",
+    "options": [
+      "彼は毎晩テレビを消す。",
+      "彼は毎晩テレビを見ることが好きです。",
+      "彼は毎晩テレビを見ません。",
+      "彼は毎晩テレビを見ます。"
+    ],
+    "answer": 3,
+    "explanation": "「見る」の丁寧形が「見ます」です。",
+    "id": "N5-語彙-v13-04",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-04"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "paraphrase",
+    "question": "「彼女は毎日新聞を読む。」と同じ意味の文はどれですか。",
+    "options": [
+      "彼女は毎日雑誌を読む。",
+      "彼女は毎日新聞を見ます。",
+      "彼女は毎日新聞を読みます。",
+      "彼女は毎日新聞を聞く。"
+    ],
+    "answer": 2,
+    "explanation": "「読む」の丁寧形が「読みます」です。",
+    "id": "N5-語彙-v13-05",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-05"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "paraphrase",
+    "question": "「私は毎日水を飲む。」と同じ意味の文はどれですか。",
+    "options": [
+      "私は毎日水を飲みます。",
+      "私は毎日お茶を飲む。",
+      "私は毎日水を飲みません。",
+      "私は毎日水を食べる。"
+    ],
+    "answer": 0,
+    "explanation": "「飲む」の丁寧形が「飲みます」です。",
+    "id": "N5-語彙-v13-06",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-06"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "彼は_______本を読みます。",
+    "options": [
+      "よく",
+      "よくて",
+      "よかった",
+      "よくない"
+    ],
+    "answer": 0,
+    "explanation": "「よく」は頻度を表す副詞です。",
+    "id": "N5-語彙-v13-07",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-07"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "彼女は_______に行きます。",
+    "options": [
+      "学校",
+      "学校へ",
+      "学校で",
+      "学校の"
+    ],
+    "answer": 1,
+    "explanation": "行く先を表す時には「へ」を使います。",
+    "id": "N5-語彙-v13-08",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-08"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "彼は_______をします。",
+    "options": [
+      "勉強",
+      "勉強に",
+      "勉強で",
+      "勉強と"
+    ],
+    "answer": 0,
+    "explanation": "「勉強をします」は「勉強する」という意味です。",
+    "id": "N5-語彙-v13-09",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-09"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "彼は_______住んでいます。",
+    "options": [
+      "東京に",
+      "東京が",
+      "東京で",
+      "東京の"
+    ],
+    "answer": 0,
+    "explanation": "住む場所を表す時には「に」を使います。",
+    "id": "N5-語彙-v13-10",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-10"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "彼女は_______を見ています。",
+    "options": [
+      "テレビ",
+      "テレビで",
+      "テレビに",
+      "テレビが"
+    ],
+    "answer": 0,
+    "explanation": "「見る」対象には「を」を使います。",
+    "id": "N5-語彙-v13-11",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-11"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "私は_______に行きました。",
+    "options": [
+      "図書館",
+      "図書館が",
+      "図書館で",
+      "図書館の"
+    ],
+    "answer": 0,
+    "explanation": "行く先を表す時には「に」を使います。",
+    "id": "N5-語彙-v13-12",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-12"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "彼は_______をしています。",
+    "options": [
+      "運動",
+      "運動に",
+      "運動で",
+      "運動が"
+    ],
+    "answer": 0,
+    "explanation": "「運動をしています」は「運動する」という意味です。",
+    "id": "N5-語彙-v13-13",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-13"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "昨日、私は友達と一緒に映画を見に行きました。それはとても面白い映画で、私たちは大いに楽しみました。映画の後、私たちは近くのレストランで晩ご飯を食べました。食事の後、友達と別れて、私は家に帰りました。家に帰った後、少しテレビを見て、すぐに寝ました。翌日は早く起きて、学校に行かなければなりませんでした。",
+    "options": [
+      "友達と映画を見た",
+      "一人で映画を見た",
+      "友達と公園に行った",
+      "一人で公園に行った"
+    ],
+    "answer": 0,
+    "explanation": "文中で「友達と一緒に映画を見に行きました」とあります。",
+    "id": "N5-語彙-v13-14",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-14"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "私は先週の土曜日に新しい本を買いました。その本はとても面白くて、毎晩寝る前に少しずつ読み進めています。本の内容はミステリーで、読者を引き込むようなストーリー展開になっています。私はこの本を読むことで、毎日のストレスを忘れることができます。",
+    "options": [
+      "新しい本を買った",
+      "古い本を読んでいる",
+      "本を読まない",
+      "本を売った"
+    ],
+    "answer": 0,
+    "explanation": "文中で「先週の土曜日に新しい本を買いました」とあります。",
+    "id": "N5-語彙-v13-15",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-15"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "context",
+    "question": "親愛なる友へ、最近どうしていますか？私は元気です。先日、家族で旅行に行ってきました。とても楽しい時間を過ごしました。次に会うときには、その話をたくさんしたいと思います。それでは、また近いうちに会えることを楽しみにしています。",
+    "options": [
+      "家族で旅行に行った",
+      "一人で旅行に行った",
+      "旅行に行っていない",
+      "友達と旅行に行った"
+    ],
+    "answer": 0,
+    "explanation": "手紙に「先日、家族で旅行に行ってきました」と記載されています。",
+    "id": "N5-語彙-v13-16",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-16"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "私は毎朝、早起きをして散歩をしています。朝の空気はとても新鮮で、散歩をすると一日が気持ちよく始まります。散歩の後は、家に帰って朝ごはんを食べます。朝ごはんを食べながら、ニュースを見たり新聞を読んだりします。これが私の毎朝の習慣です。",
+    "options": [
+      "毎朝散歩をする",
+      "毎晩散歩をする",
+      "散歩をしない",
+      "時々散歩をする"
+    ],
+    "answer": 0,
+    "explanation": "文中で「私は毎朝、早起きをして散歩をしています」とあります。",
+    "id": "N5-語彙-v13-17",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-17"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "context",
+    "question": "来週の土曜日に、私たちの町でお祭りが開催されます。お祭りでは、様々な出店やゲームが楽しめます。また、夜には花火大会も予定されています。家族や友人を誘って、ぜひお出かけください。皆さんの参加をお待ちしています。",
+    "options": [
+      "来週の土曜日にお祭りがある",
+      "来週の土曜日はお祭りがない",
+      "お祭りは平日にある",
+      "お祭りに行かない"
+    ],
+    "answer": 0,
+    "explanation": "通知に「来週の土曜日に、私たちの町でお祭りが開催されます」と記載されています。",
+    "id": "N5-語彙-v13-18",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-18"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "type": "standard",
+    "question": "昨日の夜、私は友達と一緒にレストランで食事をしました。そのレストランはとても人気があり、料理もとても美味しかったです。食事の後、私たちは少し散歩をして、カフェでお茶を飲みました。久しぶりに友達と楽しい時間を過ごしました。",
+    "options": [
+      "友達とレストランで食事をした",
+      "一人でレストランで食事をした",
+      "友達と家で食事をした",
+      "一人で家で食事をした"
+    ],
+    "answer": 0,
+    "explanation": "文中で「昨日の夜、私は友達と一緒にレストランで食事をしました」とあります。",
+    "id": "N5-語彙-v13-19",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-19"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "vocabulary",
+    "type": "paraphrase",
+    "question": "「彼女は　毎日　学校に行きます。」と同じ意味の文はどれですか。",
+    "options": [
+      "彼女は　毎日　通学します。",
+      "彼女は　毎日　遊びに行きます。",
+      "彼女は　毎日　店に行きます。",
+      "彼女は　毎日　仕事に行きます。"
+    ],
+    "answer": 0,
+    "explanation": "「通学する」的意思是「上學」，與「学校に行きます」意思相近。",
+    "id": "N5-語彙-v13-20",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-語彙-v13-20"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "grammar",
+    "type": "standard",
+    "question": "彼は毎日（　　）をします。",
+    "options": [
+      "勉強",
+      "勉強の",
+      "勉強が",
+      "勉強を"
+    ],
+    "answer": 3,
+    "explanation": "正しい用法は「勉強をします」。",
+    "id": "N5-文法-v13-01",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-文法-v13-01"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "grammar",
+    "type": "standard",
+    "question": "昨日（　　）行きました。",
+    "options": [
+      "学校に",
+      "学校で",
+      "学校を",
+      "学校が"
+    ],
+    "answer": 0,
+    "explanation": "正確的用法是「学校に行きました」。",
+    "id": "N5-文法-v13-02",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-文法-v13-02"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "grammar",
+    "type": "standard",
+    "question": "日本語の本を（　　）読みます。",
+    "options": [
+      "ゆっくり",
+      "ゆっくりと",
+      "ゆっくりに",
+      "ゆっくりな"
+    ],
+    "answer": 0,
+    "explanation": "正確的用法是「ゆっくり読みます」。",
+    "id": "N5-文法-v13-03",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-文法-v13-03"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "grammar",
+    "type": "standard",
+    "question": "彼女は（　　）に住んでいます。",
+    "options": [
+      "東京",
+      "東京で",
+      "東京が",
+      "東京に"
+    ],
+    "answer": 3,
+    "explanation": "正確的用法是「東京に住んでいます」。",
+    "id": "N5-文法-v13-04",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-文法-v13-04"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "context",
+    "question": "次のメールを読んで、質問に答えてください。\n\nこんにちは、田中さん。\n今度の土曜日に私の家でバーベキューをします。午後3時から始めますので、ぜひ来てください。友達も連れてきてもいいですよ。住所は前に渡した地図を見てください。何か持ってきたいものがあれば教えてください。楽しみにしています。\n\n山田",
+    "options": [
+      "田中さんはバーベキューに招待されています。",
+      "田中さんはバーベキューに行きません。",
+      "バーベキューは日曜日にあります。",
+      "山田さんは田中さんの家に行きます。"
+    ],
+    "answer": 0,
+    "explanation": "メール中提到田中さん被邀請參加週六的燒烤聚會。",
+    "id": "N5-讀解-v13-01",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-讀解-v13-01"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "context",
+    "question": "次の通知を読んで、質問に答えてください。\n\nお知らせ\n\n来週の月曜日から金曜日まで、図書館は改装工事のため休館となります。利用者の皆様にはご不便をおかけしますが、ご理解とご協力をお願いいたします。工事が終了次第、再開いたしますので、引き続きご利用ください。\n\n図書館管理部",
+    "options": [
+      "図書館は来週月曜から金曜まで閉館します。",
+      "図書館は今週閉館しています。",
+      "図書館は土曜日に再開します。",
+      "図書館はいつも開いています。"
+    ],
+    "answer": 0,
+    "explanation": "通知中提到圖書館因改裝從下週一至周五閉館。",
+    "id": "N5-讀解-v13-02",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-讀解-v13-02"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "context",
+    "question": "次の便条を読んで、質問に答えてください。\n\n田中さんへ\n\nこんにちは。急な連絡になってしまいましたが、今日の午後3時に、前に二人で行った駅前のカフェで会いましょう。駅の東口を出てすぐ右にある、小さな花屋のとなりのカフェです。覚えていますか。静かで落ち着いた雰囲気の店で、コーヒーもケーキもおいしいところです。\n\nこの前話していた旅行の計画について、ゆっくり相談したいと思っています。写真も何枚か持って行きます。それまでに、時間の変更や、場所が分からないなど、何かあれば、遠慮なく私の携帯電話に電話してください。メールでも大丈夫です。\n\n私は2時50分ごろにはカフェに着いているつもりです。少し早く着いたら、先に席を取って、メニューを見ながら待っていますね。田中さんは、午後3時ちょうどごろに来てください。天気が悪くなった場合も、同じカフェで会いましょう。\n\n久しぶりにゆっくり話せるのを楽しみにしています。\n\n佐藤\n\n【質問】\nこの便条の内容と合っているのはどれですか。",
+    "options": [
+      "田中さんは午後3時にカフェで佐藤さんに会います。",
+      "田中さんは午後3時に駅で会います。",
+      "佐藤さんは田中さんの家に行きます。",
+      "佐藤さんはカフェで一人で待ちます。"
+    ],
+    "answer": 0,
+    "explanation": "便条には、「今日の午後3時に、駅前のカフェで会いましょう」と書いてあり、田中さんが午後3時ごろにカフェに来るように頼んでいる。したがって、田中さんは午後3時にカフェで佐藤さんに会うという内容的に1番が正しい。",
+    "id": "N5-讀解-v13-03",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-讀解-v13-03"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "standard",
+    "question": "次の文章を読んで、質問に答えてください。\n\n私は毎朝ジョギングをします。ジョギングをすると、とても気持ちがいいです。その後、シャワーを浴びて、朝ご飯を食べます。朝ご飯を食べた後、仕事に行きます。仕事が終わったら、家に帰って、晩ご飯を作ります。晩ご飯を食べた後、少しテレビを見てから寝ます。\n\n私は毎朝何をしますか。",
+    "options": [
+      "ジョギング",
+      "読書",
+      "テレビを見る",
+      "料理をする"
+    ],
+    "answer": 0,
+    "explanation": "文章提到「私は毎朝ジョギングをします」。",
+    "id": "N5-讀解-v13-04",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-讀解-v13-04"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "standard",
+    "question": "次の文章を読んで、質問に答えてください。\n\n昨日、友達と一緒に映画を見に行きました。映画はとても面白かったです。映画を見た後、レストランで食事をしました。食事の後、カフェでコーヒーを飲みました。家に帰ったのは夜の10時でした。\n\n私は昨日何時に家に帰りましたか。",
+    "options": [
+      "10時",
+      "9時",
+      "11時",
+      "8時"
+    ],
+    "answer": 0,
+    "explanation": "文章中提到「家に帰ったのは夜の10時でした」。",
+    "id": "N5-讀解-v13-05",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-讀解-v13-05"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
+  },
+  {
+    "category": "reading",
+    "type": "standard",
+    "question": "次の文章を読んで、質問に答えてください。\n\n私の趣味は読書です。毎晩寝る前に本を読みます。読みたい本はたくさんありますが、時間が足りません。週末には図書館に行って、新しい本を借ります。図書館にはたくさんの本があって、選ぶのが楽しいです。\n\n私の趣味は何ですか。",
+    "options": [
+      "読書",
+      "映画",
+      "スポーツ",
+      "料理"
+    ],
+    "answer": 0,
+    "explanation": "文章中提到「私の趣味は読書です」。",
+    "id": "N5-讀解-v13-06",
+    "tags": [
+      "N5",
+      "v13",
+      "N5-讀解-v13-06"
+    ],
+    "metadata": {
+      "generated_at": "2025-12-11 00:11:14",
+      "gen_model": "gpt-4o",
+      "audit_model": "gpt-5.1",
+      "batch": "v13"
+    }
   }
 ]
